@@ -47,16 +47,18 @@ describe('List Conversations Tool', () => {
     expect(conversations.type).toBe('text');
     
     // Parse the JSON response
-    const conversationList = JSON.parse(conversations.text);
-    expect(Array.isArray(conversationList)).toBe(true);
+    const response = JSON.parse(conversations.text);
+    expect(response).toHaveProperty('total');
+    expect(response).toHaveProperty('conversations');
+    expect(Array.isArray(response.conversations)).toBe(true);
     // Should have some conversations (may vary based on actual database)
-    expect(conversationList.length).toBeGreaterThanOrEqual(0);
+    expect(response.conversations.length).toBeGreaterThanOrEqual(0);
     
     // Check structure of first conversation
-    const firstConv = conversationList[0];
-    if (conversationList.length > 0) {
-      expect(firstConv).toHaveProperty('composer_id');
-      expect(firstConv).toHaveProperty('message_count');
+    const firstConv = response.conversations[0];
+    if (response.conversations.length > 0) {
+      expect(firstConv).toHaveProperty('composerId');
+      expect(firstConv).toHaveProperty('messageCount');
       expect(firstConv).toHaveProperty('preview');
     }
   });
@@ -68,8 +70,8 @@ describe('List Conversations Tool', () => {
       arguments: { limit: 10, offset: 0 }
     });
     
-    const firstPageData = JSON.parse(firstPage.content[0].text);
-    expect(firstPageData.length).toBeLessThanOrEqual(10);
+    const firstPageResponse = JSON.parse(firstPage.content[0].text);
+    expect(firstPageResponse.conversations.length).toBeLessThanOrEqual(10);
 
     // Get second page
     const secondPage = await client.callTool({
@@ -77,11 +79,11 @@ describe('List Conversations Tool', () => {
       arguments: { limit: 10, offset: 10 }
     });
     
-    const secondPageData = JSON.parse(secondPage.content[0].text);
+    const secondPageResponse = JSON.parse(secondPage.content[0].text);
     
     // Verify no overlap between pages
-    const firstIds = firstPageData.map((c: any) => c.composer_id);
-    const secondIds = secondPageData.map((c: any) => c.composer_id);
+    const firstIds = firstPageResponse.conversations.map((c: any) => c.composerId);
+    const secondIds = secondPageResponse.conversations.map((c: any) => c.composerId);
     const overlap = firstIds.filter((id: string) => secondIds.includes(id));
     expect(overlap.length).toBe(0);
   });
