@@ -46,8 +46,8 @@ describe('Search Conversations Tool', () => {
     // If results found, check structure
     if (searchResults.length > 0) {
       const firstResult = searchResults[0];
-      expect(firstResult).toHaveProperty('composer_id');
-      expect(firstResult).toHaveProperty('message_count');
+      expect(firstResult).toHaveProperty('composerId');
+      expect(firstResult).toHaveProperty('messageCount');
       expect(firstResult).toHaveProperty('preview');
       expect(firstResult).toHaveProperty('matches');
       expect(Array.isArray(firstResult.matches)).toBe(true);

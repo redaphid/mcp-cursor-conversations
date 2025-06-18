@@ -28,8 +28,10 @@ describe('Get Conversation Tool', () => {
       name: 'list_conversations',
       arguments: { limit: 1 }
     });
-    const conversations = JSON.parse(listResult.content[0].text);
-    testComposerId = conversations[0].composer_id;
+    const response = JSON.parse(listResult.content[0].text);
+    if (response.conversations && response.conversations.length > 0) {
+      testComposerId = response.conversations[0].composerId;
+    }
   });
 
   afterAll(async () => {
@@ -51,7 +53,7 @@ describe('Get Conversation Tool', () => {
     expect(result.isError).toBeFalsy();
     
     const conversation = JSON.parse(result.content[0].text);
-    expect(conversation).toHaveProperty('composer_id');
+    expect(conversation).toHaveProperty('messageCount');
     expect(conversation).toHaveProperty('messages');
     expect(Array.isArray(conversation.messages)).toBe(true);
   });
@@ -113,6 +115,6 @@ describe('Get Conversation Tool', () => {
     });
     
     expect(result.isError).toBe(true);
-    expect(result.content[0].text).toContain('Error retrieving conversation');
+    expect(result.content[0].text).toContain('Error: Conversation');
   });
 });
