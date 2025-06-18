@@ -1,0 +1,198 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://github.com/redaphid/cursor-conversations/schemas/conversation.schema.json",
+  "title": "Cursor Conversation Schema",
+  "description": "Schema for Cursor IDE conversation exports containing chat history between user and AI assistant",
+  "type": "object",
+  "required": ["composerId", "conversation"],
+  "properties": {
+    "composerId": {
+      "type": "string",
+      "format": "uuid",
+      "description": "Unique identifier for the conversation"
+    },
+    "richText": {
+      "type": "string",
+      "description": "Rich text editor state in JSON format"
+    },
+    "hasLoaded": {
+      "type": "boolean",
+      "description": "Whether the conversation has been fully loaded"
+    },
+    "text": {
+      "type": "string",
+      "description": "Plain text content of the conversation"
+    },
+    "conversation": {
+      "type": "array",
+      "description": "Array of messages in the conversation",
+      "items": {
+        "type": "object",
+        "required": ["type", "bubbleId"],
+        "properties": {
+          "type": {
+            "type": "integer",
+            "enum": [1, 2],
+            "description": "Message type: 1 = User message, 2 = Assistant message"
+          },
+          "bubbleId": {
+            "type": "string",
+            "format": "uuid",
+            "description": "Unique identifier for this message"
+          },
+          "text": {
+            "type": "string",
+            "description": "The message content"
+          },
+          "msgType": {
+            "type": "string",
+            "enum": ["freeform"],
+            "description": "Type of message interaction"
+          },
+          "userContextFiles": {
+            "type": "array",
+            "description": "Files included in user's context",
+            "items": {
+              "type": "string"
+            }
+          },
+          "suggestedCodeBlocks": {
+            "type": "array",
+            "description": "Code blocks suggested by the assistant",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": ["deletion", "newfile", "edit"],
+                  "description": "Type of code change"
+                },
+                "diff": {
+                  "type": "array",
+                  "description": "Diff information for the change",
+                  "items": {
+                    "type": "object"
+                  }
+                },
+                "filePath": {
+                  "type": "string",
+                  "description": "Path to the file being modified"
+                },
+                "isRejected": {
+                  "type": "boolean",
+                  "description": "Whether the suggestion was rejected"
+                },
+                "error": {
+                  "type": ["string", "null"],
+                  "description": "Error message if applicable"
+                },
+                "code": {
+                  "type": "string",
+                  "description": "The suggested code content"
+                },
+                "state": {
+                  "type": "string",
+                  "enum": ["pending", "applied", "rejected"],
+                  "description": "Current state of the suggestion"
+                }
+              }
+            }
+          },
+          "relevantFiles": {
+            "type": "array",
+            "description": "Files relevant to this message",
+            "items": {
+              "type": "string"
+            }
+          },
+          "capabilitiesRan": {
+            "type": "object",
+            "description": "Capabilities/features that were executed",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "integer"
+              }
+            }
+          },
+          "editTrailContexts": {
+            "type": "array",
+            "description": "Edit trail contexts for tracking changes"
+          },
+          "multiFileLinterErrors": {
+            "type": "array",
+            "description": "Linter errors across multiple files"
+          },
+          "diffHistories": {
+            "type": "array",
+            "description": "History of diffs applied"
+          },
+          "recentLocationsHistory": {
+            "type": "array",
+            "description": "Recent file locations visited",
+            "items": {
+              "type": "object",
+              "properties": {
+                "relativeWorkspacePath": {
+                  "type": "string",
+                  "description": "Relative path within the workspace"
+                },
+                "lineNumber": {
+                  "type": "integer",
+                  "description": "Line number in the file"
+                }
+              }
+            }
+          },
+          "codebaseContext": {
+            "type": "array",
+            "description": "Codebase context references",
+            "items": {
+              "type": "object",
+              "properties": {
+                "relativeWorkspacePath": {
+                  "type": "string"
+                },
+                "content": {
+                  "type": "string"
+                },
+                "codeSymbolMetadata": {
+                  "type": "object"
+                }
+              }
+            }
+          },
+          "folderPaths": {
+            "type": "array",
+            "description": "Folder paths included in context",
+            "items": {
+              "type": "string"
+            }
+          },
+          "responseParts": {
+            "type": "array",
+            "description": "Parts of the assistant's response",
+            "items": {
+              "type": "object",
+              "properties": {
+                "type": {
+                  "type": "string",
+                  "enum": ["text", "codeblock"],
+                  "description": "Type of response part"
+                },
+                "rawText": {
+                  "type": "string",
+                  "description": "Raw text content"
+                },
+                "codeBlockMeta": {
+                  "type": "object",
+                  "description": "Metadata for code blocks"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
