@@ -1,0 +1,108 @@
+{
+  "composerId": "67185ef6-673c-424f-b774-b1c06dc73ad6",
+  "richText": "",
+  "hasLoaded": true,
+  "text": "",
+  "conversation": [],
+  "status": "none",
+  "context": {
+    "editTrailContexts": [],
+    "notepads": [],
+    "composers": [],
+    "quotes": [],
+    "selectedCommits": [],
+    "selectedPullRequests": [],
+    "selectedImages": [],
+    "folderSelections": [],
+    "fileSelections": [],
+    "selections": [],
+    "terminalSelections": [],
+    "selectedDocs": [],
+    "externalLinks": [],
+    "cursorRules": [],
+    "mentions": {
+      "editTrailContexts": {},
+      "notepads": {},
+      "composers": {},
+      "quotes": {},
+      "selectedCommits": {},
+      "selectedPullRequests": {},
+      "gitDiff": [],
+      "gitDiffFromBranchToMain": [],
+      "selectedImages": {},
+      "usesCodebase": [],
+      "useWeb": [],
+      "folderSelections": {},
+      "fileSelections": {},
+      "terminalFiles": {},
+      "selections": {},
+      "terminalSelections": {},
+      "selectedDocs": {},
+      "externalLinks": {},
+      "useLinterErrors": [],
+      "useDiffReview": [],
+      "useContextPicking": [],
+      "useRememberThis": [],
+      "diffHistory": [],
+      "cursorRules": {}
+    }
+  },
+  "gitGraphFileSuggestions": [],
+  "userResponsesToSuggestedCodeBlocks": [],
+  "generatingBubbleIds": [],
+  "isReadingLongFile": false,
+  "codeBlockData": {},
+  "originalModelLines": {},
+  "newlyCreatedFiles": [],
+  "newlyCreatedFolders": [],
+  "tabs": [
+    {
+      "type": "composer"
+    }
+  ],
+  "selectedTabIndex": 1,
+  "createdAt": 1740275157520,
+  "hasChangedContext": false,
+  "capabilities": [
+    {
+      "type": 9,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 11,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 15,
+      "data": {
+        "customInstructions": "",
+        "bubbleDataMap": "{}"
+      }
+    },
+    {
+      "type": 14,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 6,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 16,
+      "data": {}
+    }
+  ],
+  "codebaseSearchSettings": {},
+  "isFileListExpanded": true,
+  "unifiedMode": "chat",
+  "forceMode": "chat",
+  "isAgentic": false
+}

@@ -1,0 +1,134 @@
+{
+  "composerId": "e5181488-affa-43b1-89a4-31f35e443818",
+  "richText": "{\"root\":{\"children\":[{\"children\":[{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"@edit.js\",\"type\":\"mention\",\"version\":1,\"mentionName\":\"edit.js\",\"storedKey\":\"824\",\"metadata\":{\"selection\":{\"type\":2,\"selectionWithoutUuid\":{\"uri\":{\"$mid\":1,\"fsPath\":\"/Users/redaphid/Projects/paper-cranes/edit.js\",\"external\":\"file:///Users/redaphid/Projects/paper-cranes/edit.js\",\"path\":\"/Users/redaphid/Projects/paper-cranes/edit.js\",\"scheme\":\"file\"}}},\"selectedOption\":{\"key\":\"edit.js\",\"type\":\"file\",\"selectionPrecursor\":{\"uri\":{\"$mid\":1,\"fsPath\":\"/Users/redaphid/Projects/paper-cranes/edit.js\",\"external\":\"file:///Users/redaphid/Projects/paper-cranes/edit.js\",\"path\":\"/Users/redaphid/Projects/paper-cranes/edit.js\",\"scheme\":\"file\"}},\"secondaryText\":\"edit.js\",\"name\":\"edit.js\",\"picture\":{},\"_score\":13,\"isSlash\":false}}},{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" I have a problem in which the 'edit' pane with \",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+  "hasLoaded": true,
+  "text": "@edit.js I have a problem in which the 'edit' pane with ",
+  "conversation": [],
+  "status": "none",
+  "context": {
+    "editTrailContexts": [],
+    "notepads": [],
+    "quotes": [],
+    "selectedCommits": [],
+    "selectedPullRequests": [],
+    "selectedImages": [],
+    "folderSelections": [],
+    "fileSelections": [
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/paper-cranes/edit.css",
+          "external": "file:///Users/redaphid/Projects/paper-cranes/edit.css",
+          "path": "/Users/redaphid/Projects/paper-cranes/edit.css",
+          "scheme": "file"
+        },
+        "addedWithoutMention": true,
+        "autoContext": true
+      },
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/paper-cranes/edit.js",
+          "external": "file:///Users/redaphid/Projects/paper-cranes/edit.js",
+          "path": "/Users/redaphid/Projects/paper-cranes/edit.js",
+          "scheme": "file"
+        },
+        "uuid": "824",
+        "collapseByDefault": false,
+        "addedWithoutMention": false
+      }
+    ],
+    "selections": [],
+    "terminalSelections": [],
+    "selectedDocs": [],
+    "externalLinks": [],
+    "diffHistory": {
+      "files": [],
+      "diffHistories": [],
+      "uniqueId": "76e3dc3c-c715-45b4-be3e-5cc63e6e8cc6"
+    },
+    "mentions": {
+      "editTrailContexts": {},
+      "notepads": {},
+      "quotes": {},
+      "selectedCommits": {},
+      "selectedPullRequests": {},
+      "gitDiff": [],
+      "gitDiffFromBranchToMain": [],
+      "selectedImages": {},
+      "usesCodebase": [],
+      "useWeb": [],
+      "folderSelections": {},
+      "fileSelections": {
+        "file:///Users/redaphid/Projects/paper-cranes/edit.js": [
+          {
+            "uuid": "824"
+          }
+        ]
+      },
+      "terminalFiles": {},
+      "selections": {},
+      "terminalSelections": {},
+      "selectedDocs": {},
+      "externalLinks": {},
+      "useLinterErrors": [],
+      "useDiffReview": [],
+      "useContextPicking": [],
+      "useRememberThis": [],
+      "diffHistory": []
+    }
+  },
+  "gitGraphFileSuggestions": [],
+  "userResponsesToSuggestedCodeBlocks": [],
+  "generatingBubbleIds": [],
+  "isReadingLongFile": false,
+  "codeBlockData": {},
+  "originalModelLines": {},
+  "newlyCreatedFiles": [],
+  "newlyCreatedFolders": [],
+  "tabs": [
+    {
+      "type": "composer"
+    }
+  ],
+  "selectedTabIndex": 1,
+  "createdAt": 1737077942724,
+  "hasChangedContext": true,
+  "capabilities": [
+    {
+      "type": 9,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 11,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 15,
+      "data": {
+        "customInstructions": "",
+        "bubbleDataMap": "{}"
+      }
+    },
+    {
+      "type": 14,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 6,
+      "data": {
+        "customInstructions": ""
+      }
+    }
+  ],
+  "forceMode": "edit",
+  "codebaseSearchSettings": {},
+  "isFileListExpanded": true,
+  "isAgentic": false
+}

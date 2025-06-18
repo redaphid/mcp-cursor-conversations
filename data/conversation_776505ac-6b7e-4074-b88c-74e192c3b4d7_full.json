@@ -1,0 +1,417 @@
+{
+  "_v": 3,
+  "composerId": "776505ac-6b7e-4074-b88c-74e192c3b4d7",
+  "richText": "",
+  "hasLoaded": true,
+  "text": "",
+  "fullConversationHeadersOnly": [
+    {
+      "bubbleId": "40de7321-5f5c-4358-be4f-bf11b6d7789b",
+      "type": 1
+    },
+    {
+      "bubbleId": "04696f65-5348-4f1e-aaab-ec94df2f82e3",
+      "type": 2,
+      "serverBubbleId": "07c9906f-dc7b-4fb1-8073-a5c4b1611cb0"
+    },
+    {
+      "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+      "type": 2
+    }
+  ],
+  "conversationMap": {},
+  "status": "aborted",
+  "context": {
+    "notepads": [],
+    "composers": [],
+    "quotes": [],
+    "selectedCommits": [],
+    "selectedPullRequests": [],
+    "selectedImages": [],
+    "folderSelections": [],
+    "fileSelections": [],
+    "selections": [],
+    "terminalSelections": [],
+    "selectedDocs": [],
+    "externalLinks": [],
+    "cursorRules": [],
+    "uiElementSelections": [],
+    "mentions": {
+      "notepads": {},
+      "composers": {},
+      "quotes": {},
+      "selectedCommits": {},
+      "selectedPullRequests": {},
+      "gitDiff": [],
+      "gitDiffFromBranchToMain": [],
+      "selectedImages": {},
+      "usesCodebase": [],
+      "useWeb": [],
+      "folderSelections": {},
+      "fileSelections": {},
+      "terminalFiles": {},
+      "selections": {},
+      "terminalSelections": {},
+      "selectedDocs": {},
+      "externalLinks": {},
+      "useLinterErrors": [],
+      "useDiffReview": [],
+      "useGenerateRules": [],
+      "useContextPicking": [],
+      "useRememberThis": [],
+      "diffHistory": [],
+      "cursorRules": {},
+      "autoContext": [],
+      "uiElementSelections": {}
+    }
+  },
+  "gitGraphFileSuggestions": [],
+  "generatingBubbleIds": [],
+  "isReadingLongFile": false,
+  "codeBlockData": {
+    "file:///Users/redaphid/Projects/ollama-interactions/package.json": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 0,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/package.json",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/package.json",
+          "path": "/Users/redaphid/Projects/ollama-interactions/package.json",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "json",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "043a8e37-13aa-41c0-a7f8-d55e0a48892d",
+        "intermediateModelLines": [],
+        "lastDiffId": "ecc323fc-c01d-4352-b657-3c4667b515d3",
+        "diffId": "30e927d2-8315-496e-a8cd-f27a36a6cad2",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/tsconfig.json": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 1,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/tsconfig.json",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/tsconfig.json",
+          "path": "/Users/redaphid/Projects/ollama-interactions/tsconfig.json",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "json",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "54954880-ff8a-4d7a-af4e-9825a5a66eb4",
+        "intermediateModelLines": [],
+        "lastDiffId": "bf3a050d-3360-4d77-bc09-32136ff5935f",
+        "diffId": "7d44ecda-df43-40e4-8f34-9aac45ed31f6",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/01-simple-interaction.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 2,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/src/01-simple-interaction.ts",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/01-simple-interaction.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/01-simple-interaction.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "bcd9c763-5768-4b6e-a991-047afd53c76c",
+        "intermediateModelLines": [],
+        "lastDiffId": "c67c615a-58c2-4e93-9a47-7e05ca1dea96",
+        "diffId": "640b9c0a-c9ad-4dd5-9d37-28f77cdce930",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/02-tool-calling.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 3,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/src/02-tool-calling.ts",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/02-tool-calling.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/02-tool-calling.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "7e6a3196-b82e-4faf-bb69-c6cd74b12fb4",
+        "intermediateModelLines": [],
+        "lastDiffId": "c2cc1800-9943-42b4-b3cc-f123e9dc1c26",
+        "diffId": "52136f24-41ee-470c-93f7-5272761dae18",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/03-conversation-flow.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 4,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/src/03-conversation-flow.ts",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/03-conversation-flow.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/03-conversation-flow.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "31fbc08e-3c58-489a-bdbc-f17139aaa86c",
+        "intermediateModelLines": [],
+        "lastDiffId": "6ce5d991-5974-4e87-8ae4-dd10a69b1370",
+        "diffId": "685829a5-ddbb-46b6-9b25-5a44bd55bf6f",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/04-rag-system.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 5,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/src/04-rag-system.ts",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/04-rag-system.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/04-rag-system.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "bdb3131f-6c14-498d-be0b-49c715dc7564",
+        "intermediateModelLines": [],
+        "lastDiffId": "06a331a1-dc7f-4ab2-be5c-3798c3d859a4",
+        "diffId": "652a174a-2551-43b7-acbb-9889192bc4cb",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/05-vector-stores.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 6,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/src/05-vector-stores.ts",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/05-vector-stores.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/05-vector-stores.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "8dcd3663-ad96-438f-995b-4b5378a00283",
+        "intermediateModelLines": [],
+        "lastDiffId": "8111f0cd-65d3-4cb9-958b-0f760b1fce9c",
+        "diffId": "ca4db791-12b5-4eef-892c-878baccf8a0f",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/01-mcp-host.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 7,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/src/mcp/01-mcp-host.ts",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/01-mcp-host.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/mcp/01-mcp-host.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "38564231-96cb-4ac3-82db-772d72f4eaa8",
+        "intermediateModelLines": [],
+        "lastDiffId": "5d1d8e2c-a37f-4cfd-8b6a-f078b6e9e5f5",
+        "diffId": "0d9588cb-700f-4070-8538-5edbb36924a5",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/02-mcp-client.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 8,
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/src/mcp/02-mcp-client.ts",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/02-mcp-client.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/mcp/02-mcp-client.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "accepted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded",
+        "latestApplyGenerationUUID": "9a71dcea-580c-4d95-af1c-a1c2eda79ec1",
+        "intermediateModelLines": [],
+        "lastDiffId": "d4638dc0-a354-4725-a451-e87e21e66d5e",
+        "diffId": "d7d413e1-2822-4601-b2a8-9f4ee99de0af",
+        "isNoOp": false
+      }
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/03-mcp-features.ts": [
+      {
+        "_v": 2,
+        "bubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4",
+        "codeBlockIdx": 9,
+        "uri": {
+          "$mid": 1,
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/03-mcp-features.ts",
+          "path": "/Users/redaphid/Projects/ollama-interactions/src/mcp/03-mcp-features.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "status": "aborted",
+        "isNotApplied": false,
+        "languageId": "typescript",
+        "codeBlockDisplayPreference": "expanded"
+      }
+    ]
+  },
+  "originalModelLines": {
+    "file:///Users/redaphid/Projects/ollama-interactions/package.json": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/tsconfig.json": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/01-simple-interaction.ts": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/02-tool-calling.ts": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/03-conversation-flow.ts": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/04-rag-system.ts": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/05-vector-stores.ts": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/01-mcp-host.ts": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/02-mcp-client.ts": [
+      " "
+    ],
+    "file:///Users/redaphid/Projects/ollama-interactions/src/mcp/03-mcp-features.ts": [
+      " "
+    ]
+  },
+  "newlyCreatedFiles": [],
+  "newlyCreatedFolders": [],
+  "lastUpdatedAt": 1749110913044,
+  "createdAt": 1749110572293,
+  "hasChangedContext": true,
+  "capabilities": [
+    {
+      "type": 15,
+      "data": {
+        "bubbleDataMap": "{}"
+      }
+    },
+    {
+      "type": 17,
+      "data": {}
+    },
+    {
+      "type": 14,
+      "data": {}
+    },
+    {
+      "type": 22,
+      "data": {}
+    },
+    {
+      "type": 18,
+      "data": {}
+    },
+    {
+      "type": 19,
+      "data": {}
+    },
+    {
+      "type": 23,
+      "data": {}
+    },
+    {
+      "type": 6,
+      "data": {}
+    },
+    {
+      "type": 16,
+      "data": {}
+    },
+    {
+      "type": 24,
+      "data": {}
+    },
+    {
+      "type": 21,
+      "data": {}
+    },
+    {
+      "type": 25,
+      "data": {}
+    }
+  ],
+  "name": "Prepare offline examples for ollama and mcp",
+  "codebaseSearchSettings": {},
+  "isFileListExpanded": false,
+  "unifiedMode": "edit",
+  "forceMode": "edit",
+  "usageData": {},
+  "allAttachedFileCodeChunksUris": [],
+  "subComposerIds": [],
+  "latestConversationSummary": {
+    "summary": {
+      "summary": "\n- The user requested to download and run libraries and sample code related to interacting with Ollama, specifying various functionalities such as simple interaction, tool calling, conversation flow rearranging, RAG, and vector store uses, while also expressing interest in MCP servers and their implementation in Cloudflare.\n- The user emphasized the need for clear examples in TypeScript, using Node.js, and indicated that they were experimenting, so advanced error handling was not necessary.\n- The assistant provided a comprehensive setup, including a package.json file, TypeScript configuration, and multiple TypeScript files containing examples for each requested functionality, including Ollama interactions and MCP server/client examples.\n- The assistant created specific examples for simple interactions, tool calling, conversation management, RAG systems, and vector stores, as well as MCP host and client implementations, ensuring that the user had everything needed for offline experimentation.\n- The user concluded by asking for a summary of the conversation, indicating a desire to review the information provided, while the assistant had just finished detailing the code and examples necessary for the user's experimentation with Ollama and MCP.\n",
+      "truncationLastBubbleIdInclusive": "07c9906f-dc7b-4fb1-8073-a5c4b1611cb0",
+      "clientShouldStartSendingFromInclusiveBubbleId": "40de7321-5f5c-4358-be4f-bf11b6d7789b",
+      "previousConversationSummaryBubbleId": "",
+      "includesToolResults": false
+    },
+    "lastBubbleId": "25157d5f-49d2-4878-85a4-b55172bdd7a4"
+  },
+  "tokenCount": 0,
+  "latestChatGenerationUUID": "d0e2185d-3efb-4490-b429-533358fc6978",
+  "isAgentic": false
+}

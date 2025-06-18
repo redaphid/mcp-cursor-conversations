@@ -1,0 +1,805 @@
+{
+  "_v": 1,
+  "composerId": "591712e0-3958-456b-b731-8e2a555095a7",
+  "richText": "{\"root\":{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+  "hasLoaded": true,
+  "text": "",
+  "conversation": [
+    {
+      "_v": 1,
+      "type": 1,
+      "attachedFoldersNew": [],
+      "bubbleId": "226b6c9f-5804-45fe-b545-27ad6f8dfde5",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [
+        "src/PaperCrane.ts",
+        "src/PaperCrane.test.ts",
+        "src/PaperCrane.reference.tsx",
+        "index.ts",
+        "package.json",
+        "public/index.html"
+      ],
+      "capabilitiesRan": {
+        "mutate-request": [
+          6
+        ],
+        "start-submit-chat": [],
+        "before-submit-chat": [
+          15,
+          17
+        ],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-codeblock": [],
+        "process-stream": [
+          15,
+          14
+        ]
+      },
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": true,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "humanChanges": [
+        {
+          "relativeWorkspacePath": "src/PaperCrane.ts",
+          "renderedDiffs": [
+            {
+              "startLineNumber": 104,
+              "endLineNumberExclusive": 105,
+              "beforeContextLines": [
+                "                if (bufferInfo.indices) {",
+                "                    gl.deleteBuffer(bufferInfo.indices)",
+                "                }",
+                "            }",
+                "        }"
+              ],
+              "removedLines": [
+                "    }, [shader, contextAttributes]) // Add contextAttributes to dependency array"
+              ],
+              "addedLines": [
+                "    }, [shader]) // Add contextAttributes to dependency array"
+              ],
+              "afterContextLines": [
+                "",
+                "    return html`<canvas ref=${canvasRef} style=${{ width: \"100%\", height: \"100%\", display: \"block\" }} />`",
+                "}",
+                ""
+              ]
+            }
+          ]
+        }
+      ],
+      "summarizedComposers": [],
+      "cursorRules": [],
+      "contextPieces": [],
+      "editTrailContexts": [],
+      "allThinkingBlocks": [],
+      "diffsSinceLastApply": [],
+      "deletedFiles": [],
+      "supportedTools": [
+        1,
+        3,
+        5,
+        6,
+        7,
+        8,
+        9,
+        11,
+        12,
+        14,
+        15,
+        17,
+        20,
+        19,
+        21,
+        22,
+        23,
+        24
+      ],
+      "tokenCount": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "richText": "{\"root\":{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"Strip everything down to the bare bones in \",\"type\":\"text\",\"version\":1},{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"@PaperCrane.ts\",\"type\":\"mention\",\"version\":1,\"mentionName\":\"PaperCrane.ts\",\"storedKey\":\"55\",\"metadata\":{\"selection\":{\"type\":2,\"selectionWithoutUuid\":{\"uri\":{\"$mid\":1,\"fsPath\":\"/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"external\":\"file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"path\":\"/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"scheme\":\"file\"}}},\"selectedOption\":{\"key\":\"PaperCrane.ts\",\"type\":\"file\",\"selectionPrecursor\":{\"uri\":{\"$mid\":1,\"fsPath\":\"/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"external\":\"file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"path\":\"/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"scheme\":\"file\"}},\"secondaryText\":\"src\",\"id\":\"67d97b01-b8c2-40db-b74c-2eff0665a26a\",\"name\":\"PaperCrane.ts\",\"_score\":10,\"isSlash\":false}}},{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" . Don't clean up or anything\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+      "text": "Strip everything down to the bare bones in @PaperCrane.ts . Don't clean up or anything",
+      "tokenDetailsUpUntilHere": [
+        {
+          "relativeWorkspacePath": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+          "count": 792,
+          "lineCount": 108
+        }
+      ],
+      "tokenCountUpUntilHere": 792,
+      "context": {
+        "notepads": [],
+        "composers": [],
+        "quotes": [],
+        "selectedCommits": [],
+        "selectedPullRequests": [],
+        "selectedImages": [],
+        "folderSelections": [],
+        "fileSelections": [
+          {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+              "external": "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+              "path": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+              "scheme": "file"
+            },
+            "addedWithoutMention": true,
+            "autoContext": true
+          }
+        ],
+        "terminalFiles": [],
+        "selections": [],
+        "terminalSelections": [],
+        "selectedDocs": [],
+        "externalLinks": [],
+        "cursorRules": [],
+        "mentions": {
+          "notepads": {},
+          "composers": {},
+          "quotes": {},
+          "selectedCommits": {},
+          "selectedPullRequests": {},
+          "gitDiff": [],
+          "gitDiffFromBranchToMain": [],
+          "selectedImages": {},
+          "usesCodebase": [],
+          "useWeb": [],
+          "folderSelections": {},
+          "fileSelections": {
+            "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts": [
+              {
+                "uuid": "55"
+              }
+            ]
+          },
+          "terminalFiles": {},
+          "selections": {},
+          "terminalSelections": {},
+          "selectedDocs": {},
+          "externalLinks": {},
+          "useLinterErrors": [],
+          "useDiffReview": [],
+          "useContextPicking": [],
+          "useRememberThis": [],
+          "diffHistory": [],
+          "cursorRules": {}
+        },
+        "usesCodebase": false
+      },
+      "checkpointId": "02f46641-8fd9-4c60-aa8f-bae77afcd80e",
+      "unifiedMode": 2,
+      "currentFileLocationData": {
+        "relativeWorkspacePath": "src/PaperCrane.ts",
+        "lineNumber": 81,
+        "text": "        return () => {"
+      },
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    },
+    {
+      "_v": 1,
+      "type": 2,
+      "attachedFoldersNew": [],
+      "bubbleId": "4d5cc1f5-25bb-41d4-868d-78024fab7bfb",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [
+          6
+        ],
+        "start-submit-chat": [],
+        "before-submit-chat": [
+          15,
+          17
+        ],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-codeblock": [],
+        "process-stream": [
+          15,
+          14
+        ]
+      },
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "humanChanges": [],
+      "attachedHumanChanges": false,
+      "summarizedComposers": [],
+      "cursorRules": [],
+      "contextPieces": [],
+      "editTrailContexts": [],
+      "allThinkingBlocks": [],
+      "diffsSinceLastApply": [],
+      "deletedFiles": [],
+      "supportedTools": [],
+      "tokenCount": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "codeBlocks": [],
+      "text": "",
+      "isChat": false,
+      "timingInfo": {
+        "clientStartTime": 1744179987186,
+        "clientRpcSendTime": 1744179987219,
+        "clientSettleTime": 1744179996421,
+        "clientEndTime": 1744179996421
+      },
+      "intermediateChunks": [],
+      "serverBubbleId": "28861748-b9c3-4bbf-83b1-397c7054ccd3",
+      "usageUuid": "ba0fb693-3ed7-45fd-984f-acd926751f2f",
+      "thinking": {
+        "text": "The user wants to simplify the `src/PaperCrane.ts` file by removing the cleanup logic within the `useEffect` hook.\n\n1.  **Identify the target file:** `src/PaperCrane.ts`.\n2.  **Identify the section to modify:** The `useEffect` hook, specifically the cleanup function returned at the end.\n3.  **Determine the change:** Remove the entire cleanup function.",
+        "signature": ""
+      },
+      "thinkingDurationMs": 864,
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    },
+    {
+      "_v": 1,
+      "type": 2,
+      "attachedFoldersNew": [],
+      "bubbleId": "34fbe36f-0256-4e46-a61a-70e9684c9025",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-codeblock": [],
+        "process-stream": []
+      },
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "humanChanges": [],
+      "attachedHumanChanges": false,
+      "summarizedComposers": [],
+      "cursorRules": [],
+      "contextPieces": [],
+      "editTrailContexts": [],
+      "allThinkingBlocks": [],
+      "diffsSinceLastApply": [],
+      "deletedFiles": [],
+      "supportedTools": [],
+      "tokenCount": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "text": "Okay, I will remove the cleanup logic from the `useEffect` hook in `src/PaperCrane.ts`.",
+      "usageUuid": "ba0fb693-3ed7-45fd-984f-acd926751f2f",
+      "symbolLinks": [
+        {
+          "symbolName": "useEffect",
+          "symbolSearchString": "useEffect",
+          "relativeWorkspacePath": "src/PaperCrane.ts",
+          "roughLineNumber": 3
+        }
+      ],
+      "fileLinks": [
+        {
+          "displayName": "src/PaperCrane.ts",
+          "relativeWorkspacePath": "src/PaperCrane.ts"
+        }
+      ],
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    },
+    {
+      "_v": 1,
+      "type": 2,
+      "attachedFoldersNew": [],
+      "bubbleId": "cadddfe3-6ccd-475f-bfcd-6752c4396f5b",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-codeblock": [],
+        "process-stream": []
+      },
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "humanChanges": [],
+      "attachedHumanChanges": false,
+      "summarizedComposers": [],
+      "cursorRules": [],
+      "contextPieces": [],
+      "editTrailContexts": [],
+      "allThinkingBlocks": [],
+      "diffsSinceLastApply": [],
+      "deletedFiles": [],
+      "supportedTools": [],
+      "tokenCount": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "codeBlocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+            "external": "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+            "path": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+            "scheme": "file"
+          },
+          "version": 0,
+          "codeBlockIdx": 0
+        }
+      ],
+      "text": "",
+      "isThought": false,
+      "isCapabilityIteration": false,
+      "capabilityType": 15,
+      "checkpointId": "3c9c12f3-4846-41ad-80ad-ab85411dbdec",
+      "afterCheckpointId": "ae84d566-3874-4efe-9973-ef930e72ce68",
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    },
+    {
+      "_v": 1,
+      "type": 2,
+      "attachedFoldersNew": [],
+      "bubbleId": "896957e1-a3c7-4554-b412-51469a372b24",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-codeblock": [],
+        "process-stream": []
+      },
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "humanChanges": [],
+      "attachedHumanChanges": false,
+      "summarizedComposers": [],
+      "cursorRules": [],
+      "contextPieces": [],
+      "editTrailContexts": [],
+      "allThinkingBlocks": [],
+      "diffsSinceLastApply": [],
+      "deletedFiles": [],
+      "supportedTools": [],
+      "tokenCount": {
+        "inputTokens": 0,
+        "outputTokens": 0
+      },
+      "codeBlocks": [],
+      "text": "",
+      "serverBubbleId": "5500b32a-2bb1-41f4-a345-db37bc5e4a97",
+      "usageUuid": "ba0fb693-3ed7-45fd-984f-acd926751f2f",
+      "thinking": {
+        "text": "The user wants to remove the cleanup logic in the `useEffect` hook in `src/PaperCrane.ts`. I have already done this using the `edit_file` tool. The apply model successfully removed the cleanup function.",
+        "signature": ""
+      },
+      "thinkingDurationMs": 725,
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    },
+    {
+      "_v": 1,
+      "type": 2,
+      "attachedFoldersNew": [],
+      "bubbleId": "ba1fa66c-2a58-4612-9e2e-b633c569da2b",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [
+          18
+        ],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [
+          6
+        ],
+        "process-codeblock": [],
+        "process-stream": []
+      },
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "humanChanges": [],
+      "attachedHumanChanges": false,
+      "summarizedComposers": [],
+      "cursorRules": [],
+      "contextPieces": [],
+      "editTrailContexts": [],
+      "allThinkingBlocks": [],
+      "diffsSinceLastApply": [],
+      "deletedFiles": [],
+      "supportedTools": [],
+      "tokenCount": {
+        "inputTokens": 5392,
+        "outputTokens": 483
+      },
+      "text": "OK, I've removed the cleanup function from the `useEffect` hook in `src/PaperCrane.ts`.",
+      "usageUuid": "ba0fb693-3ed7-45fd-984f-acd926751f2f",
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    }
+  ],
+  "status": "completed",
+  "context": {
+    "notepads": [],
+    "composers": [],
+    "quotes": [],
+    "selectedCommits": [],
+    "selectedPullRequests": [],
+    "selectedImages": [],
+    "folderSelections": [],
+    "fileSelections": [
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+          "external": "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+          "path": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+          "scheme": "file"
+        },
+        "addedWithoutMention": true,
+        "autoContext": true
+      }
+    ],
+    "selections": [],
+    "terminalSelections": [],
+    "selectedDocs": [],
+    "externalLinks": [],
+    "cursorRules": [],
+    "mentions": {
+      "notepads": {},
+      "composers": {},
+      "quotes": {},
+      "selectedCommits": {},
+      "selectedPullRequests": {},
+      "gitDiff": [],
+      "gitDiffFromBranchToMain": [],
+      "selectedImages": {},
+      "usesCodebase": [],
+      "useWeb": [],
+      "folderSelections": {},
+      "fileSelections": {
+        "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts": []
+      },
+      "terminalFiles": {},
+      "selections": {},
+      "terminalSelections": {},
+      "selectedDocs": {},
+      "externalLinks": {},
+      "useLinterErrors": [],
+      "useDiffReview": [],
+      "useContextPicking": [],
+      "useRememberThis": [],
+      "diffHistory": [],
+      "cursorRules": {}
+    }
+  },
+  "gitGraphFileSuggestions": [],
+  "generatingBubbleIds": [],
+  "isReadingLongFile": false,
+  "codeBlockData": {
+    "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts": [
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+          "external": "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+          "path": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+          "scheme": "file"
+        },
+        "version": 0,
+        "content": "\\\n        }\n    }, [shader]) // Add contextAttributes to dependency array\n\n    return html`<canvas ref=${canvasRef} style=${{ width: \"100%\", height: \"100%\", display: \"block\" }} />`\n}\n",
+        "languageId": "typescript",
+        "status": "accepted",
+        "originalModelDiffWrtV0": [],
+        "newModelDiffWrtV0": [
+          {
+            "original": {
+              "startLineNumber": 79,
+              "endLineNumberExclusive": 104
+            },
+            "modified": []
+          }
+        ],
+        "isNoOp": false,
+        "isChained": false,
+        "codeBlockDisplayPreference": "expanded"
+      }
+    ]
+  },
+  "originalModelLines": {
+    "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts": [
+      "import { h } from \"preact\"",
+      "import htm from \"htm\"",
+      "import { useEffect, useRef } from \"preact/hooks\"",
+      "import {",
+      "    createProgramInfo,",
+      "    setBuffersAndAttributes,",
+      "    setUniforms,",
+      "    drawBufferInfo,",
+      "    resizeCanvasToDisplaySize,",
+      "    getContext,",
+      "    createBufferInfoFromArrays",
+      "} from \"twgl.js\"",
+      "import type { ProgramInfo, BufferInfo, AttribInfo } from \"twgl.js\"",
+      "",
+      "const html = htm.bind(h)",
+      "",
+      "// Default vertex shader provided by twgl",
+      "const defaultVertexShader = `",
+      "attribute vec4 position;",
+      "void main() {",
+      "  gl_Position = position;",
+      "}",
+      "`",
+      "",
+      "// Define the props for the component",
+      "interface PaperCraneProps {",
+      "    shader: string",
+      "}",
+      "",
+      "export const PaperCrane = ({ shader }: PaperCraneProps) => {",
+      "    // Destructure props",
+      "    const canvasRef = useRef<HTMLCanvasElement>(null)",
+      "    const animationFrameRef = useRef<number>(0)",
+      "",
+      "    useEffect(() => {",
+      "        console.log(\"useEffect\")",
+      "        const canvas = canvasRef.current",
+      "        if (!canvas) return",
+      "        console.log(\"canvas\", canvas)",
+      "",
+      "        // Use twgl.getContext for WebGL2 context, passing attributes",
+      "        const gl = getContext(canvas, { preserveDrawingBuffer: true }) // Pass attributes here",
+      "",
+      "        // Use twgl.createProgramInfo with the provided fragment shader",
+      "        const programInfo: ProgramInfo = createProgramInfo(gl, [defaultVertexShader, shader])",
+      "",
+      "        // Standard geometry for a full-screen quad",
+      "        const arrays = {",
+      "            position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0]",
+      "        }",
+      "        const bufferInfo: BufferInfo = createBufferInfoFromArrays(gl, arrays)",
+      "",
+      "        let time = 0",
+      "",
+      "        const render = (currentTime: number) => {",
+      "            time = currentTime * 0.001 // convert time to seconds",
+      "",
+      "            resizeCanvasToDisplaySize(gl.canvas as HTMLCanvasElement)",
+      "            gl.viewport(0, 0, gl.canvas.width, gl.canvas.height)",
+      "",
+      "            gl.clearColor(0, 0, 0, 0)",
+      "            gl.clear(gl.COLOR_BUFFER_BIT)",
+      "",
+      "            gl.useProgram(programInfo.program)",
+      "",
+      "            setBuffersAndAttributes(gl, programInfo, bufferInfo)",
+      "",
+      "            setUniforms(programInfo, {",
+      "                u_time: time,",
+      "                u_resolution: [gl.canvas.width, gl.canvas.height]",
+      "            })",
+      "",
+      "            drawBufferInfo(gl, bufferInfo)",
+      "",
+      "            animationFrameRef.current = requestAnimationFrame(render)",
+      "        }",
+      "",
+      "        animationFrameRef.current = requestAnimationFrame(render)",
+      "",
+      "        // Cleanup function",
+      "        return () => {",
+      "            cancelAnimationFrame(animationFrameRef.current)",
+      "            if (gl) {",
+      "                // Clean up WebGL resources (optional but good practice)",
+      "                // twgl doesn't have a dedicated cleanup function for everything,",
+      "                // but you'd typically delete programs, buffers, textures etc. here",
+      "                // For simplicity, we'll rely on context loss handling or page unload",
+      "                if (programInfo && programInfo.program) {",
+      "                    gl.deleteProgram(programInfo.program)",
+      "                }",
+      "                // Delete buffers created by createBufferInfoFromArrays",
+      "                if (bufferInfo.attribs) {",
+      "                    Object.values(bufferInfo.attribs).forEach((attrib: AttribInfo) => {",
+      "                        if (attrib.buffer) {",
+      "                            gl.deleteBuffer(attrib.buffer)",
+      "                        }",
+      "                    })",
+      "                }",
+      "                if (bufferInfo.indices) {",
+      "                    gl.deleteBuffer(bufferInfo.indices)",
+      "                }",
+      "            }",
+      "        }",
+      "    }, [shader]) // Add contextAttributes to dependency array",
+      "",
+      "    return html`<canvas ref=${canvasRef} style=${{ width: \"100%\", height: \"100%\", display: \"block\" }} />`",
+      "}",
+      ""
+    ]
+  },
+  "newlyCreatedFiles": [],
+  "newlyCreatedFolders": [],
+  "lastUpdatedAt": 1744179987218,
+  "createdAt": 1744179971641,
+  "hasChangedContext": false,
+  "capabilities": [
+    {
+      "type": 15,
+      "data": {
+        "bubbleDataMap": "{\"adb6dd2f-8671-4fec-bfc7-6e8ddde49657\":{\"tool\":15,\"toolCallId\":\"tool_eaa369b5-ef5d-423c-86b8-dd21027888c\",\"status\":\"cancelled\",\"rawArgs\":\"{\\\"command\\\":\\\"npm install twgl.js\\\",\\\"explanation\\\":\\\"Install the twgl.js library to use its WebGL helper functions.\\\",\\\"is_background\\\":false}\",\"name\":\"run_terminal_cmd\",\"additionalData\":{\"status\":\"error\"},\"params\":\"{\\\"command\\\":\\\"npm install twgl.js\\\",\\\"requireUserApproval\\\":true}\",\"userDecision\":\"rejected\"},\"1aaac1b5-2543-430f-af21-add3a5faae3d\":{\"tool\":15,\"toolCallId\":\"tool_d9c0bdc2-4120-4b71-9c1d-1c19bd63f6a\",\"status\":\"cancelled\",\"rawArgs\":\"{\\\"is_background\\\":false,\\\"explanation\\\":\\\"Install the twgl.js library using yarn.\\\",\\\"command\\\":\\\"yarn add twgl.js\\\"}\",\"name\":\"run_terminal_cmd\",\"additionalData\":{\"status\":\"error\"},\"params\":\"{\\\"command\\\":\\\"yarn add twgl.js\\\",\\\"requireUserApproval\\\":true}\",\"userDecision\":\"rejected\"},\"f68ebf5a-3364-414c-b68c-db06aedea2fb\":{\"tool\":15,\"toolCallId\":\"tool_6c51360d-64fd-4e03-bfee-2bad54999ec\",\"status\":\"completed\",\"rawArgs\":\"{\\\"is_background\\\":false,\\\"command\\\":\\\"bun add twgl.js\\\",\\\"explanation\\\":\\\"Install the twgl.js library using bun.\\\"}\",\"name\":\"run_terminal_cmd\",\"additionalData\":{\"status\":\"success\",\"sessionId\":\"35b9d22e-29ae-4202-9f8f-6594bdda6f4b\",\"startAtBufferLine\":5},\"params\":\"{\\\"command\\\":\\\"bun add twgl.js\\\",\\\"requireUserApproval\\\":true}\",\"userDecision\":\"accepted\",\"result\":\"{\\\"output\\\":\\\"bun add v1.2.8 (adab0f64)\\\\n\\\\ninstalled twgl.js@5.5.4\\\\n\\\\n[427.00ms] done\\\\nredaphid@M2 ~/P/paper-crane (main)>\\\",\\\"notInterrupted\\\":true,\\\"resultingWorkingDirectory\\\":\\\"/Users/redaphid/Projects/paper-crane\\\",\\\"endedReason\\\":\\\"RUN_TERMINAL_COMMAND_ENDED_REASON_EXECUTION_COMPLETED\\\",\\\"exitCodeV2\\\":0}\"},\"cd0d6664-7031-4fe5-9419-cb1ab440a3f5\":{\"tool\":7,\"toolCallId\":\"tool_ae7688f9-918d-4cbc-95c8-16e17d403d7\",\"status\":\"completed\",\"rawArgs\":\"{\\\"code_edit\\\":\\\"import { h } from \\\\\\\"preact\\\\\\\"\\\\nimport htm from \\\\\\\"htm\\\\\\\"\\\\nimport { useEffect, useRef } from \\\\\\\"preact/hooks\\\\\\\"\\\\nimport { createProgramInfo, setBuffersAndAttributes, setUniforms, drawBufferInfo, resizeCanvasToDisplaySize, getContext } from \\\\\\\"twgl.js\\\\\\\"\\\\n\\\\nconst html = htm.bind(h)\\\\n\\\\n// Default vertex shader provided by twgl\\\\nconst defaultVertexShader = `\\\\nattribute vec4 position;\\\\nvoid main() {\\\\n  gl_Position = position;\\\\n}\\\\n`;\\\\n\\\\nexport const PaperCrane = ({ shader }: { shader: string }) =\\\\u003e {\\\\n    const canvasRef = useRef\\\\u003cHTMLCanvasElement\\\\u003e(null)\\\\n    const animationFrameRef = useRef\\\\u003cnumber\\\\u003e(0)\\\\n\\\\n    useEffect(() =\\\\u003e {\\\\n        const canvas = canvasRef.current\\\\n        if (!canvas) return\\\\n\\\\n        // Use twgl.getContext for WebGL2 context\\\\n        const gl = getContext(canvas, { webgl2: true }) as WebGL2RenderingContext\\\\n        if (!gl) {\\\\n            console.error(\\\\\\\"WebGL 2 not available\\\\\\\")\\\\n            return\\\\n        }\\\\n\\\\n        // Use twgl.createProgramInfo with the provided fragment shader\\\\n        const programInfo = createProgramInfo(gl, [defaultVertexShader, shader])\\\\n\\\\n        // Standard geometry for a full-screen quad\\\\n        const arrays = {\\\\n            position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0],\\\\n        };\\\\n        const bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays);\\\\n\\\\n\\\\n        let time = 0;\\\\n\\\\n        const render = (currentTime: number) =\\\\u003e {\\\\n            time = currentTime * 0.001; // convert time to seconds\\\\n\\\\n            resizeCanvasToDisplaySize(gl.canvas as HTMLCanvasElement)\\\\n            gl.viewport(0, 0, gl.canvas.width, gl.canvas.height)\\\\n\\\\n            gl.clearColor(0, 0, 0, 0)\\\\n            gl.clear(gl.COLOR_BUFFER_BIT)\\\\n\\\\n            gl.useProgram(programInfo.program)\\\\n\\\\n            setBuffersAndAttributes(gl, programInfo, bufferInfo)\\\\n\\\\n            setUniforms(programInfo, {\\\\n                u_time: time,\\\\n                u_resolution: [gl.canvas.width, gl.canvas.height],\\\\n            })\\\\n\\\\n            drawBufferInfo(gl, bufferInfo)\\\\n\\\\n            animationFrameRef.current = requestAnimationFrame(render)\\\\n        }\\\\n\\\\n        animationFrameRef.current = requestAnimationFrame(render)\\\\n\\\\n        // Cleanup function\\\\n        return () =\\\\u003e {\\\\n            cancelAnimationFrame(animationFrameRef.current)\\\\n            if (gl) {\\\\n                 // Clean up WebGL resources (optional but good practice)\\\\n                 // twgl doesn't have a dedicated cleanup function for everything,\\\\n                 // but you'd typically delete programs, buffers, textures etc. here\\\\n                 // For simplicity, we'll rely on context loss handling or page unload\\\\n                 if (programInfo && programInfo.program) {\\\\n                     gl.deleteProgram(programInfo.program);\\\\n                 }\\\\n                 // Delete buffers created by createBufferInfoFromArrays\\\\n                 Object.values(bufferInfo.attribs).forEach(attrib =\\\\u003e {\\\\n                     if (attrib.buffer) {\\\\n                         gl.deleteBuffer(attrib.buffer);\\\\n                     }\\\\n                 });\\\\n                 if (bufferInfo.indices) {\\\\n                     gl.deleteBuffer(bufferInfo.indices);\\\\n                 }\\\\n            }\\\\n        }\\\\n    }, [shader]) // Re-run effect if the shader string changes\\\\n\\\\n    return html`\\\\u003ccanvas ref=${canvasRef} style=${{ width: '100%', height: '100%', display: 'block' }} /\\\\u003e`\\\\n}\\\\n\\\",\\\"target_file\\\":\\\"src/PaperCrane.ts\\\",\\\"instructions\\\":\\\"Replace the raw WebGL initialization with twgl.js initialization and set up a basic render loop.\\\"}\",\"name\":\"edit_file\",\"additionalData\":{\"version\":0,\"instructions\":\"Replace the raw WebGL initialization with twgl.js initialization and set up a basic render loop.\",\"startingLints\":[{\"severity\":1,\"relatedInformation\":[],\"message\":\"Argument of type 'WebGLShader | null' is not assignable to parameter of type 'WebGLShader'.\\n  Type 'null' is not assignable to type 'WebGLShader'.\",\"range\":{\"startPosition\":{\"line\":15,\"column\":25},\"endPosition\":{\"line\":15,\"column\":37}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"Cannot find name 'defaultVertexShader'.\",\"range\":{\"startPosition\":{\"line\":15,\"column\":39},\"endPosition\":{\"line\":15,\"column\":58}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"Argument of type 'WebGLShader | null' is not assignable to parameter of type 'WebGLShader'.\\n  Type 'null' is not assignable to type 'WebGLShader'.\",\"range\":{\"startPosition\":{\"line\":16,\"column\":25},\"endPosition\":{\"line\":16,\"column\":39}}},{\"severity\":1,\"relatedInformation\":[{\"startLineNumber\":14,\"startColumn\":15,\"endLineNumber\":14,\"endColumn\":29,\"message\":\"'fragmentShader' is declared here.\",\"resource\":{\"scheme\":\"file\",\"authority\":\"\",\"path\":\"/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"query\":\"\",\"fragment\":\"\",\"_formatted\":\"file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\",\"_fsPath\":\"/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts\"}}],\"message\":\"Cannot find name 'fragmentShaderSource'. Did you mean 'fragmentShader'?\",\"range\":{\"startPosition\":{\"line\":16,\"column\":41},\"endPosition\":{\"line\":16,\"column\":61}}}],\"lintingStatus\":\"linted\"},\"params\":\"{\\\"relativeWorkspacePath\\\":\\\"src/PaperCrane.ts\\\"}\",\"userDecision\":\"accepted\",\"result\":\"{\\\"diff\\\":{\\\"chunks\\\":[{\\\"diffString\\\":\\\"  import htm from \\\\\\\"htm\\\\\\\"\\\\n  import { useEffect, useRef } from \\\\\\\"preact/hooks\\\\\\\"\\\\n+ import { createProgramInfo, setBuffersAndAttributes, setUniforms, drawBufferInfo, resizeCanvasToDisplaySize, getContext } from \\\\\\\"twgl.js\\\\\\\"\\\\n+ \\\\n  const html = htm.bind(h)\\\\n+ \\\\n+ // Default vertex shader provided by twgl\\\\n+ const defaultVertexShader = `\\\\n+ attribute vec4 position;\\\\n+ void main() {\\\\n+   gl_Position = position;\\\\n+ }\\\\n+ `;\\\\n+ \\\\n  export const PaperCrane = ({ shader }: { shader: string }) => {\\\\n      const canvasRef = useRef<HTMLCanvasElement>(null)\\\\n+     const animationFrameRef = useRef<number>(0)\\\\n+ \\\\n      useEffect(() => {\\\\n          const canvas = canvasRef.current\\\\n          if (!canvas) return\\\\n-         const gl = canvas.getContext(\\\\\\\"webgl2\\\\\\\")\\\\n-         if (!gl) return\\\\n-         const program = gl.createProgram()\\\\n-         const vertexShader = gl.createShader(gl.VERTEX_SHADER)\\\\n-         const fragmentShader = gl.createShader(gl.FRAGMENT_SHADER)\\\\n-         gl.shaderSource(vertexShader, defaultVertexShader)\\\\n-         gl.shaderSource(fragmentShader, fragmentShaderSource)\\\\n-     }, [])\\\\n-     return html`<canvas />`\\\\n+ \\\\n+         // Use twgl.getContext for WebGL2 context\\\\n+         const gl = getContext(canvas, { webgl2: true }) as WebGL2RenderingContext\\\\n+         if (!gl) {\\\\n+             console.error(\\\\\\\"WebGL 2 not available\\\\\\\")\\\\n+             return\\\\n+         }\\\\n+ \\\\n+         // Use twgl.createProgramInfo with the provided fragment shader\\\\n+         const programInfo = createProgramInfo(gl, [defaultVertexShader, shader])\\\\n+ \\\\n+         // Standard geometry for a full-screen quad\\\\n+         const arrays = {\\\\n+             position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0],\\\\n+         };\\\\n+         const bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays);\\\\n+ \\\\n+ \\\\n+         let time = 0;\\\\n+ \\\\n+         const render = (currentTime: number) => {\\\\n+             time = currentTime * 0.001; // convert time to seconds\\\\n+ \\\\n+             resizeCanvasToDisplaySize(gl.canvas as HTMLCanvasElement)\\\\n+             gl.viewport(0, 0, gl.canvas.width, gl.canvas.height)\\\\n+ \\\\n+             gl.clearColor(0, 0, 0, 0)\\\\n+             gl.clear(gl.COLOR_BUFFER_BIT)\\\\n+ \\\\n+             gl.useProgram(programInfo.program)\\\\n+ \\\\n+             setBuffersAndAttributes(gl, programInfo, bufferInfo)\\\\n+ \\\\n+             setUniforms(programInfo, {\\\\n+                 u_time: time,\\\\n+                 u_resolution: [gl.canvas.width, gl.canvas.height],\\\\n+             })\\\\n+ \\\\n+             drawBufferInfo(gl, bufferInfo)\\\\n+ \\\\n+             animationFrameRef.current = requestAnimationFrame(render)\\\\n+         }\\\\n+ \\\\n+         animationFrameRef.current = requestAnimationFrame(render)\\\\n+ \\\\n+         // Cleanup function\\\\n+         return () => {\\\\n+             cancelAnimationFrame(animationFrameRef.current)\\\\n+             if (gl) {\\\\n+                  // Clean up WebGL resources (optional but good practice)\\\\n+                  // twgl doesn't have a dedicated cleanup function for everything,\\\\n+                  // but you'd typically delete programs, buffers, textures etc. here\\\\n+                  // For simplicity, we'll rely on context loss handling or page unload\\\\n+                  if (programInfo && programInfo.program) {\\\\n+                      gl.deleteProgram(programInfo.program);\\\\n+                  }\\\\n+                  // Delete buffers created by createBufferInfoFromArrays\\\\n+                  Object.values(bufferInfo.attribs).forEach(attrib => {\\\\n+                      if (attrib.buffer) {\\\\n+                          gl.deleteBuffer(attrib.buffer);\\\\n+                      }\\\\n+                  });\\\\n+                  if (bufferInfo.indices) {\\\\n+                      gl.deleteBuffer(bufferInfo.indices);\\\\n+                  }\\\\n+             }\\\\n+         }\\\\n+     }, [shader]) // Re-run effect if the shader string changes\\\\n+ \\\\n+     return html`<canvas ref=${canvasRef} style=${{ width: '100%', height: '100%', display: 'block' }} />`\\\\n  }\\\\n  \\\",\\\"oldStart\\\":2,\\\"newStart\\\":2,\\\"oldLines\\\":19,\\\"newLines\\\":93,\\\"linesRemoved\\\":9,\\\"linesAdded\\\":83}]},\\\"isApplied\\\":true,\\\"linterErrors\\\":[{\\\"message\\\":\\\"Object literal may only specify known properties, and 'webgl2' does not exist in type 'WebGLContextAttributes'.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":25,\\\"column\\\":41},\\\"endPosition\\\":{\\\"line\\\":25,\\\"column\\\":47}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"},{\\\"message\\\":\\\"Cannot find name 'twgl'.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":38,\\\"column\\\":28},\\\"endPosition\\\":{\\\"line\\\":38,\\\"column\\\":32}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"},{\\\"message\\\":\\\"'attrib' is of type 'unknown'.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":81,\\\"column\\\":26},\\\"endPosition\\\":{\\\"line\\\":81,\\\"column\\\":32}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"},{\\\"message\\\":\\\"'attrib' is of type 'unknown'.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":82,\\\"column\\\":42},\\\"endPosition\\\":{\\\"line\\\":82,\\\"column\\\":48}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"}]}\"},\"6f0f78b9-7696-41af-8d23-8eeb8ed63206\":{\"tool\":7,\"toolCallId\":\"tool_bf9be4ac-ae6a-4a93-8ec0-bcd9733c530\",\"status\":\"completed\",\"rawArgs\":\"{\\\"code_edit\\\":\\\"import { h } from \\\\\\\"preact\\\\\\\"\\\\nimport htm from \\\\\\\"htm\\\\\\\"\\\\nimport { useEffect, useRef } from \\\\\\\"preact/hooks\\\\\\\"\\\\n// Import necessary functions and types from twgl.js\\\\nimport { createProgramInfo, setBuffersAndAttributes, setUniforms, drawBufferInfo, resizeCanvasToDisplaySize, getContext, createBufferInfoFromArrays, ProgramInfo, BufferInfo, AttribInfo } from \\\\\\\"twgl.js\\\\\\\"\\\\n\\\\nconst html = htm.bind(h)\\\\n\\\\n// ... existing code ...\\\\n\\\\n        if (!canvas) return\\\\n\\\\n        // Use twgl.getContext for WebGL2 context\\\\n        // Let TS infer the type, twgl handles context version internally\\\\n        const gl = getContext(canvas, { webgl2: true }) // Request WebGL2\\\\n        if (!gl) {\\\\n            console.error(\\\\\\\"WebGL 2 not available or context creation failed\\\\\\\")\\\\n            return\\\\n        }\\\\n        // Check if we actually got a WebGL2 context if specific features are needed\\\\n        // For this basic setup, it might not be strictly necessary, but good practice\\\\n        if (!(gl instanceof WebGL2RenderingContext)) {\\\\n            console.error(\\\\\\\"Failed to get WebGL2 context.\\\\\\\");\\\\n            // Optionally fallback to WebGL1 or return\\\\n            return;\\\\n        }\\\\n\\\\n        // Use twgl.createProgramInfo with the provided fragment shader\\\\n        const programInfo: ProgramInfo | null = createProgramInfo(gl, [defaultVertexShader, shader])\\\\n\\\\n        // Check if program creation was successful\\\\n        if (!programInfo) {\\\\n            console.error(\\\\\\\"Failed to create shader program.\\\\\\\");\\\\n            return;\\\\n        }\\\\n\\\\n        // Standard geometry for a full-screen quad\\\\n        const arrays = {\\\\n            position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0],\\\\n        };\\\\n        // Use imported function directly\\\\n        const bufferInfo: BufferInfo = createBufferInfoFromArrays(gl, arrays);\\\\n\\\\n\\\\n        let time = 0;\\\\n// ... existing code ...\\\\n                 }\\\\n                 // Delete buffers created by createBufferInfoFromArrays\\\\n                 // Type the attrib correctly\\\\n                 Object.values(bufferInfo.attribs).forEach((attrib: AttribInfo) =\\\\u003e {\\\\n                     if (attrib.buffer) {\\\\n                         gl.deleteBuffer(attrib.buffer);\\\\n                     }\\\\n// ... existing code ...\\\\n\\\",\\\"target_file\\\":\\\"src/PaperCrane.ts\\\",\\\"instructions\\\":\\\"Fix linter errors related to twgl usage and types.\\\"}\",\"name\":\"edit_file\",\"additionalData\":{\"version\":1,\"instructions\":\"Fix linter errors related to twgl usage and types.\",\"startingLints\":[{\"severity\":1,\"relatedInformation\":[],\"message\":\"Object literal may only specify known properties, and 'webgl2' does not exist in type 'WebGLContextAttributes'.\",\"range\":{\"startPosition\":{\"line\":32,\"column\":41},\"endPosition\":{\"line\":32,\"column\":47}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"Cannot find name 'twgl'.\",\"range\":{\"startPosition\":{\"line\":45,\"column\":28},\"endPosition\":{\"line\":45,\"column\":32}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"'attrib' is of type 'unknown'.\",\"range\":{\"startPosition\":{\"line\":87,\"column\":25},\"endPosition\":{\"line\":87,\"column\":31}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"'attrib' is of type 'unknown'.\",\"range\":{\"startPosition\":{\"line\":88,\"column\":41},\"endPosition\":{\"line\":88,\"column\":47}}}],\"lintingStatus\":\"linted\"},\"params\":\"{\\\"relativeWorkspacePath\\\":\\\"src/PaperCrane.ts\\\"}\",\"userDecision\":\"accepted\",\"result\":\"{\\\"diff\\\":{\\\"chunks\\\":[{\\\"diffString\\\":\\\"      drawBufferInfo,\\\\n      resizeCanvasToDisplaySize,\\\\n-     getContext\\\\n+     getContext,\\\\n+     createBufferInfoFromArrays,\\\\n+     ProgramInfo,\\\\n+     BufferInfo,\\\\n+     AttribInfo\\\\n  } from \\\\\\\"twgl.js\\\\\\\"\\\\n  \\\",\\\"oldStart\\\":8,\\\"newStart\\\":8,\\\"oldLines\\\":5,\\\"newLines\\\":9,\\\"linesRemoved\\\":1,\\\"linesAdded\\\":5},{\\\"diffString\\\":\\\"  \\\\n          // Use twgl.getContext for WebGL2 context\\\\n-         const gl = getContext(canvas, { webgl2: true }) as WebGL2RenderingContext\\\\n+         const gl = getContext(canvas, { webgl2: true })\\\\n          if (!gl) {\\\\n-             console.error(\\\\\\\"WebGL 2 not available\\\\\\\")\\\\n+             console.error(\\\\\\\"WebGL 2 not available or context creation failed\\\\\\\")\\\\n+             return\\\\n+         }\\\\n+         if (!(gl instanceof WebGL2RenderingContext)) {\\\\n+             console.error(\\\\\\\"Failed to get WebGL2 context.\\\\\\\")\\\\n              return\\\\n          }\\\\n  \\\\n          // Use twgl.createProgramInfo with the provided fragment shader\\\\n-         const programInfo = createProgramInfo(gl, [defaultVertexShader, shader])\\\\n+         const programInfo: ProgramInfo | null = createProgramInfo(gl, [defaultVertexShader, shader])\\\\n+ \\\\n+         if (!programInfo) {\\\\n+             console.error(\\\\\\\"Failed to create shader program.\\\\\\\")\\\\n+             return\\\\n+         }\\\\n  \\\\n          // Standard geometry for a full-screen quad\\\\n          const arrays = {\\\\n              position: [-1, -1, 0, 1, -1, 0, -1, 1, 0, -1, 1, 0, 1, -1, 0, 1, 1, 0]\\\\n          }\\\\n-         const bufferInfo = twgl.createBufferInfoFromArrays(gl, arrays)\\\\n+         const bufferInfo: BufferInfo = createBufferInfoFromArrays(gl, arrays)\\\\n  \\\\n          let time = 0\\\",\\\"oldStart\\\":30,\\\"newStart\\\":34,\\\"oldLines\\\":18,\\\"newLines\\\":27,\\\"linesRemoved\\\":4,\\\"linesAdded\\\":13},{\\\"diffString\\\":\\\"                  }\\\\n                  // Delete buffers created by createBufferInfoFromArrays\\\\n-                 Object.values(bufferInfo.attribs).forEach((attrib) => {\\\\n+                 Object.values(bufferInfo.attribs).forEach((attrib: AttribInfo) => {\\\\n                      if (attrib.buffer) {\\\\n                          gl.deleteBuffer(attrib.buffer)\\\",\\\"oldStart\\\":84,\\\"newStart\\\":97,\\\"oldLines\\\":5,\\\"newLines\\\":5,\\\"linesRemoved\\\":1,\\\"linesAdded\\\":1}]},\\\"isApplied\\\":true,\\\"linterErrors\\\":[{\\\"message\\\":\\\"'ProgramInfo' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":12,\\\"column\\\":5},\\\"endPosition\\\":{\\\"line\\\":12,\\\"column\\\":16}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"},{\\\"message\\\":\\\"'BufferInfo' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":13,\\\"column\\\":5},\\\"endPosition\\\":{\\\"line\\\":13,\\\"column\\\":15}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"},{\\\"message\\\":\\\"'AttribInfo' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":14,\\\"column\\\":5},\\\"endPosition\\\":{\\\"line\\\":14,\\\"column\\\":15}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"},{\\\"message\\\":\\\"Object literal may only specify known properties, and 'webgl2' does not exist in type 'WebGLContextAttributes'.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":36,\\\"column\\\":41},\\\"endPosition\\\":{\\\"line\\\":36,\\\"column\\\":47}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"},{\\\"message\\\":\\\"No overload matches this call.\\\\n  Overload 1 of 2, '(o: { [s: string]: AttribInfo; } | ArrayLike<AttribInfo>): AttribInfo[]', gave the following error.\\\\n    Argument of type '{ [key: string]: AttribInfo; } | undefined' is not assignable to parameter of type '{ [s: string]: AttribInfo; } | ArrayLike<AttribInfo>'.\\\\n      Type 'undefined' is not assignable to type '{ [s: string]: AttribInfo; } | ArrayLike<AttribInfo>'.\\\\n  Overload 2 of 2, '(o: {}): any[]', gave the following error.\\\\n    Argument of type '{ [key: string]: AttribInfo; } | undefined' is not assignable to parameter of type '{}'.\\\\n      Type 'undefined' is not assignable to type '{}'.\\\",\\\"range\\\":{\\\"startPosition\\\":{\\\"line\\\":99,\\\"column\\\":31},\\\"endPosition\\\":{\\\"line\\\":99,\\\"column\\\":49}},\\\"severity\\\":\\\"DIAGNOSTIC_SEVERITY_ERROR\\\"}]}\"},\"a3cc171c-28b7-4f28-82d8-7aabb3dc3d7f\":{\"tool\":7,\"toolCallId\":\"tool_b2e09bcc-e536-4680-92ab-9646e20a34e\",\"status\":\"completed\",\"rawArgs\":\"{\\\"instructions\\\":\\\"Fix linter errors related to type imports, getContext options, and Object.values argument.\\\",\\\"target_file\\\":\\\"src/PaperCrane.ts\\\",\\\"code_edit\\\":\\\"import { h } from \\\\\\\"preact\\\\\\\"\\\\nimport htm from \\\\\\\"htm\\\\\\\"\\\\nimport { useEffect, useRef } from \\\\\\\"preact/hooks\\\\\\\"\\\\n// Import necessary functions and types from twgl.js\\\\nimport { createProgramInfo, setBuffersAndAttributes, setUniforms, drawBufferInfo, resizeCanvasToDisplaySize, getContext, createBufferInfoFromArrays } from \\\\\\\"twgl.js\\\\\\\"\\\\n// Use type-only imports for types\\\\nimport type { ProgramInfo, BufferInfo, AttribInfo } from \\\\\\\"twgl.js\\\\\\\"\\\\n\\\\nconst html = htm.bind(h)\\\\n\\\\n// ... existing code ...\\\\n\\\\n        // Use twgl.getContext for WebGL2 context\\\\n        // Cast options to any to satisfy TS while using twgl feature\\\\n        const gl = getContext(canvas, { webgl2: true } as any) // Request WebGL2\\\\n        if (!gl) {\\\\n            console.error(\\\\\\\"WebGL 2 not available or context creation failed\\\\\\\")\\\\n// ... existing code ...\\\\n                 }\\\\n                 // Delete buffers created by createBufferInfoFromArrays\\\\n                 // Check if attribs exists before iterating\\\\n                 if (bufferInfo.attribs) {\\\\n                    Object.values(bufferInfo.attribs).forEach((attrib: AttribInfo) =\\\\u003e {\\\\n                        if (attrib.buffer) {\\\\n                            gl.deleteBuffer(attrib.buffer);\\\\n                        }\\\\n                    });\\\\n                 }\\\\n                 if (bufferInfo.indices) {\\\\n                     gl.deleteBuffer(bufferInfo.indices);\\\\n// ... existing code ...\\\\n\\\"}\",\"name\":\"edit_file\",\"additionalData\":{\"version\":2,\"instructions\":\"Fix linter errors related to type imports, getContext options, and Object.values argument.\",\"startingLints\":[{\"severity\":1,\"relatedInformation\":[],\"message\":\"'ProgramInfo' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.\",\"range\":{\"startPosition\":{\"line\":12,\"column\":5},\"endPosition\":{\"line\":12,\"column\":16}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"'BufferInfo' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.\",\"range\":{\"startPosition\":{\"line\":13,\"column\":5},\"endPosition\":{\"line\":13,\"column\":15}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"'AttribInfo' is a type and must be imported using a type-only import when 'verbatimModuleSyntax' is enabled.\",\"range\":{\"startPosition\":{\"line\":14,\"column\":5},\"endPosition\":{\"line\":14,\"column\":15}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"Object literal may only specify known properties, and 'webgl2' does not exist in type 'WebGLContextAttributes'.\",\"range\":{\"startPosition\":{\"line\":36,\"column\":41},\"endPosition\":{\"line\":36,\"column\":47}}},{\"severity\":1,\"relatedInformation\":[],\"message\":\"No overload matches this call.\\n  Overload 1 of 2, '(o: { [s: string]: AttribInfo; } | ArrayLike<AttribInfo>): AttribInfo[]', gave the following error.\\n    Argument of type '{ [key: string]: AttribInfo; } | undefined' is not assignable to parameter of type '{ [s: string]: AttribInfo; } | ArrayLike<AttribInfo>'.\\n      Type 'undefined' is not assignable to type '{ [s: string]: AttribInfo; } | ArrayLike<AttribInfo>'.\\n  Overload 2 of 2, '(o: {}): any[]', gave the following error.\\n    Argument of type '{ [key: string]: AttribInfo; } | undefined' is not assignable to parameter of type '{}'.\\n      Type 'undefined' is not assignable to type '{}'.\",\"range\":{\"startPosition\":{\"line\":99,\"column\":31},\"endPosition\":{\"line\":99,\"column\":49}}}],\"lintingStatus\":\"linted\"},\"params\":\"{\\\"relativeWorkspacePath\\\":\\\"src/PaperCrane.ts\\\"}\",\"userDecision\":\"accepted\",\"result\":\"{\\\"diff\\\":{\\\"chunks\\\":[{\\\"diffString\\\":\\\"      getContext,\\\\n      createBufferInfoFromArrays,\\\\n-     ProgramInfo,\\\\n-     BufferInfo,\\\\n-     AttribInfo\\\\n  } from \\\\\\\"twgl.js\\\\\\\"\\\\n+ import type { ProgramInfo, BufferInfo, AttribInfo } from \\\\\\\"twgl.js\\\\\\\"\\\\n  \\\\n  const html = htm.bind(h)\\\",\\\"oldStart\\\":10,\\\"newStart\\\":10,\\\"oldLines\\\":8,\\\"newLines\\\":6,\\\"linesRemoved\\\":3,\\\"linesAdded\\\":1},{\\\"diffString\\\":\\\"  \\\\n          // Use twgl.getContext for WebGL2 context\\\\n-         const gl = getContext(canvas, { webgl2: true })\\\\n+         const gl = getContext(canvas, { webgl2: true } as any)\\\\n          if (!gl) {\\\\n              console.error(\\\\\\\"WebGL 2 not available or context creation failed\\\\\\\")\\\",\\\"oldStart\\\":34,\\\"newStart\\\":32,\\\"oldLines\\\":5,\\\"newLines\\\":5,\\\"linesRemoved\\\":1,\\\"linesAdded\\\":1},{\\\"diffString\\\":\\\"                  }\\\\n                  // Delete buffers created by createBufferInfoFromArrays\\\\n+                 if (bufferInfo.attribs) {\\\\n                      Object.values(bufferInfo.attribs).forEach((attrib: AttribInfo) => {\\\\n                          if (attrib.buffer) {\\\\n                              gl.deleteBuffer(attrib.buffer)\\\\n                          }\\\\n                      })\\\\n+                 }\\\\n                  if (bufferInfo.indices) {\\\\n                      gl.deleteBuffer(bufferInfo.indices)\\\",\\\"oldStart\\\":97,\\\"newStart\\\":95,\\\"oldLines\\\":9,\\\"newLines\\\":11,\\\"linesAdded\\\":2}]},\\\"isApplied\\\":true}\"},\"cadddfe3-6ccd-475f-bfcd-6752c4396f5b\":{\"tool\":7,\"toolCallId\":\"tool_32e3148e-7a53-4f67-b5f3-279180273e0\",\"status\":\"completed\",\"rawArgs\":\"{\\\"code_edit\\\":\\\"\\\\\\\\\\\\n        }\\\\n    }, [shader]) // Add contextAttributes to dependency array\\\\n\\\\n    return html`\\\\u003ccanvas ref=${canvasRef} style=${{ width: \\\\\\\"100%\\\\\\\", height: \\\\\\\"100%\\\\\\\", display: \\\\\\\"block\\\\\\\" }} /\\\\u003e`\\\\n}\\\\n\\\",\\\"target_file\\\":\\\"src/PaperCrane.ts\\\",\\\"instructions\\\":\\\"I will remove the cleanup function from the useEffect hook.\\\"}\",\"name\":\"edit_file\",\"additionalData\":{\"version\":0,\"instructions\":\"I will remove the cleanup function from the useEffect hook.\",\"startingLints\":[],\"lintingStatus\":\"linted\"},\"params\":\"{\\\"relativeWorkspacePath\\\":\\\"src/PaperCrane.ts\\\"}\",\"userDecision\":\"accepted\",\"result\":\"{\\\"diff\\\":{\\\"chunks\\\":[{\\\"diffString\\\":\\\"  \\\\n          animationFrameRef.current = requestAnimationFrame(render)\\\\n- \\\\n-         // Cleanup function\\\\n-         return () => {\\\\n-             cancelAnimationFrame(animationFrameRef.current)\\\\n-             if (gl) {\\\\n-                 // Clean up WebGL resources (optional but good practice)\\\\n-                 // twgl doesn't have a dedicated cleanup function for everything,\\\\n-                 // but you'd typically delete programs, buffers, textures etc. here\\\\n-                 // For simplicity, we'll rely on context loss handling or page unload\\\\n-                 if (programInfo && programInfo.program) {\\\\n-                     gl.deleteProgram(programInfo.program)\\\\n-                 }\\\\n-                 // Delete buffers created by createBufferInfoFromArrays\\\\n-                 if (bufferInfo.attribs) {\\\\n-                     Object.values(bufferInfo.attribs).forEach((attrib: AttribInfo) => {\\\\n-                         if (attrib.buffer) {\\\\n-                             gl.deleteBuffer(attrib.buffer)\\\\n-                         }\\\\n-                     })\\\\n-                 }\\\\n-                 if (bufferInfo.indices) {\\\\n-                     gl.deleteBuffer(bufferInfo.indices)\\\\n-                 }\\\\n-             }\\\\n-         }\\\\n      }, [shader]) // Add contextAttributes to dependency array\\\\n  \\\",\\\"oldStart\\\":77,\\\"newStart\\\":77,\\\"oldLines\\\":29,\\\"newLines\\\":4,\\\"linesRemoved\\\":25}]},\\\"isApplied\\\":true}\"}}"
+      }
+    },
+    {
+      "type": 17,
+      "data": {}
+    },
+    {
+      "type": 14,
+      "data": {}
+    },
+    {
+      "type": 22,
+      "data": {}
+    },
+    {
+      "type": 18,
+      "data": {}
+    },
+    {
+      "type": 19,
+      "data": {}
+    },
+    {
+      "type": 6,
+      "data": {}
+    },
+    {
+      "type": 16,
+      "data": {}
+    },
+    {
+      "type": 21,
+      "data": {}
+    }
+  ],
+  "name": "Minimalist Approach to @PaperCrane.ts",
+  "codebaseSearchSettings": {},
+  "isFileListExpanded": false,
+  "unifiedMode": "agent",
+  "forceMode": "edit",
+  "usageData": {},
+  "latestConversationSummary": {
+    "summary": {
+      "summary": "\n- The user requested to strip down the code in `src/PaperCrane.ts` to its bare essentials without any cleanup or additional modifications.\n- The assistant acknowledged the request and proceeded to remove the cleanup logic from the `useEffect` hook in the specified file.\n- A tool was called to edit the file, which resulted in the removal of the cleanup function and related WebGL resource management code.\n- The assistant confirmed that the cleanup function had been successfully removed from the `useEffect` hook.\n- The conversation concluded with the assistant stating that the cleanup function was removed, aligning with the user's intent to simplify the code.\n",
+      "truncationLastBubbleIdInclusive": "ba1fa66c-2a58-4612-9e2e-b633c569da2b",
+      "clientShouldStartSendingFromInclusiveBubbleId": "226b6c9f-5804-45fe-b545-27ad6f8dfde5",
+      "previousConversationSummaryBubbleId": "",
+      "includesToolResults": false
+    },
+    "lastBubbleId": "ba1fa66c-2a58-4612-9e2e-b633c569da2b"
+  },
+  "tokenCount": 792,
+  "latestChatGenerationUUID": "ba0fb693-3ed7-45fd-984f-acd926751f2f",
+  "isAgentic": true
+}

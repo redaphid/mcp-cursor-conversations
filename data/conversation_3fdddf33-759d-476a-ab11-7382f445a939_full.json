@@ -1,0 +1,117 @@
+{
+  "_v": 1,
+  "composerId": "3fdddf33-759d-476a-ab11-7382f445a939",
+  "richText": "",
+  "hasLoaded": true,
+  "text": "",
+  "conversation": [],
+  "status": "none",
+  "context": {
+    "notepads": [],
+    "composers": [],
+    "quotes": [],
+    "selectedCommits": [],
+    "selectedPullRequests": [],
+    "selectedImages": [],
+    "folderSelections": [],
+    "fileSelections": [
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/url-shortener/src/index.ts",
+          "external": "file:///Users/redaphid/Projects/url-shortener/src/index.ts",
+          "path": "/Users/redaphid/Projects/url-shortener/src/index.ts",
+          "scheme": "file"
+        },
+        "addedWithoutMention": true,
+        "autoContext": true
+      }
+    ],
+    "selections": [],
+    "terminalSelections": [],
+    "selectedDocs": [],
+    "externalLinks": [],
+    "cursorRules": [],
+    "mentions": {
+      "notepads": {},
+      "composers": {},
+      "quotes": {},
+      "selectedCommits": {},
+      "selectedPullRequests": {},
+      "gitDiff": [],
+      "gitDiffFromBranchToMain": [],
+      "selectedImages": {},
+      "usesCodebase": [],
+      "useWeb": [],
+      "folderSelections": {},
+      "fileSelections": {},
+      "terminalFiles": {},
+      "selections": {},
+      "terminalSelections": {},
+      "selectedDocs": {},
+      "externalLinks": {},
+      "useLinterErrors": [],
+      "useDiffReview": [],
+      "useContextPicking": [],
+      "useRememberThis": [],
+      "diffHistory": [],
+      "cursorRules": {}
+    }
+  },
+  "gitGraphFileSuggestions": [],
+  "generatingBubbleIds": [],
+  "isReadingLongFile": false,
+  "codeBlockData": {},
+  "originalModelLines": {},
+  "newlyCreatedFiles": [],
+  "newlyCreatedFolders": [],
+  "createdAt": 1744690496183,
+  "hasChangedContext": false,
+  "capabilities": [
+    {
+      "type": 15,
+      "data": {
+        "bubbleDataMap": "{}"
+      }
+    },
+    {
+      "type": 17,
+      "data": {}
+    },
+    {
+      "type": 14,
+      "data": {}
+    },
+    {
+      "type": 22,
+      "data": {}
+    },
+    {
+      "type": 18,
+      "data": {}
+    },
+    {
+      "type": 19,
+      "data": {}
+    },
+    {
+      "type": 6,
+      "data": {}
+    },
+    {
+      "type": 16,
+      "data": {}
+    },
+    {
+      "type": 21,
+      "data": {}
+    }
+  ],
+  "codebaseSearchSettings": {},
+  "isFileListExpanded": false,
+  "unifiedMode": "agent",
+  "forceMode": "edit",
+  "usageData": {},
+  "tokenCount": 629,
+  "isAgentic": true
+}
