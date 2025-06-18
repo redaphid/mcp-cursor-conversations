@@ -1,0 +1,35 @@
+{
+  "name": "@redaphid/cursor-conversations-mcp",
+  "version": "1.0.0",
+  "description": "MCP server for accessing Cursor conversation data",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "start": "node --experimental-strip-types src/index.ts",
+    "test": "vitest",
+    "test:run": "vitest run"
+  },
+  "keywords": [
+    "mcp",
+    "llm",
+    "cursor",
+    "conversations"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "better-sqlite3": "^11.7.0"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.9",
+    "@types/node": "^22.5.0",
+    "vitest": "^2.1.8"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "files": [
+    "src"
+  ]
+}
