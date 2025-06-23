@@ -90,3 +90,48 @@ Retrieve a specific conversation by ID.
 ## How It Works
 
 The MCP server reads directly from Cursor's SQLite database (`state.vscdb`) located in your Cursor application data directory. It queries the `cursorDiskKV` table where conversations are stored with keys like `composerData:{uuid}`. This provides real-time access to all your Cursor conversations without needing to export or extract data.
+
+## MCP Server Setup
+
+### Quick Setup Commands
+
+**Claude Code (CLI):**
+```bash
+claude mcp add cursor-conversations "node --experimental-strip-types /path/to/this/project/src/index.ts" -s user
+```
+
+**Claude Desktop:** Create `~/Library/Application Support/Claude/claude_desktop_config.json`:
+```json
+{
+  "mcpServers": {
+    "cursor-conversations": {
+      "command": "node",
+      "args": ["--experimental-strip-types", "/path/to/this/project/src/index.ts"],
+      "env": {}
+    }
+  }
+}
+```
+
+**Cursor:** Create `.mcp.json` in project root:
+```json
+{
+  "mcpServers": {
+    "cursor-conversations": {
+      "command": "node",
+      "args": ["--experimental-strip-types", "src/index.ts"],
+      "env": {}
+    }
+  }
+}
+```
+
+### Claude Self-Setup
+
+Ask Claude to set up the MCP server:
+
+```
+Set up the cursor-conversations MCP server for all my Claude environments. This project is located at [your-project-path].
+```
+
+Claude will automatically configure Claude Code, Claude Desktop, and Cursor using the appropriate commands and file modifications.
