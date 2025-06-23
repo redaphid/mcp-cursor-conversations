@@ -145,15 +145,12 @@ export const createMcpServer = () => {
 
     try {
       if (name === 'list_conversations') {
-        const conversations = await listConversations(db, args)
+        const result = await listConversations(db, args)
         return {
           content: [
             {
               type: 'text',
-              text: JSON.stringify({
-                total: conversations.length,
-                conversations,
-              }, null, 2),
+              text: JSON.stringify(result, null, 2),
             },
           ],
         }

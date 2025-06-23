@@ -5,6 +5,15 @@ import { getBubbleData } from './getBubbleData.ts'
 export const listConversations = async (db, options = {}) => {
   const { limit = 50, offset = 0 } = options
   
+  // Get total count first
+  const countStmt = db.prepare(`
+    SELECT COUNT(*) as count 
+    FROM cursorDiskKV 
+    WHERE key LIKE 'composerData:%'
+  `)
+  const totalCount = countStmt.get().count
+  
+  // Get the limited results
   const stmt = db.prepare(`
     SELECT key, value 
     FROM cursorDiskKV 
@@ -32,5 +41,8 @@ export const listConversations = async (db, options = {}) => {
     })
   }
   
-  return conversations
+  return {
+    conversations,
+    total: totalCount
+  }
 }
