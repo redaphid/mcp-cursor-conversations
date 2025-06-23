@@ -44,6 +44,18 @@ export const createMcpServer = () => {
               description: 'Number of conversations to skip',
               default: 0,
             },
+            sortBy: {
+              type: 'string',
+              enum: ['recent_activity', 'created', 'updated'],
+              description: 'Sort conversations by: recent_activity (updated or created), created (creation time), updated (last update time)',
+              default: 'recent_activity',
+            },
+            sortOrder: {
+              type: 'string',
+              enum: ['desc', 'asc'],
+              description: 'Sort order: desc (newest first) or asc (oldest first)',
+              default: 'desc',
+            },
           },
         },
       },

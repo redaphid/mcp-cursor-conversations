@@ -85,22 +85,46 @@ export const getConversationSummary = (conversation, getBubbleData = null) => {
         if (bubbleData.type === 1) {
           messageInfo.text = bubbleData.text || ''
         } else if (bubbleData.type === 2) {
-          // For assistant messages
-          if (bubbleData.text) {
-            messageInfo.text = bubbleData.text
-          } else if (bubbleData.responseParts) {
-            // Extract from responseParts if available
-            const textParts = []
-            for (const part of bubbleData.responseParts || []) {
+          // For assistant messages, try multiple content sources
+          const textParts = []
+          
+          // Try main text field first
+          if (bubbleData.text && bubbleData.text.trim()) {
+            textParts.push(bubbleData.text)
+          }
+          
+          // Try responseParts if available
+          if (bubbleData.responseParts && bubbleData.responseParts.length > 0) {
+            for (const part of bubbleData.responseParts) {
               if (part.type === 'text' && part.rawText) {
                 textParts.push(part.rawText)
               }
             }
-            messageInfo.text = textParts.join('')
           }
+          
+          // Try codeBlocks if available
+          if (bubbleData.codeBlocks && bubbleData.codeBlocks.length > 0) {
+            textParts.push(`[${bubbleData.codeBlocks.length} code block(s)]`)
+          }
+          
+          // Try thinking content if available
+          if (bubbleData.thinking && typeof bubbleData.thinking === 'string' && bubbleData.thinking.trim()) {
+            textParts.push('[AI thinking content]')
+          }
+          
+          // Try intermediateChunks if available
+          if (bubbleData.intermediateChunks && bubbleData.intermediateChunks.length > 0) {
+            textParts.push(`[${bubbleData.intermediateChunks.length} intermediate chunk(s)]`)
+          }
+          
+          messageInfo.text = textParts.join(' ')
         }
         
-        if (messageInfo.text) {
+        // Count the message if it has any content (even if just indicators)
+        if (messageInfo.text || bubbleData.codeBlocks?.length > 0 || bubbleData.thinking) {
+          if (!messageInfo.text) {
+            messageInfo.text = '[Content without text]'
+          }
           messages.push(messageInfo)
         }
       }

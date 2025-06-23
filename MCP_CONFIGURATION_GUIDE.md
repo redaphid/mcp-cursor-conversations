@@ -1,68 +1,41 @@
 # Claude MCP Self-Configuration Guide
 
-## For Claude: How to Set Up MCP Servers
+## Setup Commands
 
-When asked to configure MCP servers, use these commands and file operations:
-
-### Claude Code Setup
 ```bash
-# Add this project's MCP server
-claude mcp add cursor-conversations "node --experimental-strip-types /path/to/project/src/index.ts" -s user
+# ALWAYS use absolute paths
+claude mcp add cursor-conversations "node --experimental-strip-types /absolute/path/to/project/src/index.ts" -s user
 
 # Verify setup
 claude mcp get cursor-conversations
-
-# Remove if needed
-claude mcp remove cursor-conversations -s user
 ```
 
-### Claude Desktop Setup
-Edit or create: `~/Library/Application Support/Claude/claude_desktop_config.json`
-```json
-{
-  "mcpServers": {
-    "cursor-conversations": {
-      "command": "node",
-      "args": ["--experimental-strip-types", "/path/to/project/src/index.ts"],
-      "env": {}
-    }
-  }
-}
+## Prerequisites Check
+
+```bash
+# Verify requirements first
+node --version  # Must be 24.0.0+
+ls -la "$HOME/Library/Application Support/Cursor/User/globalStorage/state.vscdb"  # Database must exist
 ```
 
-### Cursor Setup  
-Create `.mcp.json` in project directory:
-```json
-{
-  "mcpServers": {
-    "cursor-conversations": {
-      "command": "node", 
-      "args": ["--experimental-strip-types", "src/index.ts"],
-      "env": {}
-    }
-  }
-}
+## Troubleshooting
+
+**"ENOENT" or "Server disconnected"**
+```bash
+# Test server directly
+node --experimental-strip-types src/index.ts
+# Should show: "Cursor Conversations MCP server running on stdio"
 ```
 
-## Common User Requests
-
-**"Set up the MCP server for all environments"**
-- Run Claude Code command
-- Create/update Claude Desktop config file
-- Create Cursor .mcp.json file
-- Tell user to restart Claude Desktop
-
-**"Update the path to /new/path"**
-- Update all three configurations with new path
-- Use `claude mcp remove` then `claude mcp add` for Claude Code
-
-**"The server isn't working"**
-- Check file paths exist
-- Verify JSON syntax
-- Confirm Node.js 24+ installed
-- Remind about Claude Desktop restart
+**"Cursor database not found"**
+```bash
+# Find database location
+find ~ -name "state.vscdb" 2>/dev/null
+export CURSOR_DB_PATH="/path/to/your/state.vscdb"
+```
 
 ## File Locations
-- Claude Code: Uses `claude mcp` commands
-- Claude Desktop: `~/Library/Application Support/Claude/claude_desktop_config.json`
-- Cursor: `.mcp.json` in project root
+
+- **Database (macOS)**: `~/Library/Application Support/Cursor/User/globalStorage/state.vscdb`
+- **Database (Windows)**: `%APPDATA%/Cursor/User/globalStorage/state.vscdb`
+- **Database (Linux)**: `~/.config/Cursor/User/globalStorage/state.vscdb`

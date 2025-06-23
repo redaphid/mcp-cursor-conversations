@@ -1,125 +1,126 @@
-# Cursor Conversations Archive
+# Cursor Conversations MCP Server
 
-This repository contains exported conversations from Cursor IDE, capturing the interaction history between users and AI assistants during coding sessions.
+An MCP (Model Context Protocol) server that provides direct access to your Cursor IDE conversation history. Connect to Claude Code to search and analyze your past AI conversations.
 
-## Overview
+## Quick Start
 
-Cursor stores conversation data in a SQLite database (`state.vscdb`) within its application support directory. This project extracts and organizes that data into a more accessible JSON format for analysis, backup, and portability.
+### 1. Prerequisites
+- **Node.js 24.0.0+** (required for TypeScript support)
+- **Cursor IDE** with existing conversations
 
-## Repository Structure
-
-```
-cursor-conversations/
-├── data/                     # Exported conversation files
-│   ├── conversation_*_full.json      # Complete conversation data
-│   ├── conversation_*_summary.json   # Simplified message-only versions
-│   └── conversations_index.json      # Index of all conversations
-├── schemas/                  # JSON schemas for data validation
-│   └── conversation.schema.json      # Schema defining conversation structure
-├── scripts/                  # Analysis and utility scripts
-└── README.md                # This file
-```
-
-## Data Format
-
-Each conversation is stored in two formats:
-
-### Full Format (`*_full.json`)
-Contains complete conversation data including:
-- User messages (type: 1)
-- Assistant messages (type: 2)
-- Code suggestions and diffs
-- File context and references
-- Editor state and location history
-- Capability execution logs
-
-### Summary Format (`*_summary.json`)
-Simplified version containing only:
-- Conversation ID
-- Message count
-- Array of messages (text only)
-
-## Schema
-
-The conversation data follows the JSON schema defined in `schemas/conversation.schema.json`. Key properties include:
-
-- `composerId`: Unique UUID for the conversation
-- `conversation`: Array of message objects
-- `type`: Message type (1 = user, 2 = assistant)
-- `bubbleId`: Unique identifier for each message
-- `suggestedCodeBlocks`: Code changes proposed by the assistant
-- `relevantFiles`: Files referenced in the conversation
-- `recentLocationsHistory`: Navigation history within the codebase
-
-## Usage
-
-### Viewing Conversations
-Open any `*_summary.json` file to quickly read through a conversation's messages.
-
-### Analyzing Code Suggestions
-The `*_full.json` files contain detailed code suggestions with diffs that can be analyzed to understand what changes were proposed.
-
-### Finding Specific Topics
-Use the `conversations_index.json` file to browse conversation previews and find discussions on specific topics.
-
-## Statistics
-
-- Total conversations: 82
-- Successfully exported: 78
-- Message counts range from 1 to 342 messages
-- Topics include: shader programming, web development, testing, and various coding tasks
-
-## Data Privacy
-
-These conversations may contain sensitive information including:
-- Code snippets from private projects
-- File paths revealing project structure
-- Development workflows and practices
-
-Please review the data before sharing publicly.
-
-## Technical Details
-
-The original data is stored in Cursor's SQLite database at:
-- macOS: `~/Library/Application Support/Cursor/User/globalStorage/state.vscdb`
-- Table: `cursorDiskKV`
-- Key pattern: `composerData:{uuid}`
-
-## Extraction Script
-
-The `scripts/extract_conversations.py` script can be used to extract conversations from Cursor's SQLite database.
-
-### Usage
+### 2. Clone and Install
 
 ```bash
-# Extract using default paths
-python scripts/extract_conversations.py
-
-# Specify custom database path
-python scripts/extract_conversations.py --db-path /path/to/state.vscdb
-
-# Specify custom output directory
-python scripts/extract_conversations.py --output-dir /path/to/output
+git clone https://github.com/your-username/mcp-cursor-conversations.git
+cd mcp-cursor-conversations
+npm install
 ```
 
-### Default Database Locations
+### 3. Set Up with Claude Code
+
+```bash
+# Add MCP server (use your actual project path)
+claude mcp add cursor-conversations "node --experimental-strip-types /absolute/path/to/project/src/index.ts" -s user
+
+# Verify setup
+claude mcp get cursor-conversations
+```
+
+### 4. Start Using
+
+Ask Claude to search your conversations:
+```
+Search my Cursor conversations for "React components"
+```
+
+```
+List my most recent conversations from the past week
+```
+
+```
+Find conversations with more than 50 messages about debugging
+```
+
+## Available Tools
+
+- **`list_conversations`** - List all conversations with pagination
+- **`search_conversations`** - Search by content with basic filters  
+- **`search_conversations_advanced`** - Advanced search with date/count/status filters
+- **`get_conversation`** - Retrieve specific conversation by ID
+
+## System Requirements
+
+- **Node.js 24.0.0+** (required for TypeScript support)
+- **Cursor IDE** with existing conversations
+
+## How It Works
+
+The MCP server reads directly from Cursor's SQLite database (`state.vscdb`) located in your Cursor application data directory. It queries the `cursorDiskKV` table where conversations are stored, providing real-time access without needing to export data.
+
+## Troubleshooting
+
+### Quick Diagnostics
+
+```bash
+# Verify Node.js version
+node --version  # Should be 24.0.0+
+
+# Test database connection
+node --experimental-strip-types src/index.ts
+# Should show: "Cursor Conversations MCP server running on stdio"
+
+# Check database exists
+ls -la "$HOME/Library/Application Support/Cursor/User/globalStorage/state.vscdb"
+```
+
+### Common Issues
+
+#### "ENOENT: no such file or directory"
+**Problem**: Can't find node or database
+
+**Solutions**:
+1. Use full path to node: `which node` then use that path in config
+2. Set custom database path: `export CURSOR_DB_PATH="/path/to/state.vscdb"`
+
+#### "Cursor database not found"
+**Problem**: Database not at expected location
+
+**Solution**:
+```bash
+# Find your database
+find ~ -name "state.vscdb" 2>/dev/null
+
+# Set custom path
+export CURSOR_DB_PATH="/path/to/your/state.vscdb"
+```
+
+## Database Locations
 
 - **macOS**: `~/Library/Application Support/Cursor/User/globalStorage/state.vscdb`
-- **Windows**: `%APPDATA%/Cursor/User/globalStorage/state.vscdb`
+- **Windows**: `%APPDATA%/Cursor/User/globalStorage/state.vscdb`  
 - **Linux**: `~/.config/Cursor/User/globalStorage/state.vscdb`
 
-### What the Script Does
+## Advanced Configuration
 
-1. Connects to Cursor's SQLite database
-2. Extracts all conversations from the `cursorDiskKV` table
-3. Creates both full and summary versions of each conversation
-4. Generates an index file for easy browsing
-5. Creates a summary README with statistics
+### Environment Variables
+```bash
+# Custom database location
+export CURSOR_DB_PATH="/path/to/custom/state.vscdb"
 
-## Contributing
+# Debug logging
+export DEBUG="cursor-conversations:*"
+```
 
-This is a personal archive repository. If you have similar Cursor conversation data and would like to contribute analysis scripts or tools, please open an issue first to discuss.
+### MCP Server Commands
+```bash
+claude mcp list    # Show all configured servers
+claude mcp remove cursor-conversations -s user  # Remove if needed
+```
+
+## Privacy Note
+
+This tool accesses your local Cursor conversation data. No data is sent to external services - everything runs locally on your machine.
 
 ## License
 
-The conversation data remains property of the original authors. Any analysis scripts or tools in this repository are provided as-is for educational purposes.
+MIT License - see LICENSE file for details.
