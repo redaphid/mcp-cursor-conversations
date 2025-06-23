@@ -188,3 +188,6 @@ yarn-error.log*
 sibi/
 __pycache__/
 .claude/
+
+# Data directory with conversation exports
+data/
