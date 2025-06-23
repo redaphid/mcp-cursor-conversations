@@ -1,0 +1,388 @@
+{
+  "composer_id": "7988540f-fa07-43be-ba0a-38fa7aad2e6e",
+  "conversation_length": 45,
+  "status": "aborted",
+  "messages": [
+    {
+      "type": "user",
+      "text": "update this to use the features output from @zoomer.js as uniforms, in the same way @fractal-zoom.frag does, to continuously zoom into interesting areas in this shader",
+      "bubble_id": "70fd3a8f-c023-4a3a-9e9b-a756c0fcbb72"
+    },
+    {
+      "type": "assistant",
+      "text": "I'll update the tie-dye.frag shader to use the zoomer.js controller outputs as uniforms, similar to how fractal-zoom.frag does. This will enable continuous zooming into interesting areas of the fractal.",
+      "bubble_id": "968197b7-b98b-404c-ae13-98e0eb7c012d"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "58f09a8e-a46b-4147-b5b4-8a7e3d5c62a2"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "3652007d-d8bd-4f39-810c-a1b38b9bbad8"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "69a0580b-c020-42c9-a9a3-d34800957452"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "a1036f8f-12e0-4b6f-bde7-71e0321b0e99",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 0,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "9fca8c1b-677b-4c32-a9de-a4da636eca3a",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 1,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "8138d390-69e2-4a2d-b275-7d0d3eac67e6"
+    },
+    {
+      "type": "user",
+      "text": "Stop this shader from warping. Make sure we are always looking at interesting fractal features as we continuously zoom",
+      "bubble_id": "d3a82d52-b51e-45d0-9b3d-31b3185626d4"
+    },
+    {
+      "type": "assistant",
+      "text": "I'll update the shader to focus on continuous zooming into interesting fractal features without the warping effects.",
+      "bubble_id": "0ac312ed-9f43-43bd-8823-a858b2911bb3"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "712bd8fa-440f-4204-9bbc-f44046624550",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 2,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "79542eca-c009-4c20-b9cd-6c9f418b1b51"
+    },
+    {
+      "type": "user",
+      "text": "This suddenly veers away from interesting fractal areas as it zooms past a certain point. Does it listen to the @zoomer.js controller's output? Shouldn't this prevent floating point issues?",
+      "bubble_id": "9abdfe3b-135b-4c53-b226-0221150fee48"
+    },
+    {
+      "type": "assistant",
+      "text": "You're right - there's an issue with how we're handling the camera position from the zoomer.js controller. Let me fix that to ensure we properly scale and maintain focus on interesting areas throughout the zoom.",
+      "bubble_id": "80775fa8-cb2b-463d-832f-b05dabb625dc"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "3e99c0fe-1ad4-4d9b-bb8f-0d9914c3fee1"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "dddf37b4-e0ab-4df2-ab2a-901778591be0",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 3,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "ecbd308e-eef6-46a7-ab17-1cab5c54d1ee"
+    },
+    {
+      "type": "user",
+      "text": "fix @tie-dye.frag and @zoomer.js to correctly zoom infinitely deep into a recursive black and white checkerboard pattern. I want to use this to confirm I can calculate the zoom on the cpu with arbitrary precision and render it. Do this however makes the most sense",
+      "bubble_id": "e35e078d-e675-4fd3-af80-75782176f6a0"
+    },
+    {
+      "type": "assistant",
+      "text": "I'll update both files to create an infinitely deep zoom into a recursive black and white checkerboard pattern, using CPU-calculated high-precision coordinates.",
+      "bubble_id": "5d134f8b-ea91-40ab-8c0f-644de48d5fbe"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "ca02e3dd-39d3-4744-9a76-a0fa11e939a2"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "9ffd2fea-0f46-46dc-b736-2707f98d900e",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/controllers/zoomer.js",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/controllers/zoomer.js",
+            "path": "/Users/redaphid/Projects/paper-cranes/controllers/zoomer.js",
+            "scheme": "file"
+          },
+          "version": 0,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "3cc1bce4-3bb2-422a-bfed-b4c41578b2bb",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 4,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "8581703b-227b-4d89-84ac-7e0eb189dcd7"
+    },
+    {
+      "type": "user",
+      "text": "no, it can't do recursive functions in the gpu via glsl. Try again",
+      "bubble_id": "573582de-e0c4-49c8-84cf-bea19d0db0ff"
+    },
+    {
+      "type": "assistant",
+      "text": "You're right - recursive functions aren't supported in GLSL. Let me update the shader to use an iterative approach instead.",
+      "bubble_id": "04092ea4-697f-466b-9542-0b00e94fd04c"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "614be7e7-7e39-43f7-ad6a-4962ef55fd81",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 5,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "c19452a1-c96c-4570-abfa-ee8004a0d06c"
+    },
+    {
+      "type": "user",
+      "text": "now it's black. ",
+      "bubble_id": "d1f9f952-4aaf-4764-bf70-35cb9685f06e"
+    },
+    {
+      "type": "assistant",
+      "text": "Let's fix that issue by diagnosing and correcting the problem. The all-black screen likely indicates there's a problem with either the coordinate calculations or the checkerboard pattern function.",
+      "bubble_id": "3ea7ef44-8136-4345-8ebe-107ec2eb3fb8"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "37dbbb64-d75b-4647-970a-0a0a666d368e",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 6,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "849a7800-9da7-4a00-851c-00ba13a18c7d"
+    },
+    {
+      "type": "user",
+      "text": "This eventually stops zooming and starts panning blocky blurry squares",
+      "bubble_id": "1a810796-5098-41d1-8282-c6ee2d1183a3"
+    },
+    {
+      "type": "assistant",
+      "text": "Let me fix that issue by improving how we handle deep zoom levels and ensuring we maintain the proper checkerboard structure.",
+      "bubble_id": "55fbd12b-11c4-4afe-93d6-8525bdfb2a12"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "924c3e33-28cd-46cc-ac36-9ce501d4495f",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 7,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "a4f08837-1766-41c1-b7dc-fb90bbaf6179"
+    },
+    {
+      "type": "user",
+      "text": "This seems like it zooms for a bit, then it looks like static, then it freezes",
+      "bubble_id": "8b0d18d2-f8bb-44f6-9bf1-2b0cdefaa065"
+    },
+    {
+      "type": "assistant",
+      "text": "Let's fix the zooming issue by simplifying the approach and focusing on precise coordinate handling. The current issues might be related to precision loss or overflow in our calculations.",
+      "bubble_id": "d552ba82-cdbe-4bc2-b3f2-c34e0d9ff138"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "f47f397a-5dd7-4e91-a431-19ce3ff659e8",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 8,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "39c2a7b7-5552-4a21-abb2-8a584c747b1c"
+    },
+    {
+      "type": "user",
+      "text": "ok that shader zooms for a while, then eventually stops, centering on a white cell. After maybe 20s",
+      "bubble_id": "a2791c5f-0203-4a79-8340-102b2f3ab514"
+    },
+    {
+      "type": "assistant",
+      "text": "The issue is likely due to floating point precision limitations in JavaScript. Let's modify the controller to better handle deep zooms by implementing a stepped approach that periodically resets the zoom to maintain precision.",
+      "bubble_id": "67938f30-e84e-4f22-a21e-1ad278d18d2d"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "32d87fdb-a50b-48d0-8dca-9ddbe0dec682",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/controllers/zoomer.js",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/controllers/zoomer.js",
+            "path": "/Users/redaphid/Projects/paper-cranes/controllers/zoomer.js",
+            "scheme": "file"
+          },
+          "version": 1,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "3c077e55-85ab-4cdd-9a3a-1898e501295d",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/redaphid/tie-dye.frag",
+            "scheme": "file"
+          },
+          "version": 9,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "460f1e9c-f563-4359-a1b9-8105c9d8e3db"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "9722b6cc-3d64-4b10-b22f-ad66992dde8c"
+    }
+  ]
+}

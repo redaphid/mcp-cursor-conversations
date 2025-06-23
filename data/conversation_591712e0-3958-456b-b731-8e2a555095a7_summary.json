@@ -1,0 +1,50 @@
+{
+  "composer_id": "591712e0-3958-456b-b731-8e2a555095a7",
+  "conversation_length": 6,
+  "status": "completed",
+  "messages": [
+    {
+      "type": "user",
+      "text": "Strip everything down to the bare bones in @PaperCrane.ts . Don't clean up or anything",
+      "bubble_id": "226b6c9f-5804-45fe-b545-27ad6f8dfde5"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "4d5cc1f5-25bb-41d4-868d-78024fab7bfb"
+    },
+    {
+      "type": "assistant",
+      "text": "Okay, I will remove the cleanup logic from the `useEffect` hook in `src/PaperCrane.ts`.",
+      "bubble_id": "34fbe36f-0256-4e46-a61a-70e9684c9025"
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "cadddfe3-6ccd-475f-bfcd-6752c4396f5b",
+      "code_blocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+            "external": "file:///Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+            "path": "/Users/redaphid/Projects/paper-crane/src/PaperCrane.ts",
+            "scheme": "file"
+          },
+          "version": 0,
+          "codeBlockIdx": 0
+        }
+      ]
+    },
+    {
+      "type": "assistant",
+      "text": "",
+      "bubble_id": "896957e1-a3c7-4554-b412-51469a372b24"
+    },
+    {
+      "type": "assistant",
+      "text": "OK, I've removed the cleanup function from the `useEffect` hook in `src/PaperCrane.ts`.",
+      "bubble_id": "ba1fa66c-2a58-4612-9e2e-b633c569da2b"
+    }
+  ]
+}

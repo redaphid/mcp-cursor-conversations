@@ -1,0 +1,268 @@
+{
+  "_v": 3,
+  "composerId": "739d9c51-5e94-4ae7-9182-25d836d3e1e2",
+  "richText": "{\"root\":{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+  "hasLoaded": true,
+  "text": "",
+  "fullConversationHeadersOnly": [
+    {
+      "bubbleId": "82355bb4-cc80-4fae-a1bb-986b233d6f68",
+      "type": 1
+    },
+    {
+      "bubbleId": "adfed378-1d04-419d-8993-58f9dd0acc7a",
+      "type": 2,
+      "serverBubbleId": "91520029-a60f-41b9-96ac-29317e37c2a9"
+    },
+    {
+      "bubbleId": "b84d8aa0-8030-46b1-b8c5-992542b44d03",
+      "type": 2
+    },
+    {
+      "bubbleId": "6dbd0932-e9e1-4b6a-bb06-67ff3733eed4",
+      "type": 2
+    },
+    {
+      "bubbleId": "1fd8b4ed-15b0-483e-9c88-0c3bff5f03fd",
+      "type": 2,
+      "serverBubbleId": "3470a66a-b364-41b1-8f8a-b81415bb500b"
+    },
+    {
+      "bubbleId": "f1972c44-a187-44a0-8350-4a220074d28e",
+      "type": 2
+    },
+    {
+      "bubbleId": "94bcc7f5-a0c9-4323-b021-d0c0fc5782ed",
+      "type": 2,
+      "serverBubbleId": "0dd1a047-804e-4be7-8189-b98a90a0eb59"
+    },
+    {
+      "bubbleId": "cbdaebb8-997c-439a-9c03-7bf890d7d38b",
+      "type": 2
+    },
+    {
+      "bubbleId": "54034a95-925f-42f7-9862-9122c2a0f80e",
+      "type": 2,
+      "serverBubbleId": "eef6a50c-a47c-4a02-8a9c-881eaa2e8985"
+    },
+    {
+      "bubbleId": "37e54f45-d31d-49d3-a4e7-25ddb28dc3c9",
+      "type": 2
+    },
+    {
+      "bubbleId": "04664e04-64f8-44a1-8fbd-44108a4d1e64",
+      "type": 2,
+      "serverBubbleId": "2501facf-40d6-41f0-9dc2-09f81898e00c"
+    },
+    {
+      "bubbleId": "b39ddb64-3a0d-4cd4-a34e-23aecf1f5e9b",
+      "type": 2
+    },
+    {
+      "bubbleId": "14768cb0-d4a0-4dc1-bb84-48cf5440b75d",
+      "type": 2,
+      "serverBubbleId": "0a3b37b6-4580-4a1c-b9e7-8d6e9f439308"
+    },
+    {
+      "bubbleId": "a3968806-59fa-40a8-85df-a1246a6345b0",
+      "type": 2
+    },
+    {
+      "bubbleId": "b29d96d3-61e2-48ef-bcfe-292709c50ae0",
+      "type": 2,
+      "serverBubbleId": "02fdabd1-5b64-4dae-92e1-1c18d7af6fc8"
+    },
+    {
+      "bubbleId": "9b1b79bd-b715-4c65-ba5d-60526f2c5bfc",
+      "type": 2
+    },
+    {
+      "bubbleId": "547ace7f-3f50-4ce8-8f79-0a76b2ed3177",
+      "type": 2,
+      "serverBubbleId": "ff62e660-e383-423c-9948-d4920f195097"
+    },
+    {
+      "bubbleId": "176fb01d-8628-49c4-8d18-20d95ee21924",
+      "type": 2
+    },
+    {
+      "bubbleId": "1ddcb1a8-f12c-439c-9d1e-fc3acdd8dc37",
+      "type": 2,
+      "serverBubbleId": "016588fb-63ac-41ec-a44d-b294feb6fa29"
+    },
+    {
+      "bubbleId": "53404c90-204b-4b54-9bc8-33eb801229c0",
+      "type": 2
+    },
+    {
+      "bubbleId": "65f842e3-fb7b-49ec-90c8-0fe51acf960a",
+      "type": 2,
+      "serverBubbleId": "1f3a57e6-df03-4e5f-aa13-040a26364187"
+    },
+    {
+      "bubbleId": "92a0e279-e4e1-4d7f-87c7-892e337d6aa5",
+      "type": 2
+    },
+    {
+      "bubbleId": "3f0ea832-d967-4df5-b9f8-744df18f5104",
+      "type": 2,
+      "serverBubbleId": "1e60ab9e-2298-4991-844d-d8e6d3cbdf02"
+    },
+    {
+      "bubbleId": "076a9857-aac3-4882-ac4f-937781dd4b88",
+      "type": 2
+    },
+    {
+      "bubbleId": "0edb016c-d63f-457f-8efe-a8b08add364a",
+      "type": 2,
+      "serverBubbleId": "cc6f2e0b-3eff-4c7c-bf14-d2434d0de11b"
+    }
+  ],
+  "conversationMap": {},
+  "status": "completed",
+  "context": {
+    "notepads": [],
+    "composers": [],
+    "quotes": [],
+    "selectedCommits": [],
+    "selectedPullRequests": [],
+    "selectedImages": [],
+    "folderSelections": [],
+    "fileSelections": [
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/ollama-interactions/kaggle-data/sample-conversations/chat_dialogues.txt",
+          "external": "file:///Users/redaphid/Projects/ollama-interactions/kaggle-data/sample-conversations/chat_dialogues.txt",
+          "path": "/Users/redaphid/Projects/ollama-interactions/kaggle-data/sample-conversations/chat_dialogues.txt",
+          "scheme": "file"
+        },
+        "addedWithoutMention": true,
+        "autoContext": true
+      }
+    ],
+    "selections": [],
+    "terminalSelections": [],
+    "selectedDocs": [],
+    "externalLinks": [],
+    "cursorRules": [],
+    "uiElementSelections": [],
+    "mentions": {
+      "notepads": {},
+      "composers": {},
+      "quotes": {},
+      "selectedCommits": {},
+      "selectedPullRequests": {},
+      "gitDiff": [],
+      "gitDiffFromBranchToMain": [],
+      "selectedImages": {},
+      "usesCodebase": [],
+      "useWeb": [],
+      "folderSelections": {},
+      "fileSelections": {},
+      "terminalFiles": {},
+      "selections": {},
+      "terminalSelections": {},
+      "selectedDocs": {},
+      "externalLinks": {},
+      "useLinterErrors": [],
+      "useDiffReview": [],
+      "useGenerateRules": [],
+      "useContextPicking": [],
+      "useRememberThis": [],
+      "diffHistory": [],
+      "cursorRules": {},
+      "autoContext": [],
+      "uiElementSelections": {}
+    }
+  },
+  "gitGraphFileSuggestions": [],
+  "generatingBubbleIds": [],
+  "isReadingLongFile": false,
+  "codeBlockData": {},
+  "originalModelLines": {},
+  "newlyCreatedFiles": [],
+  "newlyCreatedFolders": [],
+  "lastUpdatedAt": 1749118993325,
+  "createdAt": 1749118947951,
+  "hasChangedContext": false,
+  "capabilities": [
+    {
+      "type": 15,
+      "data": {
+        "bubbleDataMap": "{}"
+      }
+    },
+    {
+      "type": 17,
+      "data": {}
+    },
+    {
+      "type": 14,
+      "data": {}
+    },
+    {
+      "type": 22,
+      "data": {}
+    },
+    {
+      "type": 18,
+      "data": {}
+    },
+    {
+      "type": 19,
+      "data": {}
+    },
+    {
+      "type": 23,
+      "data": {}
+    },
+    {
+      "type": 6,
+      "data": {}
+    },
+    {
+      "type": 16,
+      "data": {}
+    },
+    {
+      "type": 24,
+      "data": {}
+    },
+    {
+      "type": 25,
+      "data": {}
+    },
+    {
+      "type": 21,
+      "data": {}
+    }
+  ],
+  "name": "Install Claude code on macOS",
+  "codebaseSearchSettings": {},
+  "isFileListExpanded": false,
+  "unifiedMode": "agent",
+  "forceMode": "edit",
+  "usageData": {
+    "claude-4-sonnet-thinking": {
+      "costInCents": 3,
+      "amount": 1
+    }
+  },
+  "allAttachedFileCodeChunksUris": [
+    "file:///Users/redaphid/Projects/ollama-interactions/kaggle-data/sample-conversations/chat_dialogues.txt"
+  ],
+  "subComposerIds": [],
+  "latestConversationSummary": {
+    "summary": {
+      "summary": "\n- The user requested assistance to install Claude Code on their macOS device using Homebrew, aiming to have the executable available in their shell.\n- The assistant found the installation command and confirmed that Claude was already installed via Homebrew, then checked for the command-line interface.\n- After confirming the installation of the Claude desktop app, the assistant searched for the CLI tool and found that it needed to be installed via npm.\n- The assistant successfully installed the Claude Code CLI tool and verified its availability in the user's shell, checking the version to confirm the installation.\n- Finally, the assistant started the Claude Code CLI to initiate the login process, allowing the user to authenticate with their API key and use the tool for coding tasks.\n",
+      "truncationLastBubbleIdInclusive": "cc6f2e0b-3eff-4c7c-bf14-d2434d0de11b",
+      "clientShouldStartSendingFromInclusiveBubbleId": "53404c90-204b-4b54-9bc8-33eb801229c0",
+      "previousConversationSummaryBubbleId": "",
+      "includesToolResults": false
+    },
+    "lastBubbleId": "0edb016c-d63f-457f-8efe-a8b08add364a"
+  },
+  "latestChatGenerationUUID": "ea980852-2547-40eb-832d-b17affbba8c6",
+  "isAgentic": true
+}

@@ -1,0 +1,1315 @@
+{
+  "composerId": "b6c53018-6ec2-45e1-ba41-b7b385818575",
+  "richText": "{\"root\":{\"children\":[{\"children\":[],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":null,\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+  "hasLoaded": true,
+  "text": "",
+  "conversation": [
+    {
+      "type": 1,
+      "bubbleId": "20cee304-e0d6-45c3-bf66-a7ce594c953a",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [
+          11,
+          6
+        ],
+        "start-submit-chat": [],
+        "before-submit-chat": [
+          15
+        ],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [
+          6
+        ],
+        "process-codeblock": [],
+        "process-stream": [
+          15
+        ]
+      },
+      "editTrailContexts": [],
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [
+        {
+          "relativeWorkspacePath": ".cursorrules",
+          "lineNumber": 238
+        }
+      ],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "richText": "{\"root\":{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"using information from \",\"type\":\"text\",\"version\":1},{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"@.cursorrules\",\"type\":\"mention\",\"version\":1,\"mentionName\":\".cursorrules\",\"storedKey\":\"43\",\"metadata\":{\"selection\":{\"type\":2,\"selectionWithoutUuid\":{\"uri\":{\"$mid\":1,\"fsPath\":\"/Users/redaphid/Projects/paper-cranes/.cursorrules\",\"external\":\"file:///Users/redaphid/Projects/paper-cranes/.cursorrules\",\"path\":\"/Users/redaphid/Projects/paper-cranes/.cursorrules\",\"scheme\":\"file\"}}},\"selectedOption\":{\"key\":\".cursorrules\",\"type\":\"file\",\"selectionPrecursor\":{\"uri\":{\"$mid\":1,\"fsPath\":\"/Users/redaphid/Projects/paper-cranes/.cursorrules\",\"external\":\"file:///Users/redaphid/Projects/paper-cranes/.cursorrules\",\"path\":\"/Users/redaphid/Projects/paper-cranes/.cursorrules\",\"scheme\":\"file\"}},\"secondaryText\":\".cursorrules\",\"name\":\".cursorrules\",\"picture\":{},\"_score\":12.990430622009569,\"isSlash\":false}}},{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" , and examples in the \",\"type\":\"text\",\"version\":1},{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"@shaders\",\"type\":\"mention\",\"version\":1,\"mentionName\":\"shaders\",\"storedKey\":\"50\",\"metadata\":{\"selection\":{\"type\":5,\"selectionWithoutUuid\":{\"relativePath\":\"/shaders\"}},\"selectedOption\":{\"key\":\"shaders\",\"type\":\"folder\",\"selectionPrecursor\":{\"uri\":{\"$mid\":1,\"fsPath\":\"/shaders\",\"path\":\"/shaders\",\"scheme\":\"file\"}},\"secondaryText\":\"/shaders\",\"name\":\"shaders\",\"picture\":{},\"_score\":10,\"isSlash\":false}}},{\"detail\":1,\"format\":0,\"mode\":\"segmented\",\"style\":\"\",\"text\":\"\",\"type\":\"text\",\"version\":1},{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\" directory, generate a beautiful new music visual\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+      "text": "using information from @.cursorrules , and examples in the @shaders directory, generate a beautiful new music visual",
+      "context": {
+        "editTrailContexts": [],
+        "notepads": [],
+        "quotes": [],
+        "selectedCommits": [],
+        "selectedPullRequests": [],
+        "selectedImages": [],
+        "folderSelections": [
+          {
+            "relativePath": "/shaders",
+            "uuid": "50",
+            "addedWithoutMention": false
+          }
+        ],
+        "fileSelections": [
+          {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/redaphid/Projects/paper-cranes/.cursorrules",
+              "external": "file:///Users/redaphid/Projects/paper-cranes/.cursorrules",
+              "path": "/Users/redaphid/Projects/paper-cranes/.cursorrules",
+              "scheme": "file"
+            },
+            "addedWithoutMention": true,
+            "autoContext": true
+          }
+        ],
+        "terminalFiles": [],
+        "selections": [],
+        "terminalSelections": [],
+        "selectedDocs": [],
+        "externalLinks": [],
+        "diffHistory": {
+          "files": [],
+          "diffHistories": [],
+          "uniqueId": "a4bcd997-8a47-422b-b983-b0ee257c7c37"
+        },
+        "mentions": {
+          "editTrailContexts": {},
+          "notepads": {},
+          "quotes": {},
+          "selectedCommits": {},
+          "selectedPullRequests": {},
+          "gitDiff": [],
+          "gitDiffFromBranchToMain": [],
+          "selectedImages": {},
+          "usesCodebase": [],
+          "useWeb": [],
+          "folderSelections": {
+            "{\"relativePath\":\"/shaders\",\"addedWithoutMention\":false}": [
+              {
+                "uuid": "50"
+              }
+            ]
+          },
+          "fileSelections": {
+            "file:///Users/redaphid/Projects/paper-cranes/.cursorrules": [
+              {
+                "uuid": "43"
+              }
+            ]
+          },
+          "terminalFiles": {},
+          "selections": {},
+          "terminalSelections": {},
+          "selectedDocs": {},
+          "externalLinks": {},
+          "useLinterErrors": [],
+          "useDiffReview": [],
+          "useContextPicking": [],
+          "useRememberThis": [],
+          "diffHistory": []
+        },
+        "usesCodebase": false
+      },
+      "checkpoint": {
+        "files": [
+          {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+              "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+              "path": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+              "scheme": "file"
+            },
+            "originalModelDiffWrtV0": [],
+            "isNewlyCreated": true
+          }
+        ],
+        "nonExistentFiles": [],
+        "newlyCreatedFolders": [],
+        "activeInlineDiffs": [],
+        "inlineDiffNewlyCreatedResources": {
+          "files": [],
+          "folders": []
+        }
+      },
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    },
+    {
+      "type": 2,
+      "bubbleId": "d139571c-7c39-4f6d-bc27-41b1a84b31e7",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [
+          11,
+          6
+        ],
+        "start-submit-chat": [],
+        "before-submit-chat": [
+          15
+        ],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [
+          6
+        ],
+        "process-codeblock": [],
+        "process-stream": [
+          15
+        ]
+      },
+      "editTrailContexts": [],
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "codeBlocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+            "scheme": "file"
+          },
+          "version": 0,
+          "codeBlockIdx": 0
+        }
+      ],
+      "text": "I'll create a new music visualization shader that combines fluid motion with crystalline structures, reacting to various audio features. This shader will use spectral features to create dynamic, evolving patterns while maintaining visual interest across the screen.\n\nHere's a new shader called \"crystal-flow\":\n\n````glsl:shaders/crystal-flow.frag\n// Define audio reactive parameters\n#define FLOW_SPEED (spectralFluxZScore * 0.5 + 0.5) // Controls overall motion speed\n#define CRYSTAL_SCALE (1.0 + spectralCentroidZScore * 0.3) // Affects pattern size\n#define ENERGY_FACTOR (energyNormalized * 2.0) // Overall intensity\n#define ROUGHNESS (spectralRoughnessNormalized) // Texture detail\n#define COLOR_SHIFT (spectralCentroidNormalized) // Color variation\n#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.2) // Detail level\n\n// Rotation matrix helper\nmat2 rotate2D(float angle) {\n    float c = cos(angle), s = sin(angle);\n    return mat2(c, -s, s, c);\n}\n\n// Crystalline pattern function\nfloat crystalPattern(vec3 p) {\n    p *= CRYSTAL_SCALE;\n    float pattern = 0.0;\n    \n    // Create layered crystalline structure\n    for(int i = 0; i < 3; i++) {\n        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;\n        vec3 q = p * scale;\n        q.xy *= rotate2D(time * FLOW_SPEED * (1.0 + float(i) * 0.2));\n        q.yz *= rotate2D(time * FLOW_SPEED * 0.7);\n        \n        // Basic crystalline shape\n        float crystal = abs(sin(q.x) + sin(q.y) + sin(q.z)) / scale;\n        \n        // Add roughness based on audio\n        crystal *= 1.0 + ROUGHNESS * sin(q.x * 5.0 + q.y * 3.0 + q.z * 2.0);\n        \n        pattern += crystal;\n    }\n    \n    return pattern * ENERGY_FACTOR;\n}\n\nvoid mainImage(out vec4 fragColor, in vec2 fragCoord) {\n    // Normalized pixel coordinates\n    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;\n    \n    // Get previous frame for smooth transitions\n    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);\n    \n    // Create base position\n    vec3 p = vec3(uv * 2.0, time * 0.2);\n    \n    // Get crystal pattern value\n    float pattern = crystalPattern(p);\n    \n    // Create base color using HSL\n    vec3 color = vec3(\n        fract(COLOR_SHIFT + pattern * 0.2), // Hue\n        0.8, // Saturation\n        pattern * 0.5 + 0.2 // Lightness\n    );\n    \n    // Convert to RGB\n    color = hsl2rgb(color);\n    \n    // Add energy-based glow\n    color += vec3(0.1, 0.2, 0.3) * ENERGY_FACTOR * pattern;\n    \n    // Blend with previous frame for smooth transitions\n    float blendFactor = 0.1;\n    if(beat) {\n        // Quick flash on beats\n        blendFactor = 0.5;\n        color *= 1.2;\n    }\n    \n    // Ensure we don't get stuck in dark states\n    color = max(color, vec3(0.05));\n    \n    // Final color blend\n    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n}\n````\n\nThis shader creates a flowing crystalline structure that:\n\n1. Uses spectral flux for motion speed, creating more movement during dynamic parts of the music\n2. Scales patterns based on spectral centroid, making higher frequencies create finer details\n3. Adjusts overall intensity based on energy\n4. Adds texture variation using spectral roughness\n5. Shifts colors based on spectral centroid\n6. Creates more complex patterns during spectrally rich sections\n7. Includes beat reactivity for punctuated moments\n8. Uses frame blending for smooth transitions\n\nThe result is an evolving crystalline structure that flows and morphs with the music while maintaining visual interest through multiple layers of detail and careful color management.\n\nWould you like me to explain any particular aspect of how this shader works with the audio features?",
+      "timingInfo": {
+        "clientStartTime": 1737242069571,
+        "clientRpcSendTime": 1737242069608,
+        "clientSettleTime": 1737242095857,
+        "clientEndTime": 1737242095857
+      },
+      "intermediateChunks": [],
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": [
+          {
+            "type": 15,
+            "status": "completed"
+          }
+        ]
+      }
+    },
+    {
+      "type": 1,
+      "bubbleId": "0307689f-4b51-4714-baac-51adf830f30d",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [
+        "shaders/crystal-flow.frag"
+      ],
+      "capabilitiesRan": {
+        "mutate-request": [
+          11,
+          6
+        ],
+        "start-submit-chat": [],
+        "before-submit-chat": [
+          15
+        ],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [
+          6
+        ],
+        "process-codeblock": [],
+        "process-stream": [
+          15
+        ]
+      },
+      "editTrailContexts": [],
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [
+        {
+          "relativeWorkspacePath": ".cursorrules",
+          "lineNumber": 200
+        },
+        {
+          "relativeWorkspacePath": ".cursorrules",
+          "lineNumber": 238
+        }
+      ],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "richText": "{\"root\":{\"children\":[{\"children\":[{\"detail\":0,\"format\":0,\"mode\":\"normal\",\"style\":\"\",\"text\":\"It's too blurry, and mostly white.\",\"type\":\"text\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"paragraph\",\"version\":1}],\"direction\":\"ltr\",\"format\":\"\",\"indent\":0,\"type\":\"root\",\"version\":1}}",
+      "text": "It's too blurry, and mostly white.",
+      "context": {
+        "editTrailContexts": [],
+        "notepads": [],
+        "quotes": [],
+        "selectedCommits": [],
+        "selectedPullRequests": [],
+        "selectedImages": [],
+        "folderSelections": [],
+        "fileSelections": [
+          {
+            "uri": {
+              "$mid": 1,
+              "fsPath": "/Users/redaphid/Projects/paper-cranes/.cursorrules",
+              "external": "file:///Users/redaphid/Projects/paper-cranes/.cursorrules",
+              "path": "/Users/redaphid/Projects/paper-cranes/.cursorrules",
+              "scheme": "file"
+            },
+            "addedWithoutMention": true,
+            "autoContext": true
+          }
+        ],
+        "terminalFiles": [],
+        "selections": [],
+        "terminalSelections": [],
+        "selectedDocs": [],
+        "externalLinks": [],
+        "diffHistory": {
+          "files": [
+            {
+              "$mid": 1,
+              "path": "/.cursorrules",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/automata/1.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/automata/2.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/automata/3.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/automata/4.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/beat-trip.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/brainz.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/bumpy/1.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/cells.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/dance-hole.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/default.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/default.vert",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/evil-eye/1.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/evil-eye/2.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/evil-eye/3.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/fractal-soundscape.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/glassy-field.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/graph/dancy-coords.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/graph/line-z-score.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/graph/line.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/graph/sin.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/headbang.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/hearts.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/interdimensional-crystal.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/kbmarcher.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/markmwangi/something.frag",
+              "scheme": "file"
+            },
+            {
+              "$mid": 1,
+              "path": "/shaders/crystal-flow.frag",
+              "scheme": "file"
+            }
+          ],
+          "diffHistories": [
+            {
+              "relativeWorkspacePath": "shaders/crystal-flow.frag",
+              "diffs": [
+                {
+                  "chunks": [
+                    {
+                      "diffString": "-  \n+ // Define audio reactive parameters\n+ #define FLOW_SPEED (spectralFluxZScore * 0.5 + 0.5) // Controls overall motion speed\n+ #define CRYSTAL_SCALE (1.0 + spectralCentroidZScore * 0.3) // Affects pattern size\n+ #define ENERGY_FACTOR (energyNormalized * 2.0) // Overall intensity\n+ #define ROUGHNESS (spectralRoughnessNormalized) // Texture detail\n+ #define COLOR_SHIFT (spectralCentroidNormalized) // Color variation\n+ #define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.2) // Detail level\n+ \n+ // Rotation matrix helper\n+ mat2 rotate2D(float angle) {\n+     float c = cos(angle), s = sin(angle);\n+     return mat2(c, -s, s, c);\n+ }\n+ \n+ // Crystalline pattern function\n+ float crystalPattern(vec3 p) {\n+     p *= CRYSTAL_SCALE;\n+     float pattern = 0.0;\n+     \n+     // Create layered crystalline structure\n+     for(int i = 0; i < 3; i++) {\n+         float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;\n+         vec3 q = p * scale;\n+         q.xy *= rotate2D(time * FLOW_SPEED * (1.0 + float(i) * 0.2));\n+         q.yz *= rotate2D(time * FLOW_SPEED * 0.7);\n+         \n+         // Basic crystalline shape\n+         float crystal = abs(sin(q.x) + sin(q.y) + sin(q.z)) / scale;\n+         \n+         // Add roughness based on audio\n+         crystal *= 1.0 + ROUGHNESS * sin(q.x * 5.0 + q.y * 3.0 + q.z * 2.0);\n+         \n+         pattern += crystal;\n+     }\n+     \n+     return pattern * ENERGY_FACTOR;\n+ }\n+ \n+ void mainImage(out vec4 fragColor, in vec2 fragCoord) {\n+     // Normalized pixel coordinates\n+     vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;\n+     \n+     // Get previous frame for smooth transitions\n+     vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);\n+     \n+     // Create base position\n+     vec3 p = vec3(uv * 2.0, time * 0.2);\n+     \n+     // Get crystal pattern value\n+     float pattern = crystalPattern(p);\n+     \n+     // Create base color using HSL\n+     vec3 color = vec3(\n+         fract(COLOR_SHIFT + pattern * 0.2), // Hue\n+         0.8, // Saturation\n+         pattern * 0.5 + 0.2 // Lightness\n+     );\n+     \n+     // Convert to RGB\n+     color = hsl2rgb(color);\n+     \n+     // Add energy-based glow\n+     color += vec3(0.1, 0.2, 0.3) * ENERGY_FACTOR * pattern;\n+     \n+     // Blend with previous frame for smooth transitions\n+     float blendFactor = 0.1;\n+     if(beat) {\n+         // Quick flash on beats\n+         blendFactor = 0.5;\n+         color *= 1.2;\n+     }\n+     \n+     // Ensure we don't get stuck in dark states\n+     color = max(color, vec3(0.05));\n+     \n+     // Final color blend\n+     fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n+ } ",
+                      "oldStart": 1,
+                      "newStart": 1,
+                      "oldLines": 1,
+                      "newLines": 78,
+                      "linesRemoved": 1,
+                      "linesAdded": 78
+                    }
+                  ],
+                  "editor": "EDITOR_AI",
+                  "hitTimeout": false
+                },
+                {
+                  "chunks": [
+                    {
+                      "diffString": "      fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n  }\n+ ",
+                      "oldStart": 77,
+                      "newStart": 77,
+                      "oldLines": 2,
+                      "newLines": 3,
+                      "linesRemoved": 0,
+                      "linesAdded": 1
+                    }
+                  ],
+                  "editor": "EDITOR_HUMAN",
+                  "hitTimeout": false
+                }
+              ],
+              "timestamp": 1737242297727,
+              "uniqueId": "68571a9d-d0a9-4db1-89a0-2adc6f1cb194"
+            }
+          ],
+          "uniqueId": "d112762c-64a9-453d-963d-78717120431c"
+        },
+        "mentions": {
+          "editTrailContexts": {},
+          "notepads": {},
+          "quotes": {},
+          "selectedCommits": {},
+          "selectedPullRequests": {},
+          "gitDiff": [],
+          "gitDiffFromBranchToMain": [],
+          "selectedImages": {},
+          "usesCodebase": [],
+          "useWeb": [],
+          "folderSelections": {
+            "{\"relativePath\":\"/shaders\",\"addedWithoutMention\":false}": []
+          },
+          "fileSelections": {
+            "file:///Users/redaphid/Projects/paper-cranes/.cursorrules": []
+          },
+          "terminalFiles": {},
+          "selections": {},
+          "terminalSelections": {},
+          "selectedDocs": {},
+          "externalLinks": {},
+          "useLinterErrors": [],
+          "useDiffReview": [],
+          "useContextPicking": [],
+          "useRememberThis": [],
+          "diffHistory": []
+        },
+        "usesCodebase": false
+      },
+      "checkpoint": {
+        "files": [
+          {
+            "uri": {
+              "$mid": 1,
+              "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+              "path": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+              "scheme": "file"
+            },
+            "originalModelDiffWrtV0": [
+              {
+                "original": {
+                  "startLineNumber": 1,
+                  "endLineNumberExclusive": 2
+                },
+                "modified": [
+                  "// Define audio reactive parameters",
+                  "#define FLOW_SPEED (spectralFluxZScore * 0.5 + 0.5) // Controls overall motion speed",
+                  "#define CRYSTAL_SCALE (1.0 + spectralCentroidZScore * 0.3) // Affects pattern size",
+                  "#define ENERGY_FACTOR (energyNormalized * 2.0) // Overall intensity",
+                  "#define ROUGHNESS (spectralRoughnessNormalized) // Texture detail",
+                  "#define COLOR_SHIFT (spectralCentroidNormalized) // Color variation",
+                  "#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.2) // Detail level",
+                  "",
+                  "// Rotation matrix helper",
+                  "mat2 rotate2D(float angle) {",
+                  "    float c = cos(angle), s = sin(angle);",
+                  "    return mat2(c, -s, s, c);",
+                  "}",
+                  "",
+                  "// Crystalline pattern function",
+                  "float crystalPattern(vec3 p) {",
+                  "    p *= CRYSTAL_SCALE;",
+                  "    float pattern = 0.0;",
+                  "",
+                  "    // Create layered crystalline structure",
+                  "    for(int i = 0; i < 3; i++) {",
+                  "        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;",
+                  "        vec3 q = p * scale;",
+                  "        q.xy *= rotate2D(time * FLOW_SPEED * (1.0 + float(i) * 0.2));",
+                  "        q.yz *= rotate2D(time * FLOW_SPEED * 0.7);",
+                  "",
+                  "        // Basic crystalline shape",
+                  "        float crystal = abs(sin(q.x) + sin(q.y) + sin(q.z)) / scale;",
+                  "",
+                  "        // Add roughness based on audio",
+                  "        crystal *= 1.0 + ROUGHNESS * sin(q.x * 5.0 + q.y * 3.0 + q.z * 2.0);",
+                  "",
+                  "        pattern += crystal;",
+                  "    }",
+                  "",
+                  "    return pattern * ENERGY_FACTOR;",
+                  "}",
+                  "",
+                  "void mainImage(out vec4 fragColor, in vec2 fragCoord) {",
+                  "    // Normalized pixel coordinates",
+                  "    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;",
+                  "",
+                  "    // Get previous frame for smooth transitions",
+                  "    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);",
+                  "",
+                  "    // Create base position",
+                  "    vec3 p = vec3(uv * 2.0, time * 0.2);",
+                  "",
+                  "    // Get crystal pattern value",
+                  "    float pattern = crystalPattern(p);",
+                  "",
+                  "    // Create base color using HSL",
+                  "    vec3 color = vec3(",
+                  "        fract(COLOR_SHIFT + pattern * 0.2), // Hue",
+                  "        0.8, // Saturation",
+                  "        pattern * 0.5 + 0.2 // Lightness",
+                  "    );",
+                  "",
+                  "    // Convert to RGB",
+                  "    color = hsl2rgb(color);",
+                  "",
+                  "    // Add energy-based glow",
+                  "    color += vec3(0.1, 0.2, 0.3) * ENERGY_FACTOR * pattern;",
+                  "",
+                  "    // Blend with previous frame for smooth transitions",
+                  "    float blendFactor = 0.1;",
+                  "    if(beat) {",
+                  "        // Quick flash on beats",
+                  "        blendFactor = 0.5;",
+                  "        color *= 1.2;",
+                  "    }",
+                  "",
+                  "    // Ensure we don't get stuck in dark states",
+                  "    color = max(color, vec3(0.05));",
+                  "",
+                  "    // Final color blend",
+                  "    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);",
+                  "}",
+                  ""
+                ]
+              }
+            ]
+          }
+        ],
+        "nonExistentFiles": [],
+        "newlyCreatedFolders": [],
+        "activeInlineDiffs": [],
+        "inlineDiffNewlyCreatedResources": {
+          "files": [],
+          "folders": []
+        }
+      },
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": []
+      }
+    },
+    {
+      "type": 2,
+      "bubbleId": "cfc7f761-7505-438e-986a-7e5d1bf16710",
+      "suggestedCodeBlocks": [],
+      "relevantFiles": [],
+      "capabilitiesRan": {
+        "mutate-request": [
+          11,
+          6
+        ],
+        "start-submit-chat": [],
+        "before-submit-chat": [
+          15
+        ],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [
+          6
+        ],
+        "process-codeblock": [],
+        "process-stream": [
+          15
+        ]
+      },
+      "editTrailContexts": [],
+      "multiFileLinterErrors": [],
+      "diffHistories": [],
+      "recentLocationsHistory": [],
+      "isAgentic": false,
+      "fileDiffTrajectories": [],
+      "existedSubsequentTerminalCommand": false,
+      "existedPreviousTerminalCommand": false,
+      "docsReferences": [],
+      "webReferences": [],
+      "attachedFoldersListDirResults": [],
+      "codeBlocks": [
+        {
+          "uri": {
+            "$mid": 1,
+            "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+            "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+            "path": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+            "scheme": "file"
+          },
+          "version": 1,
+          "codeBlockIdx": 0
+        }
+      ],
+      "text": "Let's modify the shader to create sharper crystalline patterns with better contrast and less white-out. I'll adjust the scaling, pattern generation, and color balance:\n\n````glsl:shaders/crystal-flow.frag\n// Define audio reactive parameters\n#define FLOW_SPEED (spectralFluxZScore * 0.3) // Reduced speed multiplier\n#define CRYSTAL_SCALE (2.0 + spectralCentroidZScore * 0.5) // Increased base scale\n#define ENERGY_FACTOR (energyNormalized) // Reduced intensity\n#define ROUGHNESS (spectralRoughnessNormalized * 0.5) // Reduced roughness\n#define COLOR_SHIFT (spectralCentroidNormalized) \n#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.1) // Reduced complexity variation\n\n// Rotation matrix helper\nmat2 rotate2D(float angle) {\n    float c = cos(angle), s = sin(angle);\n    return mat2(c, -s, s, c);\n}\n\n// Crystalline pattern function\nfloat crystalPattern(vec3 p) {\n    p *= CRYSTAL_SCALE;\n    float pattern = 0.0;\n    \n    // Create sharper crystalline structure\n    for(int i = 0; i < 3; i++) {\n        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;\n        vec3 q = p * scale;\n        q.xy *= rotate2D(time * FLOW_SPEED * (0.5 + float(i) * 0.1));\n        q.yz *= rotate2D(time * FLOW_SPEED * 0.3);\n        \n        // Sharper crystalline shape using max() for edges\n        float crystal = max(\n            max(abs(sin(q.x)), abs(sin(q.y))),\n            abs(sin(q.z))\n        ) / scale;\n        \n        // Add controlled roughness\n        crystal *= 1.0 + ROUGHNESS * sin(q.x * 3.0 + q.y * 2.0 + q.z * 1.0);\n        \n        // Create sharper transitions\n        crystal = smoothstep(0.2, 0.8, crystal);\n        \n        pattern = max(pattern, crystal * (1.0 - float(i) * 0.2));\n    }\n    \n    return pattern * ENERGY_FACTOR;\n}\n\nvoid mainImage(out vec4 fragColor, in vec2 fragCoord) {\n    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;\n    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);\n    \n    vec3 p = vec3(uv * 3.0, time * 0.1); // Increased UV scale, slower time\n    float pattern = crystalPattern(p);\n    \n    // More contrast in the base color\n    vec3 color = vec3(\n        fract(COLOR_SHIFT + pattern * 0.3), // More color variation\n        0.9, // Higher saturation\n        smoothstep(0.1, 0.9, pattern * 0.6) // More contrast in brightness\n    );\n    \n    color = hsl2rgb(color);\n    \n    // Reduced glow intensity\n    color += vec3(0.05, 0.1, 0.15) * ENERGY_FACTOR * pattern;\n    \n    // Faster response to beats\n    float blendFactor = 0.2;\n    if(beat) {\n        blendFactor = 0.6;\n        color *= 1.1; // Reduced flash intensity\n    }\n    \n    // Ensure we don't get too dark or too bright\n    color = clamp(color, vec3(0.05), vec3(0.95));\n    \n    // Final color blend\n    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n}\n````\n\nKey changes made:\n1. Used max() function in pattern generation for sharper edges\n2. Increased base scale and UV scaling for more detail\n3. Added smoothstep for more defined transitions\n4. Reduced motion speed and complexity variations\n5. Improved contrast with better HSL mapping\n6. Reduced glow intensity and flash brightness\n7. Added clamp to prevent white-out\n8. Adjusted pattern layering for better definition\n\nThe result should now show clearer crystalline patterns with better contrast and less blur. The patterns should be more defined and avoid washing out to white, while still maintaining reactivity to the music.",
+      "timingInfo": {
+        "clientStartTime": 1737242297719,
+        "clientRpcSendTime": 1737242297788,
+        "clientSettleTime": 1737242316677,
+        "clientEndTime": 1737242316677
+      },
+      "intermediateChunks": [],
+      "capabilityStatuses": {
+        "mutate-request": [],
+        "start-submit-chat": [],
+        "before-submit-chat": [],
+        "after-submit-chat": [],
+        "after-apply": [],
+        "composer-settled": [],
+        "composer-done": [],
+        "process-stream": [
+          {
+            "type": 15,
+            "status": "completed"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "completed",
+  "context": {
+    "editTrailContexts": [],
+    "notepads": [],
+    "quotes": [],
+    "selectedCommits": [],
+    "selectedPullRequests": [],
+    "selectedImages": [],
+    "folderSelections": [],
+    "fileSelections": [
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/paper-cranes/.cursorrules",
+          "external": "file:///Users/redaphid/Projects/paper-cranes/.cursorrules",
+          "path": "/Users/redaphid/Projects/paper-cranes/.cursorrules",
+          "scheme": "file"
+        },
+        "addedWithoutMention": true,
+        "autoContext": true
+      }
+    ],
+    "selections": [],
+    "terminalSelections": [],
+    "selectedDocs": [],
+    "externalLinks": [],
+    "diffHistory": {
+      "files": [
+        {
+          "$mid": 1,
+          "path": "/.cursorrules",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/automata/1.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/automata/2.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/automata/3.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/automata/4.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/beat-trip.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/brainz.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/bumpy/1.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/cells.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/dance-hole.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/default.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/default.vert",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/evil-eye/1.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/evil-eye/2.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/evil-eye/3.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/fractal-soundscape.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/glassy-field.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/graph/dancy-coords.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/graph/line-z-score.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/graph/line.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/graph/sin.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/headbang.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/hearts.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/interdimensional-crystal.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/kbmarcher.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/markmwangi/something.frag",
+          "scheme": "file"
+        },
+        {
+          "$mid": 1,
+          "path": "/shaders/crystal-flow.frag",
+          "scheme": "file"
+        }
+      ],
+      "diffHistories": [
+        {
+          "relativeWorkspacePath": "shaders/crystal-flow.frag",
+          "diffs": [
+            {
+              "chunks": [
+                {
+                  "diffString": "-  \n+ // Define audio reactive parameters\n+ #define FLOW_SPEED (spectralFluxZScore * 0.5 + 0.5) // Controls overall motion speed\n+ #define CRYSTAL_SCALE (1.0 + spectralCentroidZScore * 0.3) // Affects pattern size\n+ #define ENERGY_FACTOR (energyNormalized * 2.0) // Overall intensity\n+ #define ROUGHNESS (spectralRoughnessNormalized) // Texture detail\n+ #define COLOR_SHIFT (spectralCentroidNormalized) // Color variation\n+ #define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.2) // Detail level\n+ \n+ // Rotation matrix helper\n+ mat2 rotate2D(float angle) {\n+     float c = cos(angle), s = sin(angle);\n+     return mat2(c, -s, s, c);\n+ }\n+ \n+ // Crystalline pattern function\n+ float crystalPattern(vec3 p) {\n+     p *= CRYSTAL_SCALE;\n+     float pattern = 0.0;\n+     \n+     // Create layered crystalline structure\n+     for(int i = 0; i < 3; i++) {\n+         float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;\n+         vec3 q = p * scale;\n+         q.xy *= rotate2D(time * FLOW_SPEED * (1.0 + float(i) * 0.2));\n+         q.yz *= rotate2D(time * FLOW_SPEED * 0.7);\n+         \n+         // Basic crystalline shape\n+         float crystal = abs(sin(q.x) + sin(q.y) + sin(q.z)) / scale;\n+         \n+         // Add roughness based on audio\n+         crystal *= 1.0 + ROUGHNESS * sin(q.x * 5.0 + q.y * 3.0 + q.z * 2.0);\n+         \n+         pattern += crystal;\n+     }\n+     \n+     return pattern * ENERGY_FACTOR;\n+ }\n+ \n+ void mainImage(out vec4 fragColor, in vec2 fragCoord) {\n+     // Normalized pixel coordinates\n+     vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;\n+     \n+     // Get previous frame for smooth transitions\n+     vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);\n+     \n+     // Create base position\n+     vec3 p = vec3(uv * 2.0, time * 0.2);\n+     \n+     // Get crystal pattern value\n+     float pattern = crystalPattern(p);\n+     \n+     // Create base color using HSL\n+     vec3 color = vec3(\n+         fract(COLOR_SHIFT + pattern * 0.2), // Hue\n+         0.8, // Saturation\n+         pattern * 0.5 + 0.2 // Lightness\n+     );\n+     \n+     // Convert to RGB\n+     color = hsl2rgb(color);\n+     \n+     // Add energy-based glow\n+     color += vec3(0.1, 0.2, 0.3) * ENERGY_FACTOR * pattern;\n+     \n+     // Blend with previous frame for smooth transitions\n+     float blendFactor = 0.1;\n+     if(beat) {\n+         // Quick flash on beats\n+         blendFactor = 0.5;\n+         color *= 1.2;\n+     }\n+     \n+     // Ensure we don't get stuck in dark states\n+     color = max(color, vec3(0.05));\n+     \n+     // Final color blend\n+     fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n+ } ",
+                  "oldStart": 1,
+                  "newStart": 1,
+                  "oldLines": 1,
+                  "newLines": 78,
+                  "linesRemoved": 1,
+                  "linesAdded": 78
+                }
+              ],
+              "editor": "EDITOR_AI",
+              "hitTimeout": false
+            },
+            {
+              "chunks": [
+                {
+                  "diffString": "      fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n  }\n+ ",
+                  "oldStart": 77,
+                  "newStart": 77,
+                  "oldLines": 2,
+                  "newLines": 3,
+                  "linesRemoved": 0,
+                  "linesAdded": 1
+                }
+              ],
+              "editor": "EDITOR_HUMAN",
+              "hitTimeout": false
+            }
+          ],
+          "timestamp": 1737242297727,
+          "uniqueId": "68571a9d-d0a9-4db1-89a0-2adc6f1cb194"
+        }
+      ],
+      "uniqueId": "d112762c-64a9-453d-963d-78717120431c"
+    },
+    "mentions": {
+      "editTrailContexts": {},
+      "notepads": {},
+      "quotes": {},
+      "selectedCommits": {},
+      "selectedPullRequests": {},
+      "gitDiff": [],
+      "gitDiffFromBranchToMain": [],
+      "selectedImages": {},
+      "usesCodebase": [],
+      "useWeb": [],
+      "folderSelections": {
+        "{\"relativePath\":\"/shaders\",\"addedWithoutMention\":false}": []
+      },
+      "fileSelections": {
+        "file:///Users/redaphid/Projects/paper-cranes/.cursorrules": []
+      },
+      "terminalFiles": {},
+      "selections": {},
+      "terminalSelections": {},
+      "selectedDocs": {},
+      "externalLinks": {},
+      "useLinterErrors": [],
+      "useDiffReview": [],
+      "useContextPicking": [],
+      "useRememberThis": [],
+      "diffHistory": []
+    }
+  },
+  "gitGraphFileSuggestions": [],
+  "userResponsesToSuggestedCodeBlocks": [
+    {
+      "userResponseType": 3,
+      "filePath": "shaders/crystal-flow.frag"
+    }
+  ],
+  "generatingBubbleIds": [],
+  "isReadingLongFile": false,
+  "codeBlockData": {
+    "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag": [
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+          "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+          "path": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+          "scheme": "file"
+        },
+        "version": 0,
+        "content": "// Define audio reactive parameters\n#define FLOW_SPEED (spectralFluxZScore * 0.5 + 0.5) // Controls overall motion speed\n#define CRYSTAL_SCALE (1.0 + spectralCentroidZScore * 0.3) // Affects pattern size\n#define ENERGY_FACTOR (energyNormalized * 2.0) // Overall intensity\n#define ROUGHNESS (spectralRoughnessNormalized) // Texture detail\n#define COLOR_SHIFT (spectralCentroidNormalized) // Color variation\n#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.2) // Detail level\n\n// Rotation matrix helper\nmat2 rotate2D(float angle) {\n    float c = cos(angle), s = sin(angle);\n    return mat2(c, -s, s, c);\n}\n\n// Crystalline pattern function\nfloat crystalPattern(vec3 p) {\n    p *= CRYSTAL_SCALE;\n    float pattern = 0.0;\n    \n    // Create layered crystalline structure\n    for(int i = 0; i < 3; i++) {\n        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;\n        vec3 q = p * scale;\n        q.xy *= rotate2D(time * FLOW_SPEED * (1.0 + float(i) * 0.2));\n        q.yz *= rotate2D(time * FLOW_SPEED * 0.7);\n        \n        // Basic crystalline shape\n        float crystal = abs(sin(q.x) + sin(q.y) + sin(q.z)) / scale;\n        \n        // Add roughness based on audio\n        crystal *= 1.0 + ROUGHNESS * sin(q.x * 5.0 + q.y * 3.0 + q.z * 2.0);\n        \n        pattern += crystal;\n    }\n    \n    return pattern * ENERGY_FACTOR;\n}\n\nvoid mainImage(out vec4 fragColor, in vec2 fragCoord) {\n    // Normalized pixel coordinates\n    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;\n    \n    // Get previous frame for smooth transitions\n    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);\n    \n    // Create base position\n    vec3 p = vec3(uv * 2.0, time * 0.2);\n    \n    // Get crystal pattern value\n    float pattern = crystalPattern(p);\n    \n    // Create base color using HSL\n    vec3 color = vec3(\n        fract(COLOR_SHIFT + pattern * 0.2), // Hue\n        0.8, // Saturation\n        pattern * 0.5 + 0.2 // Lightness\n    );\n    \n    // Convert to RGB\n    color = hsl2rgb(color);\n    \n    // Add energy-based glow\n    color += vec3(0.1, 0.2, 0.3) * ENERGY_FACTOR * pattern;\n    \n    // Blend with previous frame for smooth transitions\n    float blendFactor = 0.1;\n    if(beat) {\n        // Quick flash on beats\n        blendFactor = 0.5;\n        color *= 1.2;\n    }\n    \n    // Ensure we don't get stuck in dark states\n    color = max(color, vec3(0.05));\n    \n    // Final color blend\n    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n}",
+        "languageId": "paper-cranes-fragment-shader",
+        "status": "rejected",
+        "isNotApplied": false,
+        "originalModelDiffWrtV0": [],
+        "newModelDiffWrtV0": [
+          {
+            "original": {
+              "startLineNumber": 1,
+              "endLineNumberExclusive": 2
+            },
+            "modified": [
+              "// Define audio reactive parameters",
+              "#define FLOW_SPEED (spectralFluxZScore * 0.5 + 0.5) // Controls overall motion speed",
+              "#define CRYSTAL_SCALE (1.0 + spectralCentroidZScore * 0.3) // Affects pattern size",
+              "#define ENERGY_FACTOR (energyNormalized * 2.0) // Overall intensity",
+              "#define ROUGHNESS (spectralRoughnessNormalized) // Texture detail",
+              "#define COLOR_SHIFT (spectralCentroidNormalized) // Color variation",
+              "#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.2) // Detail level",
+              "",
+              "// Rotation matrix helper",
+              "mat2 rotate2D(float angle) {",
+              "    float c = cos(angle), s = sin(angle);",
+              "    return mat2(c, -s, s, c);",
+              "}",
+              "",
+              "// Crystalline pattern function",
+              "float crystalPattern(vec3 p) {",
+              "    p *= CRYSTAL_SCALE;",
+              "    float pattern = 0.0;",
+              "    ",
+              "    // Create layered crystalline structure",
+              "    for(int i = 0; i < 3; i++) {",
+              "        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;",
+              "        vec3 q = p * scale;",
+              "        q.xy *= rotate2D(time * FLOW_SPEED * (1.0 + float(i) * 0.2));",
+              "        q.yz *= rotate2D(time * FLOW_SPEED * 0.7);",
+              "        ",
+              "        // Basic crystalline shape",
+              "        float crystal = abs(sin(q.x) + sin(q.y) + sin(q.z)) / scale;",
+              "        ",
+              "        // Add roughness based on audio",
+              "        crystal *= 1.0 + ROUGHNESS * sin(q.x * 5.0 + q.y * 3.0 + q.z * 2.0);",
+              "        ",
+              "        pattern += crystal;",
+              "    }",
+              "    ",
+              "    return pattern * ENERGY_FACTOR;",
+              "}",
+              "",
+              "void mainImage(out vec4 fragColor, in vec2 fragCoord) {",
+              "    // Normalized pixel coordinates",
+              "    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;",
+              "    ",
+              "    // Get previous frame for smooth transitions",
+              "    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);",
+              "    ",
+              "    // Create base position",
+              "    vec3 p = vec3(uv * 2.0, time * 0.2);",
+              "    ",
+              "    // Get crystal pattern value",
+              "    float pattern = crystalPattern(p);",
+              "    ",
+              "    // Create base color using HSL",
+              "    vec3 color = vec3(",
+              "        fract(COLOR_SHIFT + pattern * 0.2), // Hue",
+              "        0.8, // Saturation",
+              "        pattern * 0.5 + 0.2 // Lightness",
+              "    );",
+              "    ",
+              "    // Convert to RGB",
+              "    color = hsl2rgb(color);",
+              "    ",
+              "    // Add energy-based glow",
+              "    color += vec3(0.1, 0.2, 0.3) * ENERGY_FACTOR * pattern;",
+              "    ",
+              "    // Blend with previous frame for smooth transitions",
+              "    float blendFactor = 0.1;",
+              "    if(beat) {",
+              "        // Quick flash on beats",
+              "        blendFactor = 0.5;",
+              "        color *= 1.2;",
+              "    }",
+              "    ",
+              "    // Ensure we don't get stuck in dark states",
+              "    color = max(color, vec3(0.05));",
+              "    ",
+              "    // Final color blend",
+              "    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);",
+              "} "
+            ]
+          }
+        ],
+        "isNoOp": false
+      },
+      {
+        "uri": {
+          "$mid": 1,
+          "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+          "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+          "path": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+          "scheme": "file"
+        },
+        "version": 1,
+        "content": "// Define audio reactive parameters\n#define FLOW_SPEED (spectralFluxZScore * 0.3) // Reduced speed multiplier\n#define CRYSTAL_SCALE (2.0 + spectralCentroidZScore * 0.5) // Increased base scale\n#define ENERGY_FACTOR (energyNormalized) // Reduced intensity\n#define ROUGHNESS (spectralRoughnessNormalized * 0.5) // Reduced roughness\n#define COLOR_SHIFT (spectralCentroidNormalized) \n#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.1) // Reduced complexity variation\n\n// Rotation matrix helper\nmat2 rotate2D(float angle) {\n    float c = cos(angle), s = sin(angle);\n    return mat2(c, -s, s, c);\n}\n\n// Crystalline pattern function\nfloat crystalPattern(vec3 p) {\n    p *= CRYSTAL_SCALE;\n    float pattern = 0.0;\n    \n    // Create sharper crystalline structure\n    for(int i = 0; i < 3; i++) {\n        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;\n        vec3 q = p * scale;\n        q.xy *= rotate2D(time * FLOW_SPEED * (0.5 + float(i) * 0.1));\n        q.yz *= rotate2D(time * FLOW_SPEED * 0.3);\n        \n        // Sharper crystalline shape using max() for edges\n        float crystal = max(\n            max(abs(sin(q.x)), abs(sin(q.y))),\n            abs(sin(q.z))\n        ) / scale;\n        \n        // Add controlled roughness\n        crystal *= 1.0 + ROUGHNESS * sin(q.x * 3.0 + q.y * 2.0 + q.z * 1.0);\n        \n        // Create sharper transitions\n        crystal = smoothstep(0.2, 0.8, crystal);\n        \n        pattern = max(pattern, crystal * (1.0 - float(i) * 0.2));\n    }\n    \n    return pattern * ENERGY_FACTOR;\n}\n\nvoid mainImage(out vec4 fragColor, in vec2 fragCoord) {\n    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;\n    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);\n    \n    vec3 p = vec3(uv * 3.0, time * 0.1); // Increased UV scale, slower time\n    float pattern = crystalPattern(p);\n    \n    // More contrast in the base color\n    vec3 color = vec3(\n        fract(COLOR_SHIFT + pattern * 0.3), // More color variation\n        0.9, // Higher saturation\n        smoothstep(0.1, 0.9, pattern * 0.6) // More contrast in brightness\n    );\n    \n    color = hsl2rgb(color);\n    \n    // Reduced glow intensity\n    color += vec3(0.05, 0.1, 0.15) * ENERGY_FACTOR * pattern;\n    \n    // Faster response to beats\n    float blendFactor = 0.2;\n    if(beat) {\n        blendFactor = 0.6;\n        color *= 1.1; // Reduced flash intensity\n    }\n    \n    // Ensure we don't get too dark or too bright\n    color = clamp(color, vec3(0.05), vec3(0.95));\n    \n    // Final color blend\n    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);\n}",
+        "languageId": "paper-cranes-fragment-shader",
+        "status": "accepted",
+        "isNotApplied": false,
+        "originalModelDiffWrtV0": [
+          {
+            "original": {
+              "startLineNumber": 1,
+              "endLineNumberExclusive": 2
+            },
+            "modified": [
+              "// Define audio reactive parameters",
+              "#define FLOW_SPEED (spectralFluxZScore * 0.5 + 0.5) // Controls overall motion speed",
+              "#define CRYSTAL_SCALE (1.0 + spectralCentroidZScore * 0.3) // Affects pattern size",
+              "#define ENERGY_FACTOR (energyNormalized * 2.0) // Overall intensity",
+              "#define ROUGHNESS (spectralRoughnessNormalized) // Texture detail",
+              "#define COLOR_SHIFT (spectralCentroidNormalized) // Color variation",
+              "#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.2) // Detail level",
+              "",
+              "// Rotation matrix helper",
+              "mat2 rotate2D(float angle) {",
+              "    float c = cos(angle), s = sin(angle);",
+              "    return mat2(c, -s, s, c);",
+              "}",
+              "",
+              "// Crystalline pattern function",
+              "float crystalPattern(vec3 p) {",
+              "    p *= CRYSTAL_SCALE;",
+              "    float pattern = 0.0;",
+              "",
+              "    // Create layered crystalline structure",
+              "    for(int i = 0; i < 3; i++) {",
+              "        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;",
+              "        vec3 q = p * scale;",
+              "        q.xy *= rotate2D(time * FLOW_SPEED * (1.0 + float(i) * 0.2));",
+              "        q.yz *= rotate2D(time * FLOW_SPEED * 0.7);",
+              "",
+              "        // Basic crystalline shape",
+              "        float crystal = abs(sin(q.x) + sin(q.y) + sin(q.z)) / scale;",
+              "",
+              "        // Add roughness based on audio",
+              "        crystal *= 1.0 + ROUGHNESS * sin(q.x * 5.0 + q.y * 3.0 + q.z * 2.0);",
+              "",
+              "        pattern += crystal;",
+              "    }",
+              "",
+              "    return pattern * ENERGY_FACTOR;",
+              "}",
+              "",
+              "void mainImage(out vec4 fragColor, in vec2 fragCoord) {",
+              "    // Normalized pixel coordinates",
+              "    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;",
+              "",
+              "    // Get previous frame for smooth transitions",
+              "    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);",
+              "",
+              "    // Create base position",
+              "    vec3 p = vec3(uv * 2.0, time * 0.2);",
+              "",
+              "    // Get crystal pattern value",
+              "    float pattern = crystalPattern(p);",
+              "",
+              "    // Create base color using HSL",
+              "    vec3 color = vec3(",
+              "        fract(COLOR_SHIFT + pattern * 0.2), // Hue",
+              "        0.8, // Saturation",
+              "        pattern * 0.5 + 0.2 // Lightness",
+              "    );",
+              "",
+              "    // Convert to RGB",
+              "    color = hsl2rgb(color);",
+              "",
+              "    // Add energy-based glow",
+              "    color += vec3(0.1, 0.2, 0.3) * ENERGY_FACTOR * pattern;",
+              "",
+              "    // Blend with previous frame for smooth transitions",
+              "    float blendFactor = 0.1;",
+              "    if(beat) {",
+              "        // Quick flash on beats",
+              "        blendFactor = 0.5;",
+              "        color *= 1.2;",
+              "    }",
+              "",
+              "    // Ensure we don't get stuck in dark states",
+              "    color = max(color, vec3(0.05));",
+              "",
+              "    // Final color blend",
+              "    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);",
+              "}",
+              ""
+            ]
+          }
+        ],
+        "newModelDiffWrtV0": [
+          {
+            "original": {
+              "startLineNumber": 1,
+              "endLineNumberExclusive": 2
+            },
+            "modified": [
+              "// Define audio reactive parameters",
+              "#define FLOW_SPEED (spectralFluxZScore * 0.3) // Reduced speed multiplier",
+              "#define CRYSTAL_SCALE (2.0 + spectralCentroidZScore * 0.5) // Increased base scale",
+              "#define ENERGY_FACTOR (energyNormalized) // Reduced intensity",
+              "#define ROUGHNESS (spectralRoughnessNormalized * 0.5) // Reduced roughness",
+              "#define COLOR_SHIFT (spectralCentroidNormalized) ",
+              "#define PATTERN_COMPLEXITY (1.0 + spectralSpreadZScore * 0.1) // Reduced complexity variation",
+              "",
+              "// Rotation matrix helper",
+              "mat2 rotate2D(float angle) {",
+              "    float c = cos(angle), s = sin(angle);",
+              "    return mat2(c, -s, s, c);",
+              "}",
+              "",
+              "// Crystalline pattern function",
+              "float crystalPattern(vec3 p) {",
+              "    p *= CRYSTAL_SCALE;",
+              "    float pattern = 0.0;",
+              "    ",
+              "    // Create sharper crystalline structure",
+              "    for(int i = 0; i < 3; i++) {",
+              "        float scale = 1.0 + float(i) * PATTERN_COMPLEXITY;",
+              "        vec3 q = p * scale;",
+              "        q.xy *= rotate2D(time * FLOW_SPEED * (0.5 + float(i) * 0.1));",
+              "        q.yz *= rotate2D(time * FLOW_SPEED * 0.3);",
+              "        ",
+              "        // Sharper crystalline shape using max() for edges",
+              "        float crystal = max(",
+              "            max(abs(sin(q.x)), abs(sin(q.y))),",
+              "            abs(sin(q.z))",
+              "        ) / scale;",
+              "        ",
+              "        // Add controlled roughness",
+              "        crystal *= 1.0 + ROUGHNESS * sin(q.x * 3.0 + q.y * 2.0 + q.z * 1.0);",
+              "        ",
+              "        // Create sharper transitions",
+              "        crystal = smoothstep(0.2, 0.8, crystal);",
+              "        ",
+              "        pattern = max(pattern, crystal * (1.0 - float(i) * 0.2));",
+              "    }",
+              "    ",
+              "    return pattern * ENERGY_FACTOR;",
+              "}",
+              "",
+              "void mainImage(out vec4 fragColor, in vec2 fragCoord) {",
+              "    vec2 uv = (fragCoord - 0.5 * resolution.xy) / resolution.y;",
+              "    vec4 prevColor = texture(prevFrame, fragCoord.xy / resolution.xy);",
+              "    ",
+              "    vec3 p = vec3(uv * 3.0, time * 0.1); // Increased UV scale, slower time",
+              "    float pattern = crystalPattern(p);",
+              "    ",
+              "    // More contrast in the base color",
+              "    vec3 color = vec3(",
+              "        fract(COLOR_SHIFT + pattern * 0.3), // More color variation",
+              "        0.9, // Higher saturation",
+              "        smoothstep(0.1, 0.9, pattern * 0.6) // More contrast in brightness",
+              "    );",
+              "    ",
+              "    color = hsl2rgb(color);",
+              "    ",
+              "    // Reduced glow intensity",
+              "    color += vec3(0.05, 0.1, 0.15) * ENERGY_FACTOR * pattern;",
+              "    ",
+              "    // Faster response to beats",
+              "    float blendFactor = 0.2;",
+              "    if(beat) {",
+              "        blendFactor = 0.6;",
+              "        color *= 1.1; // Reduced flash intensity",
+              "    }",
+              "    ",
+              "    // Ensure we don't get too dark or too bright",
+              "    color = clamp(color, vec3(0.05), vec3(0.95));",
+              "    ",
+              "    // Final color blend",
+              "    fragColor = vec4(mix(prevColor.rgb, color, blendFactor), 1.0);",
+              "}",
+              ""
+            ]
+          }
+        ],
+        "isNoOp": false
+      }
+    ]
+  },
+  "originalModelLines": {
+    "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag": [
+      " "
+    ]
+  },
+  "newlyCreatedFiles": [],
+  "newlyCreatedFolders": [],
+  "tabs": [
+    {
+      "type": "composer"
+    },
+    {
+      "type": "code",
+      "uri": {
+        "$mid": 1,
+        "fsPath": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+        "external": "file:///Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+        "path": "/Users/redaphid/Projects/paper-cranes/shaders/crystal-flow.frag",
+        "scheme": "file"
+      },
+      "version": 1
+    }
+  ],
+  "selectedTabIndex": 1,
+  "lastUpdatedAt": 1737242297787,
+  "createdAt": 1737242019291,
+  "hasChangedContext": true,
+  "capabilities": [
+    {
+      "type": 9,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 11,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 15,
+      "data": {
+        "customInstructions": "",
+        "bubbleDataMap": "{}"
+      }
+    },
+    {
+      "type": 14,
+      "data": {
+        "customInstructions": ""
+      }
+    },
+    {
+      "type": 6,
+      "data": {
+        "customInstructions": ""
+      }
+    }
+  ],
+  "name": "Creating a Dynamic Music Visualization Shader",
+  "forceMode": "edit",
+  "codebaseSearchSettings": {},
+  "isFileListExpanded": true,
+  "isAgentic": false
+}
