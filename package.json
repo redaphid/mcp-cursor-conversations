@@ -1,6 +1,6 @@
 {
   "name": "@hypnodroid/cursor-conversations",
-  "version": "2.4.0",
+  "version": "2.4.1",
   "packageManager": "pnpm@10.11.0",
   "description": "Library for accessing Cursor conversation data - conversations, messages, code diffs, checkpoints, and more",
   "main": "./dist/cjs/lib.js",
