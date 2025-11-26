@@ -9,12 +9,9 @@ jobs:
   build-and-test:
     uses: ./.github/workflows/build-and-test.yaml
 
-  publish_github_package:
+  publish_npm:
     needs: build-and-test
     runs-on: ubuntu-latest
-    permissions:
-      packages: write
-      contents: read
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -23,24 +20,36 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: '24'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://registry.npmjs.org'
       - run: pnpm publish --no-git-checks
         env:
-          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   github_release:
-    needs: [build-and-test, publish_github_package]
+    needs: [build-and-test, publish_npm]
     runs-on: ubuntu-latest
     permissions:
       contents: write
-    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
-      - uses: ncipollo/release-action@v1
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          tag: v${{ needs.build-and-test.outputs.version }}
-          name: ${{ needs.build-and-test.outputs.name }} v${{ needs.build-and-test.outputs.version }}
-          allowUpdates: true
-          generateReleaseNotes: true
-          skipIfReleaseExists: true
+          fetch-depth: 0
+      - name: Create GitHub Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG="v${{ needs.build-and-test.outputs.version }}"
+          NAME="${{ needs.build-and-test.outputs.name }} $TAG"
+
+          # Check if release already exists
+          if gh release view "$TAG" > /dev/null 2>&1; then
+            echo "Release $TAG already exists, skipping"
+            exit 0
+          fi
+
+          # Create tag if it doesn't exist
+          git tag "$TAG" || true
+          git push origin "$TAG" || true
+
+          # Create release with auto-generated notes
+          gh release create "$TAG" --title "$NAME" --generate-notes

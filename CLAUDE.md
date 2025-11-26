@@ -6,15 +6,16 @@ This project contains an MCP server that provides direct access to Cursor's conv
 
 ```bash
 # Install dependencies
-npm install
+pnpm install
 
 # Add to Claude Code (use absolute path)
-claude mcp add cursor-conversations "node --experimental-strip-types /absolute/path/to/project/src/index.ts" -s user
+claude mcp add cursor-conversations "pnpm --dir /absolute/path/to/project tsx src/index.ts" -s user
 ```
 
 ## Requirements
 
-- **Node.js 24.0.0+** (required for `--experimental-strip-types` flag)
+- **Node.js 24.0.0+**
+- **pnpm** (package manager)
 - **Cursor IDE** with existing conversations
 - **Database location**: `~/Library/Application Support/Cursor/User/globalStorage/state.vscdb` (macOS)
 
@@ -22,7 +23,7 @@ claude mcp add cursor-conversations "node --experimental-strip-types /absolute/p
 
 ```bash
 # Test database connection
-node --experimental-strip-types src/index.ts
+pnpm start
 # Should output: "Cursor Conversations MCP server running on stdio"
 
 # Find database if not in default location

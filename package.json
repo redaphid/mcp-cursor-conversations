@@ -34,13 +34,13 @@
     }
   },
   "bin": {
-    "cursor-conversations": "./dist/esm/cli.js",
-    "cursor-conversations-mcp": "./dist/esm/index.js"
+    "cursor-conversations": "./dist/esm/index.js",
+    "cursor-conversations-cli": "./dist/esm/cli.js"
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "start": "node --experimental-strip-types src/index.ts",
-    "dev": "node --experimental-strip-types src/index.ts",
+    "start": "pnpm tsx src/index.ts",
+    "dev": "pnpm tsx src/index.ts",
     "cli": "pnpm tsx src/cli.ts",
     "build": "pnpm build:esm && pnpm build:cjs",
     "build:esm": "tsc --project tsconfig.json",
@@ -102,6 +102,6 @@
     "!src/**/*.test.ts"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
+    "access": "public"
   }
 }
