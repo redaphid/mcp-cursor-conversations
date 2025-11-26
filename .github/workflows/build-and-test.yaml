@@ -1,0 +1,47 @@
+name: Build and Test
+
+on:
+  workflow_call:
+    outputs:
+      version:
+        description: "Package version from package.json"
+        value: ${{ jobs.build.outputs.version }}
+      name:
+        description: "Package name from package.json"
+        value: ${{ jobs.build.outputs.name }}
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run test:run
+
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      version: ${{ steps.read_package.outputs.version }}
+      name: ${{ steps.read_package.outputs.name }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - run: npm ci
+      - run: npm run build
+      - name: Read package.json
+        id: read_package
+        run: |
+          echo "version=$(jq -r '.version' package.json)" >> $GITHUB_OUTPUT
+          echo "name=$(jq -r '.name' package.json)" >> $GITHUB_OUTPUT
+      - uses: actions/upload-artifact@v4
+        with:
+          name: package-files
+          path: |
+            dist/
+            package.json
+            README.md

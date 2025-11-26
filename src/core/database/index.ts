@@ -1,2 +1,2 @@
-export * from './client.ts'
-export * from './keys.ts'
+export * from './client.js'
+export * from './keys.js'

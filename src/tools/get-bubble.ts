@@ -1,5 +1,5 @@
-import { queryOne, queryAll, makeBubbleKey, KEY_PATTERNS } from '../core/index.ts'
-import type { BubbleData } from '../core/types.ts'
+import { queryOne, queryAll, makeBubbleKey, KEY_PATTERNS } from '../core/index.js'
+import type { BubbleData } from '../core/types.js'
 
 /**
  * Get a single bubble (message) by ID

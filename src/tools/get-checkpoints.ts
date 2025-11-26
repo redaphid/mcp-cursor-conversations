@@ -1,5 +1,5 @@
-import { queryOne, queryAll, KEY_PATTERNS } from '../core/index.ts'
-import type { CheckpointData } from '../core/types.ts'
+import { queryOne, queryAll, KEY_PATTERNS } from '../core/index.js'
+import type { CheckpointData } from '../core/types.js'
 
 /**
  * Get all checkpoints for a conversation

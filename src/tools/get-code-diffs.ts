@@ -1,5 +1,5 @@
-import { queryAll, KEY_PATTERNS } from '../core/index.ts'
-import type { CodeBlockDiff } from '../core/types.ts'
+import { queryAll, KEY_PATTERNS } from '../core/index.js'
+import type { CodeBlockDiff } from '../core/types.js'
 
 /**
  * Get all code diffs for a conversation

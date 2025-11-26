@@ -1,5 +1,5 @@
-import { queryAll, KEY_PATTERNS } from '../core/index.ts'
-import { getConversationSummary, getBubbleData } from './helpers.ts'
+import { queryAll, KEY_PATTERNS } from '../core/index.js'
+import { getConversationSummary, getBubbleData } from './helpers.js'
 
 export const searchConversations = async (query: string, limit: number = 20) => {
   const rows = queryAll<{ key: string; value: string }>(`

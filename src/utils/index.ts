@@ -1,1 +1,1 @@
-export * from './tool-annotations.ts'
+export * from './tool-annotations.js'

@@ -1,5 +1,5 @@
-import { queryAll, queryCount, KEY_PATTERNS } from '../core/index.ts'
-import { getConversationSummary, getBubbleData } from './helpers.ts'
+import { queryAll, queryCount, KEY_PATTERNS } from '../core/index.js'
+import { getConversationSummary, getBubbleData } from './helpers.js'
 
 export interface ListConversationsOptions {
   limit?: number

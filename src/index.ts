@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 import { StdioServerTransport } from '@modelcontextprotocol/sdk/server/stdio.js'
-import { createMcpServer } from './server.ts'
-import { getDbPath } from './core/database/client.ts'
+import { createMcpServer } from './server.js'
+import { getDbPath } from './core/database/client.js'
 import { existsSync } from 'fs'
 
 export const main = async () => {

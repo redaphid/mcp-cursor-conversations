@@ -1,16 +1,16 @@
 // Existing conversation tools
-export * from './list-conversations.ts'
-export * from './search-conversations.ts'
-export * from './search-conversations-advanced.ts'
-export * from './get-conversation.ts'
-export * from './export-conversation.ts'
+export * from './list-conversations.js'
+export * from './search-conversations.js'
+export * from './search-conversations-advanced.js'
+export * from './get-conversation.js'
+export * from './export-conversation.js'
 
 // New granular data access tools
-export * from './get-bubble.ts'
-export * from './get-checkpoints.ts'
-export * from './get-code-diffs.ts'
-export * from './get-request-context.ts'
-export * from './database-stats.ts'
+export * from './get-bubble.js'
+export * from './get-checkpoints.js'
+export * from './get-code-diffs.js'
+export * from './get-request-context.js'
+export * from './database-stats.js'
 
 // Helpers
-export * from './helpers.ts'
+export * from './helpers.js'

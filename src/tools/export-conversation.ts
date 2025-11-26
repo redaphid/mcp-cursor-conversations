@@ -1,7 +1,7 @@
 import { writeFileSync } from 'fs'
 import { join } from 'path'
-import { queryOne, makeComposerKey } from '../core/index.ts'
-import { getConversationSummary, getBubbleData } from './helpers.ts'
+import { queryOne, makeComposerKey } from '../core/index.js'
+import { getConversationSummary, getBubbleData } from './helpers.js'
 
 export const exportConversation = async (
   composerId: string,

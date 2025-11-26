@@ -1,2 +1,2 @@
-export * from './database/index.ts'
-export * from './types.ts'
+export * from './database/index.js'
+export * from './types.js'

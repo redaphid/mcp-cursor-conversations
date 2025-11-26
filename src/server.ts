@@ -1,5 +1,5 @@
 import { McpServer } from '@modelcontextprotocol/sdk/server/mcp.js'
-import { TOOL_ANNOTATIONS } from './utils/index.ts'
+import { TOOL_ANNOTATIONS } from './utils/index.js'
 import {
   listConversations,
   searchConversations,
@@ -18,8 +18,8 @@ import {
   getRequestContext,
   getRequestContextStats,
   getDatabaseStats,
-} from './tools/index.ts'
-import { allPrompts } from './prompts/index.ts'
+} from './tools/index.js'
+import { allPrompts } from './prompts/index.js'
 
 export const createMcpServer = async () => {
   const mcpServer = new McpServer(

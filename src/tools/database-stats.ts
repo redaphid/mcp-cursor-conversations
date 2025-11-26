@@ -1,4 +1,4 @@
-import { queryAll, queryCount, KEY_PATTERNS } from '../core/index.ts'
+import { queryAll, queryCount, KEY_PATTERNS } from '../core/index.js'
 
 /**
  * Get comprehensive database statistics

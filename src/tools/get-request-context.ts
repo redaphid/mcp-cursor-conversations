@@ -1,5 +1,5 @@
-import { queryAll, KEY_PATTERNS } from '../core/index.ts'
-import type { MessageRequestContext } from '../core/types.ts'
+import { queryAll, KEY_PATTERNS } from '../core/index.js'
+import type { MessageRequestContext } from '../core/types.js'
 
 /**
  * Get all request contexts for a conversation (includes git status, project layout, etc.)

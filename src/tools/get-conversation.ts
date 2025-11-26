@@ -1,5 +1,5 @@
-import { queryOne, makeComposerKey } from '../core/index.ts'
-import { getConversationSummary, getBubbleData } from './helpers.ts'
+import { queryOne, makeComposerKey } from '../core/index.js'
+import { getConversationSummary, getBubbleData } from './helpers.js'
 
 export const getConversation = async (composerId: string, format: 'summary' | 'full' = 'summary') => {
   const key = makeComposerKey(composerId)

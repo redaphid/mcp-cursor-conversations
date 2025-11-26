@@ -1,5 +1,5 @@
-import { queryOne, makeBubbleKey } from '../core/index.ts'
-import type { BubbleData, ConversationData, MessageInfo } from '../core/types.ts'
+import { queryOne, makeBubbleKey } from '../core/index.js'
+import type { BubbleData, ConversationData, MessageInfo } from '../core/types.js'
 
 export const getBubbleData = (composerId: string, bubbleId: string): BubbleData | null => {
   const key = makeBubbleKey(composerId, bubbleId)

@@ -1,37 +1,96 @@
 {
-  "name": "@redaphid/cursor-conversations-mcp",
+  "name": "@redaphid/cursor-conversations",
   "version": "2.0.0",
-  "description": "MCP server for accessing Cursor conversation data - conversations, messages, code diffs, checkpoints, and more",
-  "main": "src/index.ts",
+  "description": "Library for accessing Cursor conversation data - conversations, messages, code diffs, checkpoints, and more",
+  "main": "./dist/cjs/lib.js",
+  "module": "./dist/esm/lib.js",
+  "types": "./dist/esm/lib.d.ts",
   "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/esm/lib.d.ts",
+      "import": "./dist/esm/lib.js",
+      "require": "./dist/cjs/lib.js",
+      "source": "./src/lib.ts"
+    },
+    "./core": {
+      "types": "./dist/esm/core/index.d.ts",
+      "import": "./dist/esm/core/index.js",
+      "require": "./dist/cjs/core/index.js",
+      "source": "./src/core/index.ts"
+    },
+    "./tools": {
+      "types": "./dist/esm/tools/index.d.ts",
+      "import": "./dist/esm/tools/index.js",
+      "require": "./dist/cjs/tools/index.js",
+      "source": "./src/tools/index.ts"
+    },
+    "./mcp": {
+      "types": "./dist/esm/index.d.ts",
+      "import": "./dist/esm/index.js",
+      "require": "./dist/cjs/index.js",
+      "source": "./src/index.ts"
+    }
+  },
+  "bin": {
+    "cursor-conversations-mcp": "./dist/esm/index.js"
+  },
   "scripts": {
     "start": "node --experimental-strip-types src/index.ts",
+    "dev": "node --experimental-strip-types src/index.ts",
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc --project tsconfig.json",
+    "build:cjs": "tsc --project tsconfig.cjs.json",
     "test": "vitest",
-    "test:run": "vitest run"
+    "test:run": "vitest run",
+    "test:build": "npm run build && npm run test:run",
+    "type-check": "tsc --noEmit",
+    "prepublishOnly": "npm run build"
   },
   "keywords": [
-    "mcp",
-    "llm",
     "cursor",
     "conversations",
     "code-diffs",
-    "checkpoints"
+    "checkpoints",
+    "sqlite",
+    "llm",
+    "ai-assistant"
   ],
   "author": "",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/redaphid/mcp-cursor-conversations.git"
+  },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.18.1",
     "better-sqlite3": "^11.7.0"
+  },
+  "optionalDependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.1"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.9",
     "@types/node": "^22.5.0",
+    "typescript": "^5.7.3",
     "vitest": "^2.1.8"
   },
+  "peerDependencies": {
+    "@modelcontextprotocol/sdk": "^1.18.1"
+  },
+  "peerDependenciesMeta": {
+    "@modelcontextprotocol/sdk": {
+      "optional": true
+    }
+  },
   "engines": {
-    "node": ">=24.0.0"
+    "node": ">=20.0.0"
   },
   "files": [
-    "src"
-  ]
+    "dist",
+    "src",
+    "!src/**/*.test.ts"
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  }
 }
