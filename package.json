@@ -1,7 +1,7 @@
 {
   "name": "@redaphid/cursor-conversations-mcp",
-  "version": "1.0.0",
-  "description": "MCP server for accessing Cursor conversation data",
+  "version": "2.0.0",
+  "description": "MCP server for accessing Cursor conversation data - conversations, messages, code diffs, checkpoints, and more",
   "main": "src/index.ts",
   "type": "module",
   "scripts": {
@@ -13,12 +13,14 @@
     "mcp",
     "llm",
     "cursor",
-    "conversations"
+    "conversations",
+    "code-diffs",
+    "checkpoints"
   ],
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.4",
+    "@modelcontextprotocol/sdk": "^1.18.1",
     "better-sqlite3": "^11.7.0"
   },
   "devDependencies": {

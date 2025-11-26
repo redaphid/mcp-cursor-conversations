@@ -191,3 +191,7 @@ __pycache__/
 
 # Data directory with conversation exports
 data/
+db/
+
+# Analysis artifacts
+scripts/synthesized_*/

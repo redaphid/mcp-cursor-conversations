@@ -3,7 +3,9 @@
     "cursor-conversations": {
       "command": "node",
       "args": ["--experimental-strip-types", "src/index.ts"],
-      "env": {}
+      "env": {
+        "CURSOR_DB_PATH": "./db/2025-11-25.db"
+      }
     }
   }
 }
