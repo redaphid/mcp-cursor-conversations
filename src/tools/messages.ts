@@ -1,5 +1,5 @@
 import { queryOne, queryAll, makeMessageKey, KEY_PATTERNS } from '../core/index.js'
-import type { Message, MessageSummary } from '../core/types.js'
+import type { Message } from '../core/types.js'
 
 /**
  * Get a single message by ID
@@ -30,22 +30,14 @@ export const listMessages = async (conversationId: string, options: { limit?: nu
     LIMIT ?
   `, [pattern, limit])
 
-  const messages: MessageSummary[] = []
+  const messages: Message[] = []
 
   for (const row of rows) {
     if (!row.value || row.value === 'null') continue
     try {
       const parsed = JSON.parse(row.value)
       const messageId = parsed.bubbleId || row.key.split(':')[2]
-      messages.push({
-        messageId,
-        role: parsed.type === 1 ? 'user' : 'assistant',
-        text: parsed.text?.substring(0, 200) || '[No text content]',
-        hasCodeBlocks: (parsed.codeBlocks?.length || 0) > 0,
-        hasToolResults: (parsed.toolResults?.length || 0) > 0,
-        isAgentic: parsed.isAgentic || false,
-        tokenCount: parsed.tokenCount
-      })
+      messages.push({ ...parsed, messageId })
     } catch {
       continue
     }
