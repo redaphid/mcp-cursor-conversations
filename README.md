@@ -1,15 +1,32 @@
-# @redaphid/cursor-conversations
+# @hypnodroid/cursor-conversations
 
-A library for programmatically accessing Cursor IDE's conversation database. Query conversations, messages, code diffs, file snapshots, and context data.
+Access Cursor IDE's conversation database - query conversations, messages, code diffs, file snapshots, and context data. Use as an MCP server with Claude Code or as a library in your own projects.
 
-## Installation
+## MCP Server (Claude Code)
+
+Add to Claude Code with one command:
 
 ```bash
-# From GitHub Packages
-npm install @redaphid/cursor-conversations --registry=https://npm.pkg.github.com
+claude mcp add cursor-conversations -- npx -y @hypnodroid/cursor-conversations
+```
 
-# Or link locally for development
-pnpm link /path/to/mcp-cursor-conversations
+Or add to your `.mcp.json`:
+
+```json
+{
+  "mcpServers": {
+    "cursor-conversations": {
+      "command": "npx",
+      "args": ["-y", "@hypnodroid/cursor-conversations"]
+    }
+  }
+}
+```
+
+## Installation (Library)
+
+```bash
+npm install @hypnodroid/cursor-conversations
 ```
 
 ## Quick Start
@@ -19,7 +36,7 @@ import {
   listConversations,
   listMessages,
   searchConversations
-} from '@redaphid/cursor-conversations'
+} from '@hypnodroid/cursor-conversations'
 
 // List recent conversations
 const { conversations } = await listConversations({ limit: 10 })
@@ -34,14 +51,14 @@ const results = await searchConversations('authentication', 20)
 ## CLI
 
 ```bash
-# After installing globally
-cursor-conversations list --limit 5
-cursor-conversations search "authentication"
-cursor-conversations messages <conversationId> --limit 10
-cursor-conversations export <conversationId> --format markdown
+# Run directly with npx
+npx @hypnodroid/cursor-conversations-cli list --limit 5
+npx @hypnodroid/cursor-conversations-cli search "authentication"
+npx @hypnodroid/cursor-conversations-cli messages <conversationId> --limit 10
 
-# All commands
-cursor-conversations --help
+# Or install globally
+npm install -g @hypnodroid/cursor-conversations
+cursor-conversations-cli --help
 ```
 
 **Commands:**
@@ -257,7 +274,7 @@ const stats = await getDatabaseStats()
 For custom queries:
 
 ```ts
-import { queryAll, queryOne, KEY_PATTERNS } from '@redaphid/cursor-conversations/core'
+import { queryAll, queryOne, KEY_PATTERNS } from '@hypnodroid/cursor-conversations/core'
 
 // Run custom SQL
 const rows = queryAll<{ key: string }>(`
@@ -295,7 +312,7 @@ import type {
 
   // Context
   MessageContext,
-} from '@redaphid/cursor-conversations'
+} from '@hypnodroid/cursor-conversations'
 ```
 
 ---
@@ -311,7 +328,7 @@ By default, the library reads from Cursor's default database location:
 ### Programmatic Configuration
 
 ```ts
-import { setDatabasePath, resetDatabasePath } from '@redaphid/cursor-conversations'
+import { setDatabasePath, resetDatabasePath } from '@hypnodroid/cursor-conversations'
 
 // Set a custom database path
 setDatabasePath('/path/to/state.vscdb')
@@ -333,11 +350,14 @@ CURSOR_DB_PATH=/path/to/state.vscdb node your-script.js
 
 ---
 
-## MCP Server
+## Requirements
 
-This package also includes an MCP server for use with Claude Code. See [MCP Setup](docs/mcp-setup.md) for details.
-
----
+- **Node.js 24.0.0+**
+- **Cursor IDE** with existing conversations
+- **Database location**:
+  - macOS: `~/Library/Application Support/Cursor/User/globalStorage/state.vscdb`
+  - Windows: `%APPDATA%\Cursor\User\globalStorage\state.vscdb`
+  - Linux: `~/.config/Cursor/User/globalStorage/state.vscdb`
 
 ## License
 
