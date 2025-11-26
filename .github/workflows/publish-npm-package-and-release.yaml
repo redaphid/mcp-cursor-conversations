@@ -12,6 +12,8 @@ jobs:
   publish_npm:
     needs: build-and-test
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write
     steps:
       - uses: actions/download-artifact@v4
         with:
@@ -22,8 +24,6 @@ jobs:
           node-version: '24'
           registry-url: 'https://registry.npmjs.org'
       - run: pnpm publish --no-git-checks
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   github_release:
     needs: [build-and-test, publish_npm]
