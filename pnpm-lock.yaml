@@ -11,6 +11,9 @@ importers:
       better-sqlite3:
         specifier: ^11.7.0
         version: 11.10.0
+      zod:
+        specifier: ^4.1.13
+        version: 4.1.13
     devDependencies:
       '@types/better-sqlite3':
         specifier: ^7.6.9
@@ -2217,5 +2220,4 @@ snapshots:
       zod: 4.1.13
     optional: true
 
-  zod@4.1.13:
-    optional: true
+  zod@4.1.13: {}

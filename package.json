@@ -1,6 +1,6 @@
 {
   "name": "@redaphid/cursor-conversations",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "packageManager": "pnpm@10.11.0",
   "description": "Library for accessing Cursor conversation data - conversations, messages, code diffs, checkpoints, and more",
   "main": "./dist/cjs/lib.js",
@@ -66,7 +66,8 @@
     "url": "https://github.com/redaphid/mcp-cursor-conversations.git"
   },
   "dependencies": {
-    "better-sqlite3": "^11.7.0"
+    "better-sqlite3": "^11.7.0",
+    "zod": "^4.1.13"
   },
   "optionalDependencies": {
     "@modelcontextprotocol/sdk": "^1.18.1"

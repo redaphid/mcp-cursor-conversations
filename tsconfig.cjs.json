@@ -4,5 +4,6 @@
     "module": "CommonJS",
     "moduleResolution": "Node",
     "outDir": "./dist/cjs"
-  }
+  },
+  "exclude": ["node_modules", "dist", "**/*.test.ts", "scripts", "src/index.ts", "src/server.ts", "src/prompts/**", "src/utils/**"]
 }
