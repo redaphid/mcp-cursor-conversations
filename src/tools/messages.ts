@@ -3,8 +3,10 @@ import type { Message } from '../core/types.js'
 
 const processMessage = (data: any, messageId: string): Message => {
   const msg = { ...data, messageId: data.bubbleId || messageId }
+  // Parse richText and use as text, then remove richText field
   if (msg.richText) {
-    msg.richText = parseRichText(msg.richText)
+    msg.text = parseRichText(msg.richText)
+    delete msg.richText
   }
   return msg
 }
