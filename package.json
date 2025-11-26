@@ -1,6 +1,7 @@
 {
   "name": "@redaphid/cursor-conversations",
   "version": "2.0.0",
+  "packageManager": "pnpm@10.11.0",
   "description": "Library for accessing Cursor conversation data - conversations, messages, code diffs, checkpoints, and more",
   "main": "./dist/cjs/lib.js",
   "module": "./dist/esm/lib.js",
@@ -37,17 +38,18 @@
     "cursor-conversations-mcp": "./dist/esm/index.js"
   },
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "start": "node --experimental-strip-types src/index.ts",
     "dev": "node --experimental-strip-types src/index.ts",
-    "cli": "npx tsx src/cli.ts",
-    "build": "npm run build:esm && npm run build:cjs",
+    "cli": "pnpm tsx src/cli.ts",
+    "build": "pnpm build:esm && pnpm build:cjs",
     "build:esm": "tsc --project tsconfig.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
     "test": "vitest",
     "test:run": "vitest run",
-    "test:build": "npm run build && npm run test:run",
+    "test:build": "pnpm build && pnpm test:run",
     "type-check": "tsc --noEmit",
-    "prepublishOnly": "npm run build"
+    "prepublishOnly": "pnpm build"
   },
   "keywords": [
     "cursor",
@@ -73,6 +75,7 @@
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.9",
     "@types/node": "^22.5.0",
+    "tsx": "^4.20.6",
     "typescript": "^5.7.3",
     "vitest": "^2.1.8"
   },
@@ -86,6 +89,12 @@
   },
   "engines": {
     "node": ">=20.0.0"
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "better-sqlite3",
+      "esbuild"
+    ]
   },
   "files": [
     "dist",
