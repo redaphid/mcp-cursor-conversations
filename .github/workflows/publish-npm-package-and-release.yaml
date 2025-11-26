@@ -33,6 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: write
+    continue-on-error: true
     steps:
       - uses: actions/checkout@v4
       - uses: ncipollo/release-action@v1
@@ -42,3 +43,4 @@ jobs:
           name: ${{ needs.build-and-test.outputs.name }} v${{ needs.build-and-test.outputs.version }}
           allowUpdates: true
           generateReleaseNotes: true
+          skipIfReleaseExists: true

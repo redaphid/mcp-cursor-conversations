@@ -1,6 +1,6 @@
 {
   "name": "@redaphid/cursor-conversations",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "packageManager": "pnpm@10.11.0",
   "description": "Library for accessing Cursor conversation data - conversations, messages, code diffs, checkpoints, and more",
   "main": "./dist/cjs/lib.js",
