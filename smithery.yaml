@@ -1,0 +1,23 @@
+# Smithery configuration for cursor-conversations MCP server
+# https://smithery.ai/docs/build/project-config/smithery.yaml
+
+startCommand:
+  type: stdio
+  configSchema:
+    type: object
+    properties:
+      databasePath:
+        type: string
+        description: Optional path to Cursor's state.vscdb database. If not provided, uses the default platform location.
+  commandFunction: |
+    (config) => {
+      const env = {};
+      if (config.databasePath) {
+        env.CURSOR_DB_PATH = config.databasePath;
+      }
+      return {
+        command: 'npx',
+        args: ['-y', '@hypnodroid/cursor-conversations'],
+        env
+      };
+    }
