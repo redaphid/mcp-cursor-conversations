@@ -4,37 +4,37 @@ import { queryAll, queryCount, KEY_PATTERNS } from '../core/index.js'
  * Get comprehensive database statistics
  */
 export const getDatabaseStats = async () => {
-  const composerCount = queryCount(`
+  const conversationCount = queryCount(`
     SELECT COUNT(*) as count FROM cursorDiskKV WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.COMPOSER_DATA}%`])
+  `, [`${KEY_PATTERNS.CONVERSATION}%`])
 
-  const bubbleCount = queryCount(`
+  const messageCount = queryCount(`
     SELECT COUNT(*) as count FROM cursorDiskKV WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.BUBBLE_ID}%`])
+  `, [`${KEY_PATTERNS.MESSAGE}%`])
 
-  const checkpointCount = queryCount(`
+  const snapshotCount = queryCount(`
     SELECT COUNT(*) as count FROM cursorDiskKV WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.CHECKPOINT_ID}%`])
+  `, [`${KEY_PATTERNS.SNAPSHOT}%`])
 
-  const codeBlockDiffCount = queryCount(`
+  const diffCount = queryCount(`
     SELECT COUNT(*) as count FROM cursorDiskKV WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.CODE_BLOCK_DIFF}%`])
+  `, [`${KEY_PATTERNS.DIFF}%`])
 
-  const messageRequestContextCount = queryCount(`
+  const contextCount = queryCount(`
     SELECT COUNT(*) as count FROM cursorDiskKV WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.MESSAGE_REQUEST_CONTEXT}%`])
+  `, [`${KEY_PATTERNS.CONTEXT}%`])
 
-  // Get all key prefixes to find any new patterns
+  // Get all key prefixes
   const keyPatterns = queryAll<{ prefix: string; cnt: number }>(`
     SELECT
       CASE
-        WHEN key LIKE 'composerData:%' THEN 'composerData'
-        WHEN key LIKE 'bubbleId:%' THEN 'bubbleId'
-        WHEN key LIKE 'checkpointId:%' THEN 'checkpointId'
-        WHEN key LIKE 'codeBlockDiff:%' THEN 'codeBlockDiff'
-        WHEN key LIKE 'messageRequestContext:%' THEN 'messageRequestContext'
+        WHEN key LIKE 'composerData:%' THEN 'conversation'
+        WHEN key LIKE 'bubbleId:%' THEN 'message'
+        WHEN key LIKE 'checkpointId:%' THEN 'snapshot'
+        WHEN key LIKE 'codeBlockDiff:%' THEN 'diff'
+        WHEN key LIKE 'messageRequestContext:%' THEN 'context'
         WHEN key LIKE 'inlineDiffs-%' THEN 'inlineDiffs'
-        WHEN key LIKE 'codeBlockPartialInlineDiffFates:%' THEN 'codeBlockPartialInlineDiffFates'
+        WHEN key LIKE 'codeBlockPartialInlineDiffFates:%' THEN 'partialDiffFates'
         ELSE 'other'
       END as prefix,
       COUNT(*) as cnt
@@ -45,11 +45,11 @@ export const getDatabaseStats = async () => {
 
   return {
     summary: {
-      conversations: composerCount,
-      messages: bubbleCount,
-      checkpoints: checkpointCount,
-      codeDiffs: codeBlockDiffCount,
-      requestContexts: messageRequestContextCount
+      conversations: conversationCount,
+      messages: messageCount,
+      snapshots: snapshotCount,
+      diffs: diffCount,
+      contexts: contextCount
     },
     keyPatterns: keyPatterns.reduce((acc, row) => {
       acc[row.prefix] = row.cnt
@@ -57,10 +57,10 @@ export const getDatabaseStats = async () => {
     }, {} as Record<string, number>),
     description: {
       conversations: 'Main conversation metadata and structure',
-      messages: 'Individual message bubbles with full content, tool results, code blocks',
-      checkpoints: 'File state snapshots during conversation',
-      codeDiffs: 'Line-level code changes applied during conversation',
-      requestContexts: 'Context at time of each request (git status, project layout, cursor rules)'
+      messages: 'Individual messages with full content, tool results, code blocks',
+      snapshots: 'File state snapshots during conversation',
+      diffs: 'Line-level code changes applied during conversation',
+      contexts: 'Context at time of each message (git status, project layout, cursor rules)'
     }
   }
 }

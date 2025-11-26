@@ -1,52 +1,74 @@
-// Database key patterns for Cursor's cursorDiskKV table
+/**
+ * Database key patterns for Cursor's cursorDiskKV table
+ *
+ * Cursor uses these internal key prefixes - we expose semantic names
+ */
 
-export const KEY_PATTERNS = {
-  COMPOSER_DATA: 'composerData:',
-  BUBBLE_ID: 'bubbleId:',
-  CHECKPOINT_ID: 'checkpointId:',
-  CODE_BLOCK_DIFF: 'codeBlockDiff:',
-  MESSAGE_REQUEST_CONTEXT: 'messageRequestContext:',
+// Internal Cursor key prefixes (don't change these - they match the DB)
+const CURSOR_KEYS = {
+  CONVERSATION: 'composerData:',
+  MESSAGE: 'bubbleId:',
+  SNAPSHOT: 'checkpointId:',
+  DIFF: 'codeBlockDiff:',
+  CONTEXT: 'messageRequestContext:',
 } as const
 
-export const makeComposerKey = (composerId: string): string =>
-  `${KEY_PATTERNS.COMPOSER_DATA}${composerId}`
+// Exported with semantic names
+export const KEY_PATTERNS = {
+  CONVERSATION: CURSOR_KEYS.CONVERSATION,
+  MESSAGE: CURSOR_KEYS.MESSAGE,
+  SNAPSHOT: CURSOR_KEYS.SNAPSHOT,
+  DIFF: CURSOR_KEYS.DIFF,
+  CONTEXT: CURSOR_KEYS.CONTEXT,
+} as const
 
-export const makeBubbleKey = (composerId: string, bubbleId: string): string =>
-  `${KEY_PATTERNS.BUBBLE_ID}${composerId}:${bubbleId}`
+export const makeConversationKey = (conversationId: string): string =>
+  `${KEY_PATTERNS.CONVERSATION}${conversationId}`
 
-export const makeCheckpointKey = (composerId: string, checkpointId: string): string =>
-  `${KEY_PATTERNS.CHECKPOINT_ID}${composerId}:${checkpointId}`
+export const makeMessageKey = (conversationId: string, messageId: string): string =>
+  `${KEY_PATTERNS.MESSAGE}${conversationId}:${messageId}`
 
-export const makeCodeBlockDiffKey = (composerId: string, diffId: string): string =>
-  `${KEY_PATTERNS.CODE_BLOCK_DIFF}${composerId}:${diffId}`
+export const makeSnapshotKey = (conversationId: string, snapshotId: string): string =>
+  `${KEY_PATTERNS.SNAPSHOT}${conversationId}:${snapshotId}`
 
-export const makeMessageRequestContextKey = (composerId: string, contextId: string): string =>
-  `${KEY_PATTERNS.MESSAGE_REQUEST_CONTEXT}${composerId}:${contextId}`
+export const makeDiffKey = (conversationId: string, diffId: string): string =>
+  `${KEY_PATTERNS.DIFF}${conversationId}:${diffId}`
 
-export const parseComposerKey = (key: string): string | null => {
-  if (!key.startsWith(KEY_PATTERNS.COMPOSER_DATA)) return null
-  return key.slice(KEY_PATTERNS.COMPOSER_DATA.length)
+export const makeContextKey = (conversationId: string, contextId: string): string =>
+  `${KEY_PATTERNS.CONTEXT}${conversationId}:${contextId}`
+
+export const parseConversationKey = (key: string): string | null => {
+  if (!key.startsWith(KEY_PATTERNS.CONVERSATION)) return null
+  return key.slice(KEY_PATTERNS.CONVERSATION.length)
 }
 
-export const parseBubbleKey = (key: string): { composerId: string; bubbleId: string } | null => {
-  if (!key.startsWith(KEY_PATTERNS.BUBBLE_ID)) return null
-  const parts = key.slice(KEY_PATTERNS.BUBBLE_ID.length).split(':')
+export const parseMessageKey = (key: string): { conversationId: string; messageId: string } | null => {
+  if (!key.startsWith(KEY_PATTERNS.MESSAGE)) return null
+  const parts = key.slice(KEY_PATTERNS.MESSAGE.length).split(':')
   if (parts.length !== 2) return null
-  return { composerId: parts[0], bubbleId: parts[1] }
+  return { conversationId: parts[0], messageId: parts[1] }
 }
 
-export const parseCheckpointKey = (key: string): { composerId: string; checkpointId: string } | null => {
-  if (!key.startsWith(KEY_PATTERNS.CHECKPOINT_ID)) return null
-  const rest = key.slice(KEY_PATTERNS.CHECKPOINT_ID.length)
+export const parseSnapshotKey = (key: string): { conversationId: string; snapshotId: string } | null => {
+  if (!key.startsWith(KEY_PATTERNS.SNAPSHOT)) return null
+  const rest = key.slice(KEY_PATTERNS.SNAPSHOT.length)
   const firstColon = rest.indexOf(':')
   if (firstColon === -1) return null
-  return { composerId: rest.slice(0, firstColon), checkpointId: rest.slice(firstColon + 1) }
+  return { conversationId: rest.slice(0, firstColon), snapshotId: rest.slice(firstColon + 1) }
 }
 
-export const parseCodeBlockDiffKey = (key: string): { composerId: string; diffId: string } | null => {
-  if (!key.startsWith(KEY_PATTERNS.CODE_BLOCK_DIFF)) return null
-  const rest = key.slice(KEY_PATTERNS.CODE_BLOCK_DIFF.length)
+export const parseDiffKey = (key: string): { conversationId: string; diffId: string } | null => {
+  if (!key.startsWith(KEY_PATTERNS.DIFF)) return null
+  const rest = key.slice(KEY_PATTERNS.DIFF.length)
   const firstColon = rest.indexOf(':')
   if (firstColon === -1) return null
-  return { composerId: rest.slice(0, firstColon), diffId: rest.slice(firstColon + 1) }
+  return { conversationId: rest.slice(0, firstColon), diffId: rest.slice(firstColon + 1) }
+}
+
+export const parseContextKey = (key: string): { conversationId: string; contextId: string } | null => {
+  if (!key.startsWith(KEY_PATTERNS.CONTEXT)) return null
+  const rest = key.slice(KEY_PATTERNS.CONTEXT.length)
+  const firstColon = rest.indexOf(':')
+  if (firstColon === -1) return null
+  return { conversationId: rest.slice(0, firstColon), contextId: rest.slice(firstColon + 1) }
 }

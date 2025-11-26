@@ -1,22 +1,13 @@
-// Conversation types
+/**
+ * Cursor Conversations Type Definitions
+ */
 
-export interface ConversationHeader {
-  bubbleId: string
-  timestamp?: number
-}
-
-export interface ConversationData {
-  composerId: string
-  createdAt: number
-  lastUpdatedAt?: number
-  status?: string
-  conversation?: any[]
-  conversationMap?: Record<string, any>
-  fullConversationHeadersOnly?: ConversationHeader[]
-}
+// ============================================
+// CONVERSATION TYPES
+// ============================================
 
 export interface ConversationSummary {
-  composerId: string
+  conversationId: string
   messageCount: number
   preview: string
   status: string
@@ -24,16 +15,34 @@ export interface ConversationSummary {
   updatedAt: number
 }
 
-export interface MessageInfo {
-  type: 'user' | 'assistant'
-  text: string
+export interface ConversationData {
+  conversationId: string
+  createdAt: number
+  lastUpdatedAt?: number
+  status?: string
+  messages?: Message[]
 }
 
-// Bubble data (individual messages) - new June 2025 format
-export interface BubbleData {
+// ============================================
+// MESSAGE TYPES
+// ============================================
+
+export type MessageRole = 'user' | 'assistant'
+
+export interface MessageSummary {
+  messageId: string
+  role: MessageRole
+  text: string
+  hasCodeBlocks: boolean
+  hasToolResults: boolean
+  isAgentic: boolean
+  tokenCount?: { inputTokens: number; outputTokens: number }
+}
+
+export interface Message {
   _v: number
   type: number // 1 = user, 2 = assistant
-  bubbleId: string
+  messageId: string
   text?: string
   responseParts?: Array<{ type: string; rawText?: string }>
   codeBlocks?: any[]
@@ -53,8 +62,12 @@ export interface BubbleData {
   usageUuid?: string
 }
 
-// Checkpoint data - file state snapshots
-export interface CheckpointData {
+// ============================================
+// SNAPSHOT TYPES (file state at a point in time)
+// ============================================
+
+export interface Snapshot {
+  snapshotId: string
   files: string[]
   nonExistentFiles: string[]
   newlyCreatedFolders: string[]
@@ -65,22 +78,29 @@ export interface CheckpointData {
   }
 }
 
-// Code block diff data
-export interface CodeBlockDiff {
-  newModelDiffWrtV0: Array<{
+// ============================================
+// CODE DIFF TYPES
+// ============================================
+
+export interface CodeDiff {
+  diffId: string
+  changes: Array<{
     original: { startLineNumber: number; endLineNumberExclusive: number }
     modified: string[]
   }>
-  originalModelDiffWrtV0: any[]
 }
 
-// Message request context
-export interface MessageRequestContext {
+// ============================================
+// CONTEXT TYPES (state when message was sent)
+// ============================================
+
+export interface MessageContext {
+  contextId: string
   terminalFiles: string[]
   cursorRules: string[]
   attachedFoldersListDirResults: any[]
   summarizedComposers: any[]
-  gitStatusRaw?: string
+  gitStatus?: string
   todos: any[]
   projectLayouts: string[]
 }

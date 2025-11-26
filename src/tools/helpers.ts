@@ -1,28 +1,34 @@
-import { queryOne, makeBubbleKey } from '../core/index.js'
-import type { BubbleData, ConversationData, MessageInfo } from '../core/types.js'
+import { queryOne, makeMessageKey } from '../core/index.js'
+import type { Message, ConversationData } from '../core/types.js'
 
-export const getBubbleData = (composerId: string, bubbleId: string): BubbleData | null => {
-  const key = makeBubbleKey(composerId, bubbleId)
+export const getMessageData = (conversationId: string, messageId: string): Message | null => {
+  const key = makeMessageKey(conversationId, messageId)
   const row = queryOne<{ value: string }>('SELECT value FROM cursorDiskKV WHERE key = ?', [key])
 
   if (!row?.value || row.value === 'null') return null
 
   try {
-    return JSON.parse(row.value) as BubbleData
+    const data = JSON.parse(row.value)
+    return { ...data, messageId: data.bubbleId || messageId }
   } catch {
     return null
   }
 }
 
+interface MessageInfo {
+  type: 'user' | 'assistant'
+  text: string
+}
+
 export const getConversationSummary = (
-  conversation: ConversationData,
-  getBubbleDataFn: ((composerId: string, bubbleId: string) => BubbleData | null) | null = null
+  conversation: ConversationData & { conversationId: string },
+  getMessageDataFn: ((conversationId: string, messageId: string) => Message | null) | null = null
 ) => {
   const messages: MessageInfo[] = []
 
   // Handle old structure with conversation array
-  if (conversation.conversation && Array.isArray(conversation.conversation)) {
-    for (const msg of conversation.conversation) {
+  if ((conversation as any).conversation && Array.isArray((conversation as any).conversation)) {
+    for (const msg of (conversation as any).conversation) {
       const messageInfo: MessageInfo = {
         type: msg.type === 1 ? 'user' : 'assistant',
         text: ''
@@ -51,9 +57,9 @@ export const getConversationSummary = (
   }
 
   // Handle structure with conversationMap
-  if (conversation.conversationMap && typeof conversation.conversationMap === 'object') {
-    for (const msgId of Object.keys(conversation.conversationMap)) {
-      const msg = conversation.conversationMap[msgId]
+  if ((conversation as any).conversationMap && typeof (conversation as any).conversationMap === 'object') {
+    for (const msgId of Object.keys((conversation as any).conversationMap)) {
+      const msg = (conversation as any).conversationMap[msgId]
       const messageInfo: MessageInfo = {
         type: msg.type === 1 ? 'user' : 'assistant',
         text: ''
@@ -82,49 +88,49 @@ export const getConversationSummary = (
   }
 
   // Handle June 2025 structure with fullConversationHeadersOnly
-  if (conversation.fullConversationHeadersOnly && Array.isArray(conversation.fullConversationHeadersOnly) && getBubbleDataFn) {
-    for (const header of conversation.fullConversationHeadersOnly) {
-      const bubbleData = getBubbleDataFn(conversation.composerId, header.bubbleId)
+  if ((conversation as any).fullConversationHeadersOnly && Array.isArray((conversation as any).fullConversationHeadersOnly) && getMessageDataFn) {
+    for (const header of (conversation as any).fullConversationHeadersOnly) {
+      const msgData = getMessageDataFn(conversation.conversationId, header.bubbleId)
 
-      if (bubbleData) {
+      if (msgData) {
         const messageInfo: MessageInfo = {
-          type: bubbleData.type === 1 ? 'user' : 'assistant',
+          type: msgData.type === 1 ? 'user' : 'assistant',
           text: ''
         }
 
-        if (bubbleData.type === 1) {
-          messageInfo.text = bubbleData.text || ''
-        } else if (bubbleData.type === 2) {
+        if (msgData.type === 1) {
+          messageInfo.text = msgData.text || ''
+        } else if (msgData.type === 2) {
           const textParts: string[] = []
 
-          if (bubbleData.text?.trim()) {
-            textParts.push(bubbleData.text)
+          if (msgData.text?.trim()) {
+            textParts.push(msgData.text)
           }
 
-          if (bubbleData.responseParts?.length) {
-            for (const part of bubbleData.responseParts) {
+          if (msgData.responseParts?.length) {
+            for (const part of msgData.responseParts) {
               if (part.type === 'text' && part.rawText) {
                 textParts.push(part.rawText)
               }
             }
           }
 
-          if (bubbleData.codeBlocks?.length) {
-            textParts.push(`[${bubbleData.codeBlocks.length} code block(s)]`)
+          if (msgData.codeBlocks?.length) {
+            textParts.push(`[${msgData.codeBlocks.length} code block(s)]`)
           }
 
-          if (bubbleData.thinking?.trim()) {
+          if (msgData.thinking?.trim()) {
             textParts.push('[AI thinking content]')
           }
 
-          if (bubbleData.intermediateChunks?.length) {
-            textParts.push(`[${bubbleData.intermediateChunks.length} intermediate chunk(s)]`)
+          if (msgData.intermediateChunks?.length) {
+            textParts.push(`[${msgData.intermediateChunks.length} intermediate chunk(s)]`)
           }
 
           messageInfo.text = textParts.join(' ')
         }
 
-        if (messageInfo.text || bubbleData.codeBlocks?.length || bubbleData.thinking) {
+        if (messageInfo.text || msgData.codeBlocks?.length || msgData.thinking) {
           if (!messageInfo.text) {
             messageInfo.text = '[Content without text]'
           }
@@ -138,7 +144,7 @@ export const getConversationSummary = (
     messageCount: messages.length,
     messages,
     preview: messages[0]?.text?.substring(0, 100) || 'No preview available',
-    status: conversation.status || 'none',
+    status: (conversation as any).status || 'none',
     createdAt: conversation.createdAt,
     updatedAt: conversation.lastUpdatedAt || conversation.createdAt
   }

@@ -1,12 +1,12 @@
 import { queryAll, KEY_PATTERNS } from '../core/index.js'
-import { getConversationSummary, getBubbleData } from './helpers.js'
+import { getConversationSummary, getMessageData } from './helpers.js'
 
 export const searchConversations = async (query: string, limit: number = 20) => {
   const rows = queryAll<{ key: string; value: string }>(`
     SELECT key, value
     FROM cursorDiskKV
     WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.COMPOSER_DATA}%`])
+  `, [`${KEY_PATTERNS.CONVERSATION}%`])
 
   const results: any[] = []
   const lowerQuery = query.toLowerCase()
@@ -16,15 +16,15 @@ export const searchConversations = async (query: string, limit: number = 20) => 
 
     try {
       const parsed = JSON.parse(row.value)
-      parsed.composerId = row.key.slice(KEY_PATTERNS.COMPOSER_DATA.length)
+      const conversationId = row.key.slice(KEY_PATTERNS.CONVERSATION.length)
 
-      const summary = getConversationSummary(parsed, (composerId, bubbleId) =>
-        getBubbleData(composerId, bubbleId)
+      const summary = getConversationSummary(
+        { ...parsed, conversationId },
+        (convId, msgId) => getMessageData(convId, msgId)
       )
 
       const matches: any[] = []
 
-      // Search through messages
       summary.messages.forEach((msg, index) => {
         if (msg.text?.toLowerCase().includes(lowerQuery)) {
           matches.push({
@@ -37,7 +37,7 @@ export const searchConversations = async (query: string, limit: number = 20) => 
 
       if (matches.length > 0) {
         results.push({
-          composerId: parsed.composerId,
+          conversationId,
           messageCount: summary.messageCount,
           preview: summary.messages[0]?.text?.substring(0, 100) || 'No preview available',
           status: parsed.status || 'completed',

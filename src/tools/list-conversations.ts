@@ -1,5 +1,6 @@
 import { queryAll, queryCount, KEY_PATTERNS } from '../core/index.js'
-import { getConversationSummary, getBubbleData } from './helpers.js'
+import { getConversationSummary, getMessageData } from './helpers.js'
+import type { ConversationSummary } from '../core/types.js'
 
 export interface ListConversationsOptions {
   limit?: number
@@ -16,14 +17,12 @@ export const listConversations = async (options: ListConversationsOptions = {}) 
     sortOrder = 'desc'
   } = options
 
-  // Get total count
   const totalCount = queryCount(`
     SELECT COUNT(*) as count
     FROM cursorDiskKV
     WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.COMPOSER_DATA}%`])
+  `, [`${KEY_PATTERNS.CONVERSATION}%`])
 
-  // Build ORDER BY clause
   let orderByClause: string
   switch (sortBy) {
     case 'created':
@@ -44,23 +43,24 @@ export const listConversations = async (options: ListConversationsOptions = {}) 
     WHERE key LIKE ?
     ORDER BY ${orderByClause}
     LIMIT ? OFFSET ?
-  `, [`${KEY_PATTERNS.COMPOSER_DATA}%`, limit, offset])
+  `, [`${KEY_PATTERNS.CONVERSATION}%`, limit, offset])
 
-  const conversations = []
+  const conversations: ConversationSummary[] = []
 
   for (const row of rows) {
     if (!row.value || row.value === 'null') continue
 
     try {
       const parsed = JSON.parse(row.value)
-      parsed.composerId = row.key.slice(KEY_PATTERNS.COMPOSER_DATA.length)
+      const conversationId = row.key.slice(KEY_PATTERNS.CONVERSATION.length)
 
-      const summary = getConversationSummary(parsed, (composerId, bubbleId) =>
-        getBubbleData(composerId, bubbleId)
+      const summary = getConversationSummary(
+        { ...parsed, conversationId },
+        (convId, msgId) => getMessageData(convId, msgId)
       )
 
       conversations.push({
-        composerId: parsed.composerId,
+        conversationId,
         messageCount: summary.messageCount,
         preview: summary.preview,
         status: summary.status,

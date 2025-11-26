@@ -1,30 +1,32 @@
 import { writeFileSync } from 'fs'
 import { join } from 'path'
-import { queryOne, makeComposerKey } from '../core/index.js'
-import { getConversationSummary, getBubbleData } from './helpers.js'
+import { queryOne, makeConversationKey } from '../core/index.js'
+import { getConversationSummary, getMessageData } from './helpers.js'
 
 export const exportConversation = async (
-  composerId: string,
+  conversationId: string,
   format: 'markdown' | 'json' = 'markdown'
 ): Promise<string> => {
-  const key = makeComposerKey(composerId)
+  const key = makeConversationKey(conversationId)
   const row = queryOne<{ value: string }>('SELECT value FROM cursorDiskKV WHERE key = ?', [key])
 
   if (!row?.value || row.value === 'null') {
-    throw new Error(`Conversation ${composerId} not found`)
+    throw new Error(`Conversation ${conversationId} not found`)
   }
 
   const conversation = JSON.parse(row.value)
-  conversation.composerId = composerId
 
   let content: string
   let extension: string
 
   if (format === 'json') {
-    content = JSON.stringify(conversation, null, 2)
+    content = JSON.stringify({ ...conversation, conversationId }, null, 2)
     extension = 'json'
   } else {
-    const summary = getConversationSummary(conversation, (cId, bId) => getBubbleData(cId, bId))
+    const summary = getConversationSummary(
+      { ...conversation, conversationId },
+      (convId, msgId) => getMessageData(convId, msgId)
+    )
 
     const messageBlocks = summary.messages.map((msg, index) => {
       return `## Message ${index + 1} (${msg.type})
@@ -34,7 +36,7 @@ ${msg.text || ''}
 `
     }).join('')
 
-    content = `# Conversation: ${composerId}
+    content = `# Conversation: ${conversationId}
 
 **Created:** ${conversation.createdAt}
 **Updated:** ${summary.updatedAt}
@@ -45,7 +47,7 @@ ${messageBlocks}`
     extension = 'md'
   }
 
-  const filename = `cursor-conversation-${composerId}.${extension}`
+  const filename = `cursor-conversation-${conversationId}.${extension}`
   const filepath = join('/tmp', filename)
 
   writeFileSync(filepath, content, 'utf8')

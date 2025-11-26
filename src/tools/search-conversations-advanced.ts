@@ -1,5 +1,5 @@
 import { queryAll, KEY_PATTERNS } from '../core/index.js'
-import { getConversationSummary, getBubbleData } from './helpers.js'
+import { getConversationSummary, getMessageData } from './helpers.js'
 
 export interface AdvancedSearchOptions {
   date_from?: string
@@ -28,7 +28,7 @@ export const searchConversationsAdvanced = async (options: AdvancedSearchOptions
     SELECT key, value
     FROM cursorDiskKV
     WHERE key LIKE ?
-  `, [`${KEY_PATTERNS.COMPOSER_DATA}%`])
+  `, [`${KEY_PATTERNS.CONVERSATION}%`])
 
   const results: any[] = []
 
@@ -37,13 +37,13 @@ export const searchConversationsAdvanced = async (options: AdvancedSearchOptions
 
     try {
       const parsed = JSON.parse(row.value)
-      parsed.composerId = row.key.slice(KEY_PATTERNS.COMPOSER_DATA.length)
+      const conversationId = row.key.slice(KEY_PATTERNS.CONVERSATION.length)
 
-      const summary = getConversationSummary(parsed, (composerId, bubbleId) =>
-        getBubbleData(composerId, bubbleId)
+      const summary = getConversationSummary(
+        { ...parsed, conversationId },
+        (convId, msgId) => getMessageData(convId, msgId)
       )
 
-      // Apply filters
       const lastMessageDate = new Date(summary.updatedAt)
 
       if (date_from && lastMessageDate < new Date(date_from)) continue
@@ -53,9 +53,9 @@ export const searchConversationsAdvanced = async (options: AdvancedSearchOptions
       if (status !== 'all' && summary.status !== status) continue
 
       results.push({
-        composer_id: parsed.composerId,
-        message_count: summary.messageCount,
-        last_message_date: summary.updatedAt,
+        conversationId,
+        messageCount: summary.messageCount,
+        lastMessageDate: summary.updatedAt,
         status: summary.status,
         preview: summary.preview
       })
@@ -64,14 +64,13 @@ export const searchConversationsAdvanced = async (options: AdvancedSearchOptions
     }
   }
 
-  // Sort results
   results.sort((a, b) => {
     let comparison = 0
 
     if (sort_by === 'date') {
-      comparison = new Date(a.last_message_date).getTime() - new Date(b.last_message_date).getTime()
+      comparison = new Date(a.lastMessageDate).getTime() - new Date(b.lastMessageDate).getTime()
     } else if (sort_by === 'message_count') {
-      comparison = a.message_count - b.message_count
+      comparison = a.messageCount - b.messageCount
     } else if (sort_by === 'status') {
       comparison = (a.status || '').localeCompare(b.status || '')
     }
@@ -80,7 +79,7 @@ export const searchConversationsAdvanced = async (options: AdvancedSearchOptions
   })
 
   return {
-    total_found: results.length,
+    totalFound: results.length,
     returned: Math.min(results.length, limit),
     conversations: results.slice(0, limit)
   }
