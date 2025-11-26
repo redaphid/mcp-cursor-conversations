@@ -31,6 +31,34 @@ const { messages } = await listMessages(conversations[0].conversationId)
 const results = await searchConversations('authentication', 20)
 ```
 
+## CLI
+
+```bash
+# After installing globally
+cursor-conversations list --limit 5
+cursor-conversations search "authentication"
+cursor-conversations messages <conversationId> --limit 10
+cursor-conversations export <conversationId> --format markdown
+
+# All commands
+cursor-conversations --help
+```
+
+**Commands:**
+- `list` - List conversations
+- `get <id>` - Get single conversation
+- `search <query>` - Search by text
+- `search-advanced` - Search with filters (date, message count, status)
+- `export <id>` - Export to markdown/json
+- `messages <id>` - List messages
+- `message <id> <msgId>` - Get single message
+- `snapshots <id>` - List snapshots
+- `diffs <id>` - List code diffs
+- `contexts <id>` - List contexts
+- `stats` - Database statistics
+
+---
+
 ## API Reference
 
 ### Conversations

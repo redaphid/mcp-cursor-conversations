@@ -33,11 +33,13 @@
     }
   },
   "bin": {
+    "cursor-conversations": "./dist/esm/cli.js",
     "cursor-conversations-mcp": "./dist/esm/index.js"
   },
   "scripts": {
     "start": "node --experimental-strip-types src/index.ts",
     "dev": "node --experimental-strip-types src/index.ts",
+    "cli": "npx tsx src/cli.ts",
     "build": "npm run build:esm && npm run build:cjs",
     "build:esm": "tsc --project tsconfig.json",
     "build:cjs": "tsc --project tsconfig.cjs.json",
