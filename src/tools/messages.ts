@@ -1,5 +1,13 @@
-import { queryOne, queryAll, makeMessageKey, KEY_PATTERNS } from '../core/index.js'
+import { queryOne, queryAll, makeMessageKey, KEY_PATTERNS, parseRichText } from '../core/index.js'
 import type { Message } from '../core/types.js'
+
+const processMessage = (data: any, messageId: string): Message => {
+  const msg = { ...data, messageId: data.bubbleId || messageId }
+  if (msg.richText) {
+    msg.richText = parseRichText(msg.richText)
+  }
+  return msg
+}
 
 /**
  * Get a single message by ID
@@ -13,7 +21,7 @@ export const getMessage = async (conversationId: string, messageId: string): Pro
   }
 
   const data = JSON.parse(row.value)
-  return { ...data, messageId: data.bubbleId || messageId }
+  return processMessage(data, messageId)
 }
 
 /**
@@ -37,7 +45,7 @@ export const listMessages = async (conversationId: string, options: { limit?: nu
     try {
       const parsed = JSON.parse(row.value)
       const messageId = parsed.bubbleId || row.key.split(':')[2]
-      messages.push({ ...parsed, messageId })
+      messages.push(processMessage(parsed, messageId))
     } catch {
       continue
     }
